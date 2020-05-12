@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css?version=0.4">
+		<link rel="stylesheet" href="css/style.css?version=0.1">
+		<link rel="stylesheet" href="css/zt_04.css">
+
+		<link rel="stylesheet" href="css/swiper.min.css">
+	</head>
+	<style>
+		.swiper-container {
+			padding-top: 1.173333rem;
+			height: auto!important;
+			padding-bottom: 0.4rem;
+		}
+		
+		header {
+			z-index: 2;
+		}
+		
+		.risk-list {
+			margin:0.533333rem auto 0;
+		}
+		
+		.swiper-slide {
+			padding: 0;
+		}
+		.question{
+			margin-top: 0.933333rem;
+		}
+		
+		html,
+		body,
+		.swiper-container {
+			background: #f2f2f2;
+
+		}
+		
+		.swiper-slide {
+			background: #f2f2f2;
+		}
+		
+		.invest_btn {
+			position: relative;
+		}
+		
+		.invest_btn a {
+			background: #cccccc;
+			color: #fff;
+			width: 9.2rem;
+			margin: 0 auto 0.666666rem;
+			position: static;
+			border-radius: 0.266666rem;
+		}
+		
+		.invest_btn.cur a {
+			background-image: -webkit-gradient(linear, left 0, right 0, from(#00cfc8), to(#00cbbb));
+			background-image: -webkit-gradient(linear, left 0, right 0, from(#00cfc8), to(#00cbbb));
+			box-shadow: 0 0 0.266666rem rgba(0, 203, 187, 0.5);
+		}
+		
+		.question .ques_title span {
+			color: #00cbbb;
+		}
+		
+		.ques_con_one label {
+			color: #989898;
+		}
+		
+		.back_tab span,
+		.back_tab a {
+			line-height: 1.2rem;
+			color: #34393C;
+		}
+	</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="item_kind_tab back_tab">
+
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur" id="riskName"></li>
+						
+					
+
+					<a href="invest_detailst_grade.html" id="riskMsg" class="font_size30" style="position: absolute;top: 0;right: 0;">测评说明</a>
+
+				</ul>
+			</div>
+		</header>
+		<!-- Swiper -->
+		<div class="swiper-container swiper-no-swiping">
+			<!--<div id="bigTit">
+				<h5 class="font_size34"></h5>
+				<p class="font_size26">任一项选A客户均视为无出借经验客户</p>
+			</div>-->
+			<div class="swiper-wrapper risk-list " id="risk-question">
+			</div>
+
+		</div>
+
+		<div class="mask_risk">
+
+			<p class="font_size34">测评完成，您属于</p>
+			<div class="risk_result font_size60" id="score">保守型</div>
+			<img src="images/account/result.png" />
+			<!--<p class="font_size28">代表您可以接受以下情况：</p>
+			<p class="font_size28" id="score_msg"></p>-->
+			<div class="risk_selet">
+				<ul>
+
+					<li class="font_size34 restart">重新测评</li>
+					<li class="font_size34 sure">确定</li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="mask_backdrop"></div>
+		<!--风险测评提示-->
+		<div class="mask_risk_tip" style="display: none;">
+			<h4 class="font_size38">重要提示</h4>
+			<p class="font_size30">为了便于您了解自身的风险承受能力，选择合适的出借标的和服务，请您认真填写以下风险评估问卷。每个问题请选择唯一选项，不可多选。本平台将根据评估结果对出借人实行分级管理，设置出借限额和出借标的限制。</p>
+			<p class="font_size30">评估有效期为一年。在评估有效期内，如发生影响您风险承受能力的情形，您可以再次申请风险评估。 评估结果仅供参考，不构成出借建议。</p>
+			<p class="font_size30">评估结果仅供参考，不构成出借建议。</p>
+			<p class="font_size30"><span>本人声明 : </span>在风险承受能力测试过程中，本人提供的全部信息、资料是真实、准确和完整的，测试结果真实、准确地反映了本人的风险承受程度。</p>
+		    <div class="mask_read font_size34">已了解</div>
+		</div>
+		<div class="mask_investNo_tip font_size30"></div>
+		<input type="hidden" name="answerList" id="answerList" value="" />
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/zt_risk.js"></script>
+	<!-- Swiper JS -->
+	<script src="js/swiper.min.js"></script>
+	<!-- Initialize Swiper -->
+</html>

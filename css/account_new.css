@@ -1,0 +1,886 @@
+/*
+* @Author: Fern
+* @Date:   2018-05-24 17:00:06
+* @Last Modified by:   Fern
+* @Last Modified time: 2019-10-02 13:44:29
+*/
+
+.account_home_tab {
+	padding-left: 0.4rem;
+	border: 0
+}
+
+.account_home_tab a:nth-of-type(1) {
+	display: block;
+	float: left;
+	margin: 0.16rem 0 0
+}
+
+.account_home_tab a:nth-of-type(1) img {
+	display: block;
+	width: 0.853333rem;
+	height: 0.853333rem;
+	border-radius: 100%
+}
+
+.account_home_tab a:nth-of-type(2) {
+	float: right;
+	width: 1.173333rem;
+	height: 1.173333rem;
+	background: url("../images/account/news.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_home_tab a.cur:nth-of-type(2) {
+	background: url("../images/account/news_cur.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_number_wrap {
+	padding: 0 0.4rem;
+	margin-top: 0.533333rem
+}
+
+.account_number {
+	width: 100%;
+	padding: 0.666666rem 0.266666rem 0.666666rem 0.8rem;
+	min-height: 5.066666rem;
+	box-sizing: border-box;
+	background: url("../images/account/bg.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_number h3,
+.account_number h3 a {
+	line-height: 1;
+	color: #fff;
+	font-weight: normal
+}
+
+.account_number h3 a {
+	position: relative;
+	display: inline-block
+}
+
+.account_number h3:nth-of-type(1) {
+	margin-bottom: 0.266666rem
+}
+
+.account_number h3:nth-of-type(2) {
+	margin-bottom: 1.066666rem
+}
+
+.account_number h3:nth-of-type(2) a:after {
+	content: "";
+	width: 0.586666rem;
+	height: 0.586666rem;
+	display: inline-block;
+	background: url("../images/account/icon_assetdetail.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_dl dl {
+	margin-top: 0;
+	color: #fff;
+	min-width: 3.12rem
+}
+
+.account_dl dl:nth-of-type(2) {
+	border-left: 0;
+	padding-left: 0;
+	min-width: 3.2rem
+}
+
+.account_dl dd,
+.account_dl dt {
+	color: #fff;
+	line-height: 1
+}
+
+.account_dl dt span {
+	margin-bottom: 0.266666rem
+}
+
+.account_handle {
+	padding-bottom: 0.64rem;
+	margin-top: 0.613333rem;
+	overflow: hidden
+}
+
+.account_handle dt {
+	color: #34393C;
+	padding-right: 0.133333rem
+}
+
+.account_handle dl {
+	padding-top: 0.186666rem;
+	line-height: 1;
+	width: 5.066666rem;
+	overflow: hidden
+}
+
+.account_handle dl dd {
+	color: #A11C3F;
+	min-width: 2.48rem;
+	word-wrap: break-word
+}
+
+.account_handle .fr {
+	width: 4.133333rem
+}
+
+.account_handle a {
+	display: block;
+	float: left;
+	width: 1.866666rem;
+	line-height: 0.746666rem;
+	color: #D40F42;
+	text-align: center;
+	background: url("../images/account/recharge.png") no-repeat;
+	background-size: 100% 100%;
+	color: #fff
+}
+
+.account_handle a:nth-of-type(2) {
+	float: right;
+	color: #D40F42;
+	background: url("../images/account/btn_withdraw.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_handle_one {
+	border-top: 0.266666rem solid #f2f2f2;
+	border-bottom: 0.266666rem solid #f2f2f2;
+	padding: 0.533333rem 0;
+	overflow: hidden
+}
+
+.account_handle_one li {
+	width: 33.333333%;
+	text-align: center
+}
+
+.account_handle_one li a {
+	display: block;
+	color: #34393C
+}
+
+.account_handle_one li i {
+	display: block;
+	margin: 0 auto;
+	width: 1.066666rem;
+	height: 1.066666rem;
+	background: url("../images/account/icon_myloan.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_handle_one li:nth-of-type(2) i {
+	background: url("../images/account/icon_coupon_nor.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_handle_one li:nth-of-type(3) i {
+	background: url("../images/account/icon_calendar.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_handle_one li span {
+	display: block
+}
+
+.account_handle_one li b {
+	font-weight: normal
+}
+
+.account_handle_two {
+	border-bottom: 0.266666rem solid #f2f2f2;
+	padding: 0 0.4rem
+}
+
+.account_handle_two li a {
+	display: block;
+	line-height: 1.626666rem;
+	color: #34393C;
+	overflow: hidden
+}
+
+.account_handle_two li b {
+	color: #989898;
+	font-weight: normal
+}
+
+.account_handle_two li {
+	overflow: hidden;
+	border-bottom: 1px solid #ccc
+}
+
+.account_handle_two li a:before {
+	content: "";
+	margin-left: 0.266666rem;
+	float: right;
+	width: 0.213333rem;
+	height: 0.4rem;
+	margin-top: 0.6rem;
+	background: url("../images/account/icon_detail.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_handle_two li:last-child {
+	border-bottom: 0
+}
+
+.account_handle_three {
+	border-bottom: 0
+}
+
+.tip_msg_cg {
+	background: #f2f2f2;
+	color: #989898;
+	padding-top: 0.666666rem;
+	padding-bottom: 0.666666rem
+}
+
+#userType.cur {
+	color: #989898
+}
+
+#userType {
+	color: #A11C3F
+}
+
+.user_info_basic {
+	border-bottom: 0.266666rem solid #f2f2f2;
+	padding: 0 0.4rem
+}
+
+.user_info_basic li {
+	overflow: hidden;
+	line-height: 1.626666rem;
+	border-bottom: 1px solid #ccc
+}
+
+.user_info_basic li:last-child {
+	border-bottom: 0
+}
+
+.user_info_basic li b {
+	color: #989898;
+	font-weight: normal
+}
+
+.user_info_basic li:nth-of-type(1):before {
+	content: "";
+	margin-left: 0.266666rem;
+	float: right;
+	width: 0.213333rem;
+	height: 0.4rem;
+	margin-top: 0.613333rem;
+	background: url("../images/account/icon_detail.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.user_info_basic li:nth-of-type(1) a {
+	width: 0.853333rem;
+	height: 0.853333rem;
+	display: block;
+	margin-top: 0.386666rem
+}
+
+.user_info_basic li:nth-of-type(1) a img {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%
+}
+
+.account_info_two li b.cur {
+	color: #A11C3F
+}
+
+.account_info_two .IdCard.cur a:before,
+.account_info_two .bankName.cur a:before,
+.account_info_two .cgbBindBankCard.cur a:before {
+	width: 0;
+	height: 0;
+	background: none;
+	margin-left: 0
+}
+
+.setting_bankcord_wrap {
+	padding-top: 0
+}
+
+.setting_bankcord_wrap .input_group,
+.setting_bankcord_wrap .input_group input {
+	line-height: 1.626666rem
+}
+
+.input_group {
+	border-bottom: 1px solid #ccc
+}
+
+.setting_bankcord_wrap .input_group label {
+	color: #34393C
+}
+
+.setting_bankcord_wrap .input_group input::-webkit-input-placeholder {
+	color: #ccc
+}
+
+.setting_bankcord_wrap .input_group input::-moz-placeholder {
+	color: #ccc
+}
+
+.setting_bankcord_wrap .input_group input::-ms-input-placeholder {
+	color: #ccc
+}
+
+.rechange_record span {
+	float: right;
+	color: #A11C3F;
+	padding-top: 0.666666rem;
+	padding-bottom: 0.293333rem
+}
+
+.rechange_con .bankcard_li {
+	border-bottom: 1px solid #ccc!important
+}
+
+.rechange_record {
+	overflow: hidden
+}
+
+.account_setting_wrap li {
+	line-height: 1.626666rem;
+	border-bottom: 1px solid #ccc;
+	color: #34393C
+}
+
+.account_setting_wrap li a {
+	display: block
+}
+
+.account_setting_wrap li a:before {
+	content: "";
+	margin-left: 0.266666rem;
+	float: right;
+	width: 0.213333rem;
+	height: 0.4rem;
+	margin-top: 0.613333rem;
+	background: url("../images/account/icon_detail.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_setting_wrap li span {
+	color: #34393C
+}
+
+.logout {
+	margin-top: 1.626666rem
+}
+
+.logout a {
+	width: 9.2rem;
+	margin: 0 auto;
+	line-height: 0.96rem;
+	border-radius: 0.48rem;
+	border: 2px solid #D40F42;
+	color: #D40F42;
+	text-align: center;
+	display: block
+}
+
+.account_canvas {
+	width: 100%;
+	height: 9.066666rem;
+	position: relative
+}
+
+#main {
+	width: 100%;
+	height: 9.066666rem
+}
+
+.rate_cic {
+	position: absolute;
+	top: 1.466666rem;
+	left: 50%;
+	width: 6.133333rem;
+	height: 6.133333rem;
+	background: #fff;
+	border-radius: 100%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	text-align: center
+}
+
+.rate_cic h4 {
+	padding-top: 2.373333rem;
+	margin-bottom: 0.133333rem
+}
+
+.account_money_kind {
+	padding-bottom: 0.613333rem;
+	overflow: hidden;
+	border-bottom: 0.266666rem solid #F2F2F2
+}
+
+.account_money_kind li dl {
+	width: 50%;
+	padding-left: 0.826666rem;
+	box-sizing: border-box
+}
+
+.cavans_wrap {
+	overflow: hidden
+}
+
+.account_money_kind li dl {
+	line-height: 1;
+	color: #34393C
+}
+
+.account_money_kind li dl dt span {
+	float: left;
+	padding-left: 0.133333rem
+}
+
+.account_money_kind li dl dt:before {
+	content: "";
+	float: left;
+	width: 0.4rem;
+	height: 0.4rem;
+	background: #ffb312
+}
+
+.account_money_kind li dl dd {
+	clear: both;
+	padding-top: 0.266666rem;
+	padding-left: 0.533333rem
+}
+
+.account_money_kind li:nth-of-type(1) {
+	margin-bottom: 1.226666rem;
+	overflow: hidden
+}
+
+.account_money_kind li:nth-of-type(1) dl:nth-of-type(2) dt:before {
+	background: #ff0000
+}
+
+.account_money_kind li:nth-of-type(2) dl:nth-of-type(1) dt:before {
+	background: #00cbbb
+}
+
+.account_money_kind li:nth-of-type(2) dl:nth-of-type(2) dt:before {
+	background: #00aeef
+}
+
+.account_pandect_wrap {
+	border-bottom: 0
+}
+
+.account_pandect_wrap li a:before {
+	width: 0;
+	height: 0
+}
+
+.account_pandect_wrap li b {
+	color: #34393C
+}
+
+.tip_null {
+	position: absolute;
+	width: 6.933333rem;
+	height: 6.933333rem;
+	top: 1.066666rem;
+	left: 50%;
+	background: url("../images/account/tip.png") no-repeat;
+	background-size: 100% 100%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	display: none
+}
+
+.record_trading {
+	width: 9.2rem;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+	padding: 0.666666rem 0;
+	overflow: hidden
+}
+
+.record_trading dl dt {
+	display: inline-block;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	overflow: hidden;
+	max-width: 72%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	float: left
+}
+
+.record_trading dl:nth-of-type(2) dt.in {
+	color: #A11C3F
+}
+
+.record_trading dl:nth-of-type(2) dt.out {
+	color: #00a166
+}
+
+.record_trading dl {
+	overflow: hidden
+}
+
+.record_trading dl dt {
+	color: #34393C;
+	line-height: 1;
+	margin-bottom: 0.266666rem
+}
+
+.record_trading dl:nth-of-type(2) {
+	text-align: right
+}
+
+.record_trading dl {
+	width: 50%
+}
+
+.record_trading dl dd {
+	line-height: 1;
+	clear: both
+}
+
+.account_trading_record_tab {
+	border-bottom: 1px solid #ccc
+}
+
+.account_home_tab a:nth-of-type(1) span {
+	line-height: 0.853333rem;
+	color: #34393C;
+	padding-left: 0.266666rem
+}
+
+.rechange_con {
+	position: relative
+}
+
+.rechange_con span {
+	padding-right: 0.48rem
+}
+
+.record_trading dl.fr dt {
+	float: right
+}
+
+.rechange_con:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -0.4rem;
+	width: 1.626666rem;
+	height: 1.626666rem;
+	background: url("../images/invest/arrow_right.png") no-repeat;
+	background-size: cover
+}
+
+.bank_mask_wrap {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 14;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	padding-top: 0.333333rem;
+	box-sizing: border-box
+}
+
+.bank_mask_wrap.active {
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px)
+}
+
+.bank_mask_wrap li {
+	line-height: 1.28rem;
+	color: #34393c;
+	text-align: center;
+	border-bottom: 1px solid #eeeeee;
+	text-align: center
+}
+
+.fm_wrap {
+	position: relative
+}
+
+.freezing_amount {
+	position: relative
+}
+
+.freezing_amount i {
+	display: block;
+	width: 0.533333rem;
+	height: 0.4rem;
+	padding-left: 0.133333rem
+}
+
+.freezing_amount i:before {
+	content: "";
+	display: block;
+	width: 0.266666rem;
+	height: 0.266666rem;
+	background: url("../images/account/btn_frozenassets.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.account_dl {
+	overflow: initial
+}
+
+.account_total {
+	position: relative;
+	overflow: hidden
+}
+
+.freezing_amount b {
+	color: #cbb693;
+	min-width: 4.266666rem;
+	line-height: 0.44rem;
+	background: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	top: -0.666666rem;
+	text-align: center;
+	right: -1.12rem;
+	border-radius: 0.133333rem;
+	display: none;
+	padding: 0 0.2rem;
+	box-sizing: border-box;
+	white-space: nowrap
+}
+
+.freezing_amount b:before {
+	content: "";
+	position: absolute;
+	width: 0.213333rem;
+	height: 0.106666rem;
+	background: url("../images/account/pic_triangle.png") no-repeat;
+	background-size: 100% 100%;
+	bottom: -0.106666rem;
+	right: 1.413333rem
+}
+
+.record_trading dl {
+	overflow: initial;
+	position: relative
+}
+
+.record_trading dl span {
+	position: absolute;
+	*/color: #34393C;
+	line-height: 1;
+	float: left
+}
+
+.paddingLR30 {
+	padding-left: 0.4rem;
+	padding-right: 0.4rem
+}
+
+.account_info_group {
+	padding: 0
+}
+
+.account_info_group a {
+	line-height: 1.626666rem;
+	display: block;
+	color: #34393C
+}
+
+.rechange_record a.fl {
+	float: left;
+	padding-left: 0.133333rem
+}
+
+.big_step li {
+	text-align: center;
+	color: #34393C;
+	position: relative
+}
+
+.big_step li span {
+	display: inline-block;
+	width: 0.88rem;
+	color: #fff;
+	background: url("../images/invest/pic_circie_gold.png") no-repeat;
+	background-size: 100% 100%;
+	line-height: 0.88rem
+}
+
+.big_step li em {
+	text-align: center;
+	display: block;
+	margin-top: 0.293333rem
+}
+
+.rechrge_big_wrap {
+	padding: 0 0.4rem
+}
+
+.rechrge_big_wrap h4 {
+	padding: 0.533333rem 0 0.56rem;
+	color: #34393C
+}
+
+.big_step div {
+	margin: 0.4rem 0.133333rem 0;
+	width: 0.373333rem;
+	height: 0.293333rem;
+	background: url("../images/invest/pic_doublearrow.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.rechrge_big_wrap {
+	background: #fff;
+	overflow: hidden;
+	padding-bottom: 0.666666rem
+}
+
+.big_input {
+	margin-top: 0.266666rem;
+	overflow: hidden;
+	background: #fff;
+	padding: 0 0.4rem
+}
+
+.big_input h4 {
+	padding: 0.533333rem 0 0.4rem;
+	color: #34393C;
+	line-height: 1
+}
+
+.big_input_wrap {
+	border-bottom: 1px solid #d8d8d8;
+	padding-bottom: 0.266666rem;
+	margin-bottom: 0.4rem
+}
+
+.big_input_wrap label {
+	line-height: 1
+}
+
+.big_input_wrap input {
+	width: 70%;
+	border: 0;
+	height: 0.8rem;
+	vertical-align: middle
+}
+
+.big_input p {
+	color: #989898;
+	line-height: 1;
+	margin-bottom: 0.4rem
+}
+
+.recharge_transfer {
+	padding-bottom: 0.133333rem
+}
+
+.recharge_transfer h4 {
+	padding: 0.2rem 0;
+	position: relative;
+	line-height: 2;
+	margin-top: 0.133333rem;
+	padding-left: 0.733333rem
+}
+
+.recharge_transfer h4:before {
+	content: "";
+	width: 0.56rem;
+	height: 0.56rem;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	-moz-transform: translateY(-50%) rotate(180deg);
+	-ms-transform: translateY(-50%) rotate(180deg);
+	-o-transform: translateY(-50%) rotate(180deg);
+	transform: translateY(-50%) rotate(180deg);
+	background: url("../images/icon/bank_msg.png") no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%
+}
+
+.recharge_transfer .pay_way {
+	overflow: hidden
+}
+
+.recharge_transfer .pay_way dl {
+	overflow: hidden;
+	margin-bottom: 0.2rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #f2f2f2
+}
+
+.recharge_transfer .pay_way dt {
+	color: #666;
+	line-height: 1.8
+}
+
+.recharge_transfer .pay_way dd {
+	color: #cbb693;
+	line-height: 1.5
+}
+
+.recharge_transfer .pay_way dl:last-child {
+	margin-bottom: 0;
+	border-bottom: none
+}
+
+.account_activation_wrap {
+	margin-bottom: 0.666666rem;
+	padding: 0 0.4rem;
+}
+
+.account_activation_wrap h2 {
+	text-align: center;
+	overflow: hidden;
+	margin-top: 0.666666rem;
+}
+
+.account_activation_wrap h2 img {
+	width: 3.5rem;
+}
+
+.account_activation_wrap h3 {
+	text-align: center;
+	margin-top: -0.2rem;
+	overflow: hidden;
+}
+
+.account_activation_wrap h3 img {
+	width: 6rem;
+}
+
+.account_activation_wrap h4 {
+	text-align: center;
+	color: #161d73;
+	margin-bottom: 0.4rem;
+	font-weight: 600;
+}
+.account_activation_tip{padding: 0 0.96rem}
+.account_activation_tip h5 {
+	font-weight: normal;
+	color: #666;
+	line-height: 2;
+}
+
+.account_activation_tip p {
+	text-indent: 2em;
+	line-height: 2;
+	color: #666;
+}

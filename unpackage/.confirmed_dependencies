@@ -1,0 +1,316 @@
+{
+  "page/tab_webview.html": {
+    "resources": [
+      "images/icon/account_no.png",
+      "images/icon/home.png",
+      "js/flexible_css.js",
+      "js/tab.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "images/icon/investment_no.png",
+      "css/style.css",
+      "css/mui.css",
+      "js/jquery.js",
+      "images/icon/more_no.png",
+      "images/icon/home_no.png",
+      "images/icon/investment.png",
+      "images/icon/account.png",
+      "images/icon/more.png"
+    ],
+    "refer": []
+  },
+  "page/index.html": {
+    "resources": [
+      "images/invest/logo.png",
+      "images/index/banner_04.jpg",
+      "images/index/banner_01.jpg",
+      "images/icon/home_no.png",
+      "images/icon/investment_no.png",
+      "images/index/income_cirle.png",
+      "css/style.css",
+      "images/index/user_new_vip.png",
+      "js/jquery.cookie.js",
+      "images/icon/notice.png",
+      "css/mui.css",
+      "images/icon/account_no.png",
+      "images/icon/shuaxin.jpg",
+      "js/flexible_css.js",
+      "js/common.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "images/index/banner_02.jpg",
+      "images/index/banner_03.jpg",
+      "js/smarticker.js",
+      "js/home.js",
+      "js/jquery.js",
+      "images/icon/more_no.png",
+      "page/invest_home.html",
+      "images/icon/home.png",
+      "page/account_home.html",
+      "page/more_home.html"
+    ],
+    "refer": [
+      "page/invest_home.html",
+      "page/account_home.html",
+      "page/more_home.html"
+    ]
+  },
+  "page/invest_home.html": {
+    "resources": [
+      "js/invest_home.js",
+      "page/account_home.html",
+      "images/icon/home_no.png",
+      "images/icon/investment.png",
+      "page/index.html",
+      "page/more_home.html",
+      "images/icon/account_no.png",
+      "images/invest/logo.png",
+      "css/style.css",
+      "js/jquery.cookie.js",
+      "css/mui.css",
+      "images/icon/shuaxin.jpg",
+      "js/flexible_css.js",
+      "js/common.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "js/jquery.js",
+      "images/icon/more_no.png"
+    ],
+    "refer": [
+      "page/account_home.html",
+      "page/index.html",
+      "page/more_home.html"
+    ]
+  },
+  "page/account_home.html": {
+    "resources": [
+      "images/home/icon_06.png",
+      "images/home/icon_03.png",
+      "images/home/icon_10.png",
+      "images/home/icon_07.png",
+      "images/home/icon_08.png",
+      "images/home/accont_img.png",
+      "images/home/icon_05.png",
+      "images/home/icon_04.png",
+      "js/account_home.js",
+      "images/home/icon_01.png",
+      "images/home/icon_02.png",
+      "page/account_pandect.html",
+      "images/invest/logo.png",
+      "images/icon/home_no.png",
+      "images/icon/investment_no.png",
+      "css/style.css",
+      "js/jquery.cookie.js",
+      "css/mui.css",
+      "images/icon/account_no.png",
+      "images/icon/shuaxin.jpg",
+      "js/flexible_css.js",
+      "js/common.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "js/jquery.js",
+      "images/icon/more_no.png",
+      "page/account_trading_record.html",
+      "page/index.html",
+      "images/icon/account.png",
+      "page/more_home.html",
+      "page/invest_home.html",
+      "page/invest_mine.html",
+      "page/account_setting.html",
+      "page/account_invite_friends.html",
+      "page/account_coupon.html",
+      "page/account_withdraw.html",
+      "page/account_recharge.html"
+    ],
+    "refer": [
+      "page/more_home.html",
+      "page/index.html",
+      "page/invest_home.html",
+      "page/invest_mine.html",
+      "page/account_setting.html",
+      "page/account_invite_friends.html",
+      "page/account_coupon.html",
+      "page/account_withdraw.html",
+      "page/account_trading_record.html",
+      "page/account_recharge.html",
+      "page/account_pandect.html"
+    ]
+  },
+  "page/account_pandect.html": {
+    "resources": [
+      "images/icon/back.jpg",
+      "js/account_pandect.js",
+      "page/account_home.html",
+      "images/icon/shuaxin.jpg",
+      "js/flexible_css.js",
+      "js/common.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/style.css",
+      "js/jquery.cookie.js",
+      "css/mui.css",
+      "js/jquery.js",
+      "page/account_recharge.html"
+    ],
+    "refer": [
+      "page/account_home.html",
+      "page/account_recharge.html"
+    ]
+  },
+  "page/account_trading_record.html": {
+    "resources": [
+      "images/icon/back.jpg",
+      "js/account_trading_record.js",
+      "page/account_home.html"
+    ],
+    "refer": [
+      "page/account_home.html"
+    ]
+  },
+  "page/more_home.html": {
+    "resources": [
+      "images/more/more_07.png",
+      "images/more/more_02.png",
+      "fonts/mui.ttf",
+      "images/more/more_06.png",
+      "images/more/more_01.png",
+      "images/more/more_03.png",
+      "images/icon/more.png",
+      "images/more/more_05.png",
+      "images/more/more_04.png",
+      "page/index.html",
+      "images/icon/account_no.png",
+      "images/invest/logo.png",
+      "images/icon/home_no.png",
+      "images/icon/investment_no.png",
+      "css/style.css",
+      "css/mui.css",
+      "images/icon/shuaxin.jpg",
+      "js/flexible_css.js",
+      "css/common.css",
+      "page/account_home.html",
+      "page/more_complaint_suggestion.html",
+      "page/invest_home.html",
+      "js/jquery.js"
+    ],
+    "refer": [
+      "page/index.html",
+      "page/account_home.html",
+      "page/more_complaint_suggestion.html",
+      "page/invest_home.html"
+    ]
+  },
+  "page/more_complaint_suggestion.html": {
+    "resources": [
+      "images/icon/shuaxin.jpg",
+      "js/flexible_css.js",
+      "css/common.css",
+      "images/icon/back.jpg",
+      "css/style.css",
+      "css/mui.css",
+      "page/more_home.html"
+    ],
+    "refer": [
+      "page/more_home.html"
+    ]
+  },
+  "page/invest_mine.html": {
+    "resources": [
+      "images/icon/back.jpg",
+      "page/account_home.html",
+      "js/invest_mine.js",
+      "images/icon/shuaxin.jpg",
+      "js/flexible_css.js",
+      "js/common.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/style.css",
+      "js/jquery.cookie.js",
+      "css/mui.css",
+      "js/jquery.js"
+    ],
+    "refer": [
+      "page/account_home.html"
+    ]
+  },
+  "page/account_setting.html": {
+    "resources": [
+      "images/home/setting_07.png",
+      "images/home/setting_02.png",
+      "images/home/setting_06.png",
+      "images/home/setting_05.png",
+      "fonts/mui.ttf",
+      "images/home/setting_03.png",
+      "images/home/setting_01.png",
+      "images/home/setting_04.png",
+      "page/account_home.html",
+      "page/account_setting_bankcard.html"
+    ],
+    "refer": [
+      "page/account_home.html",
+      "page/account_setting_bankcard.html"
+    ]
+  },
+  "page/account_invite_friends.html": {
+    "resources": [
+      "images/home/invist_02.png",
+      "images/home/invist_01.png",
+      "js/account_invite_friends.js",
+      "images/home/invist_03.png",
+      "images/icon/back.jpg",
+      "css/style.css",
+      "js/jquery.cookie.js",
+      "css/mui.css",
+      "images/icon/shuaxin.jpg",
+      "js/flexible_css.js",
+      "js/common.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "js/jquery.js",
+      "page/account_home.html"
+    ],
+    "refer": [
+      "page/account_home.html"
+    ]
+  },
+  "page/account_coupon.html": {
+    "resources": [
+      "js/account_coupon.js",
+      "page/account_home.html"
+    ],
+    "refer": [
+      "page/account_home.html"
+    ]
+  },
+  "page/account_withdraw.html": {
+    "resources": [
+      "js/ProJson.js",
+      "js/CityJson.js",
+      "js/account_withdraw.js",
+      "page/account_home.html"
+    ],
+    "refer": [
+      "page/account_home.html"
+    ]
+  },
+  "page/account_setting_bankcard.html": {
+    "resources": [
+      "js/account_setting_bankcard.js",
+      "page/account_setting.html"
+    ],
+    "refer": [
+      "page/account_setting.html"
+    ]
+  },
+  "page/account_recharge.html": {
+    "resources": [
+      "js/account_recharge.js",
+      "page/account_home.html",
+      "page/account_pandect.html"
+    ],
+    "refer": [
+      "page/account_home.html",
+      "page/account_pandect.html"
+    ]
+  }
+}

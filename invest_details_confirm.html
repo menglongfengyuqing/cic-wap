@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台—出借金额-出借</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">  
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/invest.css">
+		<link rel="stylesheet" href="css/invest_details.css">
+	</head>
+	<style>
+		html,
+		body {
+			background: #F2F2F2!important;
+		}
+	</style>
+
+	<body>
+		<header class="position_rel">
+			<div class="item_kind_tab back_tab">
+				<ul>
+					<span class="back_icon" onclick="javascript:history.back();"></span>
+					<li class="font_size34 cur">
+						出借
+					</li>
+
+				</ul>
+			</div>
+			<b class="kefu_btn fr"></b>
+		</header>
+
+		<div class="item_details_wrap">
+			<div class="confirm_group">
+				<ul>
+					<li>
+
+						<input type="number" name="" id="invest_input" value="" placeholder="请输入100的整数倍" class="font_size60" onkeyup="checkBlus()" onkeypress="if((event.keyCode<48 || event.keyCode>57) &amp;&amp; event.keyCode!=46 || /\.\d\d$/.test(value))event.returnValue=false;" oninput="if(value.length>10)value=value.slice(0,10)">
+					</li>
+					<li class="font_size26"><span>可用余额</span><em id="available_money">271,567.10</em><span>元</span><em id="pay">充值</em></li>
+					<li class="font_size26">起投金额<i id="minamount"></i>元,<span id="maxamount"></span></li>
+					<li id="coupon">
+						<span class="font_size30 fl">我的优惠券 </span>
+
+						<div class="fr " id="awardsValue"><b class="font_size30">无可用</b></div>
+
+					</li>
+					<li class="font_size26"><span>年化利率</span><em id="rate"></em><span>,预期出借利息</span><em id="mask_expect">0.00</em><span>元</span></li>
+				</ul>
+
+			</div>
+			<div class="confirm_btn_wrap">
+				<div class="confirm_btn font_size30" id="setting_submite">确认出借</div>
+				<div class="confirm_file">
+					<div class="inputRad fl">
+						<input type="radio" id="checkBox" class="confirm_check_box"/>
+						<label></label>
+					</div>
+					<div class="fr">知悉并同意
+						<a href="" id="porFile">
+							《出借协议》</a>
+						<a href="zt_electronic_signature.html">
+							《电子签章委托授权书》</a>,已确认
+						<a href="zt_protocol_risk.html">
+							《出借人网络借贷风险提示》</a>
+						<a href="zt_protocol_prohibit.html">
+							《出借人网络借贷禁止性行为提示》</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="confirm_msg">
+				<p class="font_size26">温馨提示:</p>
+				<p class="font_size26">1、点击确认出借后页面会跳转到银行支付页面,需您输入交易密码确认完成资金的出借。</p>
+				<p class="font_size26">2、如：跳转到银行页面您忘记交易密码后关闭或在页面停留时间超过15分钟,为保证您资金安全,银行将对您账户资金进行冻结,30分钟后系统自动解冻。</p>
+				<p class="font_size26">3、如有疑问,请于我们客服联系,客服电话400-666-968。</p>
+			</div>
+		</div>
+
+		<!-- invset_btn mask -->
+		<div class="mask_backdrop"></div>
+		<!--kefu-->
+		<div class="kefu_mask_wrap">
+			<ul>
+				<li class="font_size28">
+					<a href="zt_phone.html">在线客服</a>
+				</li>
+
+				<li class="font_size28">
+					<a href="tel:400-666-9068">400-666-9068</a>
+				</li>
+
+				<li class="font_size28"><span class="font_size28">取消</span></li>
+			</ul>
+		</div>
+		<!--- mask_coupon -->
+		<div class="mask_counpon">
+			<header>
+				<div class="item_kind_tab back_tab">
+					<ul>
+						<span class="back_coupon"></span>
+						<li class="font_size34 cur">
+							优惠券
+						</li>
+						<span class="fr font_size28" id="vouidOk">完成</span>
+					</ul>
+				</div>
+			</header>
+			<div class="account_coupon_list coupon_list_bg">
+				<h5 class="font_size24">可用优惠券如下,请点击选择</h5>
+				<div class="counpon_new_con">
+					<div id="awardsRecommend">
+						<!--<div class="counpon_new counpon_selected" >
+						   <dl>
+						   	<dt class="font_size40">抵用券</dt>
+						   	<dd class="font_size28">出借满10000元可用</dd>
+						   	<span class="font_size44">¥50.00</span>
+						   </dl>
+						   <h6 class="font_size24"><i class="fl"></i><span class="fl">2016-01-12至2016-05-12</span></h6>
+						</div>-->
+					</div>
+					<div id="awardsNormal">
+						<!--<div class="counpon_new" >
+					   <dl>
+					   	<dt class="font_size40">抵用券</dt>
+					   	<dd class="font_size28">出借满10000元可用</dd>
+					   	<span class="font_size44">¥50.00</span>
+					   </dl>
+					   <h6 class="font_size24"><i class="fl"></i><span class="fl">2016-01-12至2016-05-12</span></h6>
+					</div>-->
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div>
+			<input type="hidden" name="last" id="last" value="" />
+			<input type="hidden" name="pageNo" id="pageNo" value="" />
+			<input type="hidden" name="project_span" id="project_span" value="90">
+			<input type="hidden" name="project_amount" id="project_amount" value="1000000">
+			<input type="hidden" name="project_vouid" id="project_vouid" value="" />
+			<input type="hidden" name="project_rate" id="project_rate" value="">
+			<input type="hidden" name="loan_date" id="loan_date" value="" />
+			<input type="hidden" name="loan_date" id="project_id" value="" />
+
+			<input type="hidden" name="project_minamount" id="project_minamount" value="" />
+			<input type="hidden" name="project_maxamount" id="project_maxamount" value="" />
+			<input type="hidden" name="project_stepamount" id="project_stepamount" value="" />
+
+			<input type="hidden" name="project_state" id="project_state" value="0" />
+
+			<input type="hidden" name="project_balanceamount" id="project_balanceamount" value="" />
+			<input type="hidden" name="checkNum" id="checkNum" value="" />
+		</div>
+
+		<!--优惠券选择条件不足-->
+		<div class="counpon_not_enough">
+			<h4 class="font_size28">抵扣金额最多不超过100元</h4>
+		</div>
+		<div class="mask_wait">
+			<h4 class="font_size42">出借中</h4>
+			<p class="font_size30">正在跳转存管银行,请您耐心等待...</p>
+		</div>
+		<!-- mask_risk_test  开户 -->
+		<div class="mask_bank_two">
+			<h4 class="font_size42">开通存管银行</h4>
+			<p class="font_size30">资金会由海口联合农商银行负责存管</p>
+			<div class="mask_operation_one">
+
+				<a href="javascript:;" class="font_size30 refuse">再想想</a>
+				<a href="account_setting_bankcard.html" class="font_size30">去开通</a>
+
+			</div>
+		</div>
+		<div class="mask_risk">
+			<h4 class="font_size42">进行风险测评</h4>
+			<p class="font_size30">便于我们为您推荐更加合适的产品</p>
+			<div class="mask_operation_one">
+
+				<a href="javascript:;" class="font_size30 refuse">再想想</a>
+				<a href="zt_risk.html" class="font_size30">去测评</a>
+
+			</div>
+		</div>
+		<!--错误提示-->
+		<div class="mask_investNo_tip font_size30"></div>
+		<!--小数点弹框-->
+		<div class="mask_spot">
+			<h4 class="font_size42">温馨提示</h4>
+			<p class="font_size28">您当前出借后剩余可投金额小于<span id="spot_min"></span>元，可一次性出借全部剩余可投金额，或者出借不大于<span id="spot_max"></span>元。</p>
+			<div class="spot_btn">
+				<span class="font_size34" id="close_spot">取消</span>
+				<span class="font_size34" id="submit_spot">已了解</span>
+			</div>
+		</div>
+		
+		
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript" src="js/invest_confirm.js"></script>
+</html>

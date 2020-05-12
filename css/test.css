@@ -1,0 +1,673 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	font-family: "microsoft yahei";
+	background: #fff;
+}
+
+#swiper-container-v {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide-v {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative!important;
+}
+
+.swiper-slide {
+	padding-top: 1.173333rem;
+	box-sizing: border-box;
+}
+
+.swiper-slide1 {
+	background: url(../images/zt/annual_report/bj1.png);
+	background-size: 100% 100%;
+}
+
+.swiper-slide2 {
+	background: url(../images/zt/annual_report/bj2.png);
+	background-size: 100% 100%;
+}
+
+.swiper-slide3 {
+	background: url(../images/zt/annual_report/bj3.png);
+	background-size: 100% 100%;
+}
+
+.swiper-slide4 {
+	background: url(../images/zt/annual_report/bj4.png);
+	background-size: 100% 100%;
+}
+
+.swiper-slide5 {
+	background: url(../images/zt/annual_report/bj5.png);
+	background-size: 100% 100%;
+}
+
+.item_kind_tab span {
+	width: 0.453333rem;
+	height: 0.453333rem;
+	background: url(../images/zt/annual_report/close.png) no-repeat;
+	background-size: 100% 100%;
+	float: right;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+img {
+	display: block;
+}
+
+.swiper-pagination-bullet {
+	width: 6px;
+	height: 6px;
+	background: #fff;
+	opacity: .4;
+}
+
+.swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+@-webkit-keyframes start {
+	0%,
+	30% {
+		opacity: 0;
+		-webkit-transform: translate(0, 10px);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translate(0, -8px);
+	}
+}
+
+@-moz-keyframes start {
+	0%,
+	30% {
+		opacity: 0;
+		-moz-transform: translate(0, 10px);
+	}
+	60% {
+		opacity: 1;
+		-moz-transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		-moz-transform: translate(0, -8px);
+	}
+}
+
+@keyframes start {
+	0%,
+	30% {
+		opacity: 0;
+		transform: translate(0, 10px);
+	}
+	60% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, -8px);
+	}
+}
+
+@-webkit-keyframes myZoomIn1 {
+	0% {
+		opacity: 0.4;
+		-webkit-transform: scale3d(.4, .4, .4) translate3d(0, 30%, 0);
+		transform: scale3d(.4, .4, .4) translate3d(0, 30%, 0);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes myZoomIn1 {
+	0% {
+		opacity: 0.4;
+		-webkit-transform: scale3d(.4, .4, .4) translate3d(0, 30%, 0);
+		transform: scale3d(.4, .4, .4) translate3d(0, 30%, 0);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.myZoomIn1 {
+	-webkit-animation-name: myZoomIn1;
+	animation-name: myZoomIn1;
+}
+
+@-webkit-keyframes myZoomIn2 {
+	0% {
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 1;
+		transform: scale3d(1.06, 1.06, 1.06);
+	}
+}
+
+@keyframes myZoomIn2 {
+	0% {
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 1;
+		transform: scale3d(1.06, 1.06, 1.06);
+	}
+}
+
+.myZoomIn2 {
+	-webkit-animation-name: myZoomIn2;
+	animation-name: myZoomIn2;
+}
+
+@-webkit-keyframes myFlip {
+	0% {
+		opacity: 0.4;
+		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes myFlip {
+	0% {
+		opacity: 0.4;
+		transform: rotateY(360deg);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.myFlip {
+	-webkit-animation-name: myFlip;
+	animation-name: myFlip;
+}
+
+@-webkit-keyframes myrotateIn {
+	0% {
+		-webkit-transform-origin: center;
+		transform-origin: center;
+		-webkit-transform: rotate3d(0, 0, 1, -250deg) scale3d(.3, .3, .3);
+		transform: rotate3d(0, 0, 1, -250deg) scale3d(.3, .3, .3);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform-origin: center;
+		transform-origin: center;
+		-webkit-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@keyframes myrotateIn {
+	0% {
+		-webkit-transform-origin: center;
+		-ms-transform-origin: center;
+		transform-origin: center;
+		-webkit-transform: rotate3d(0, 0, 1, -250deg) scale3d(.3, .3, .3);
+		-ms-transform: rotate3d(0, 0, 1, -250deg) scale3d(.3, .3, .3);
+		transform: rotate3d(0, 0, 1, -250deg) scale3d(.3, .3, .3);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform-origin: center;
+		-ms-transform-origin: center;
+		transform-origin: center;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+}
+
+.myrotateIn {
+	-webkit-animation-name: myrotateIn;
+	animation-name: myrotateIn
+}
+
+@-webkit-keyframes loading {
+	0% {
+		-webkit-transform: rotate(0deg)
+	}
+	100% {
+		-webkit-transform: rotate(360deg)
+	}
+}
+
+@keyframes loading {
+	0% {
+		-webkit-transform: rotate(0deg)
+	}
+	100% {
+		-webkit-transform: rotate(360deg)
+	}
+}
+
+.loading {
+	-webkit-animation-name: loading;
+	animation-name: loading
+}
+
+
+/*loading*/
+
+.poster_wrap.load {
+	height: 100%;
+	background: url(../images/zt/annual_report/default.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 100;
+}
+
+.poster_wrap {
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform .3s linear, opacity .3s linear;
+}
+
+.p_loading {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	height: 150px;
+}
+
+.building {
+	position: absolute;
+	bottom: 1.2rem;
+	left: 0;
+	width: 100%;
+	height: 6.453333rem;
+}
+
+.building img {
+	width: 587px;
+	height: 484px;
+	margin: 0 auto;
+}
+
+
+/**/
+
+.company_intro {
+	margin-top: 16%;
+}
+
+.company_intro li img {
+	width: 6.866666rem;
+	height: 5.826666rem;
+	margin: 0 auto;
+}
+
+.about_us_tit {
+	padding: 1.2rem 0 1.106666rem 0.533333rem;
+}
+
+.about_us_tit_ico {
+	display: inline-block;
+	height: 6px;
+	width: 6px;
+	background: rgba(255, 255, 255, .36);
+	border-radius: 100%;
+	position: relative;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.posit_tit {
+	color: #fff;
+	font-size: 15px;
+	line-height: 20px;
+	padding-left: 15px;
+	margin: 35px 0 0;
+	font-weight: 400;
+}
+
+#swiper-container-h {
+	position: absolute;
+	width: 100%;
+	top: 70px;
+	bottom: 110px;
+	overflow: visible;
+}
+
+@media screen and (max-height: 480px) {
+	.posit_list_con {
+		top: 60px;
+		bottom: 85px;
+	}
+}
+
+#swiper-container-h .swiper-slide {
+	float: left;
+	height: 100%;
+	width: 85%;
+	position: relative;
+	background: #fff;
+	border-top: 5px solid #76428e;
+	border-radius: 5px 5px 0 0;
+}
+
+
+/**/
+
+.arrow-box {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 50%;
+	height: 90px;
+	border-radius: 100%;
+	background: rgba(255, 255, 255, .18);
+	z-index: 900;
+}
+
+#array {
+	-webkit-animation: start 1.5s infinite ease-in-out;
+	display: block;
+	margin: 15px auto 0 auto;
+	width: 65px;
+	height: 50px;
+	z-index: 999;
+}
+
+
+/***/
+
+.index-top {
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	top: 98px;
+	left: 44px;
+	overflow: hidden;
+}
+
+.logo em {
+	width: 80px;
+	height: 40px;
+	background: url(../images/zt/annual_report/logo.png) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	margin-right: 22px;
+}
+
+.logo span {
+	color: #cac1b5;
+	line-height: 40px;
+	float: left;
+}
+
+.step_li {
+	margin-left: 45%;
+}
+
+.step_li li {
+	margin-bottom: 22px;
+}
+
+.step_li ul:nth-of-type(1) {
+	padding-top: 4.586666rem;
+	margin-right: 0.293333rem;
+}
+
+.step_li ul:nth-of-type(2) {
+	margin-top: 41%;
+}
+
+.step_li li img {
+	width: 119px;
+	height: 116px;
+}
+
+.bar_wrap {
+	padding-top: 106px;
+	margin-left: 28px;
+}
+
+.bar_wrap .bar:nth-of-type(1) {
+	padding-left: 22px;
+	padding-bottom: 1px;
+	border-left: 1px solid #956c45;
+}
+
+.bar_wrap .bar:nth-of-type(1) img {
+	width: 46.8px;
+	height: 392px;
+}
+
+.bar_wrap .bar:nth-of-type(2) img {
+	width: 70px;
+	height: 394px;
+	margin-left: 22px;
+}
+
+.static_img {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 1.2rem;
+	text-align: center
+}
+
+.static_img img {
+	width: 7.826666rem;
+	height: 6.453333rem;
+}
+
+.about_us_msg_p img {
+	width: 360px;
+	height: 39px;
+}
+
+.about_us_msg_p {
+	position: fixed;
+	bottom: 1.173333rem;
+	right: 0.4rem;
+}
+
+.about_us_tit li {
+	color: #333;
+	line-height: 1.6;
+	letter-spacing: 3px;
+}
+
+.about_us_tit li span {
+	color: #dc3728;
+}
+
+.moon {
+	width: 1.973333rem;
+	height: 2.133333rem;
+	margin-left: 1.306666rem;
+	margin-top: 5%;
+	margin-bottom: 7%;
+}
+
+.about_us_tit_right {
+	width: 92%;
+	text-align: right;
+	padding: 0;
+	margin-bottom: 7%;
+}
+
+.about_us_tit_rightTop {
+	width: 92%;
+	text-align: right;
+	padding: 0;
+	margin-top: 13%;
+	margin-bottom: 16%;
+}
+
+.static_img_02,
+.static_img_03 {
+	text-align: center;
+}
+
+.static_img_02 img {
+	width: 7.026666rem;
+	height: 6.333333rem;
+	margin: 0 auto;
+}
+
+.static_img_03 img {
+	width: 600px;
+	height: 450px;
+	margin: 9% auto 9%;
+}
+
+.about_us_tit_white {
+	width: 9.2rem;
+	text-align: left;
+	padding-top: 0;
+}
+
+.about_us_tit_white li {
+	color: #fff;
+	letter-spacing: 3px;
+}
+
+.font_size30 {
+	font-size: 46px;
+}
+
+.font_size36 {
+	font-size: 55px;
+}
+
+.font_size34 {
+	font-size: 38px;
+}
+
+.font_size20 {
+	font-size: 34px;
+}
+
+.logo b {
+	width: 62px;
+	height: 36px;
+	background: url(../images/zt/annual_report/logo_big.png) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+}
+
+.join_btn {
+	text-align: center;
+}
+
+.join_btn img {
+	display: inline-block;
+	width: 572px;
+	height: 88.4px;
+}
+
+.join_step {
+	padding-bottom: 10px;
+}
+
+.about_us_tit_white {
+	padding-right: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.p_loading_tip {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+}
+
+.about_us_tit li b {
+	font-weight: normal;
+}
+
+.moon img {
+	width: 201px;
+	height: 218px;
+}
+
+.swiper-slide5 .join_btn {
+	position: fixed;
+	bottom: 8%;
+	left: 0;
+	width: 100%;
+}
+
+.music_logo {
+	position: fixed;
+	top: 8%;
+	right: 4%;
+	z-index: 999;
+	
+}
+
+.music_logo img.active {
+
+	-webkit-transform: rotate(360deg);
+    animation: rotation 1.5s linear infinite;
+   -moz-animation: rotation 1.5s linear infinite;
+-webkit-animation: rotation 1.5s linear infinite;
+-o-animation: rotation 1.5s linear infinite;
+}
+
+@-webkit-keyframes rotation{
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}
+}
+.mask{
+	background: rgba(0,0,0,0.8);
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 1.173333rem;
+	display: none;
+}
+.mask img{
+	margin: 19% auto;
+}

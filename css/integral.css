@@ -1,0 +1,1824 @@
+/*
+* @Author: Fern
+* @Date:   2017-07-17 11:05:25
+* @Last Modified by:   timefiles
+* @Last Modified time: 2017-08-04 17:21:03
+*/
+
+.integral_mall_banner,
+.integral_mall_hot {
+	background: #fff;
+	overflow: hidden;
+}
+
+.integral_mall_banner img {
+	width: 100%;
+}
+
+.integral_mall_banner li {
+	width: 50%;
+	padding: 0.4rem 0 0.4rem 0.8rem;
+	box-sizing: border-box;
+	line-height: 0.96rem;
+	color: #666666;
+}
+
+.integral_mall_banner li a {
+	color: #666;
+	display: block;
+}
+
+.integral_mall_banner li:before {
+	content: "";
+	display: block;
+	width: 1.6rem;
+	height: 1.6rem;
+	float: left;
+	background: url(../images/find/icon_06.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.integral_mall_banner li:nth-of-type(2):before {
+	background: url(../images/find/icon_07.png) no-repeat;
+	background-size: contain;
+}
+
+.integral_mall_hot h3 {
+	color: #34393C;
+	line-height: 1;
+	text-align: center;
+	padding: 0.666666rem 0 0.533333rem;
+}
+
+.integral_mall_list {
+	background: #fff;
+	overflow: hidden;
+	padding: 0 0.4rem;
+}
+
+.integral_mall_list dl {
+	width: 4.4rem;
+	box-sizing: border-box;
+}
+
+.integral_mall_list dl dt a {
+	display: block;
+	text-align: center;
+}
+
+.integral_mall_list dl dt {
+	color: #34393c;
+}
+
+.integral_mall_list dl dd a {
+	color: #34393c;
+	line-height: 1.2;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+	overflow: hidden;
+	margin-top: 0.4rem;
+	margin-bottom: 0.133333rem;
+}
+
+.integral_mall_list dl dd {
+	padding: 0 0.2rem 0;
+	color: #d40f42;
+	text-align: center;
+}
+
+.integral_mall_list dl dd span {}
+
+.integral_mall_list dl dd em {
+	color: #808080;
+}
+
+
+/* integral mall product */
+
+.integrall_mall_product_wrap {
+	padding-bottom: 1.2rem;
+}
+
+.integrall_mall_product_wrap {
+	background: #fff;
+}
+
+.imp_img {
+	text-align: center;
+	padding: 0.8rem 0 0.533333rem;
+	border-bottom: 0.266666rem solid #f2f2f2;
+}
+
+.imp_img img {
+	width: 5.6rem;
+	height: 5.6rem;
+	margin-bottom: 0.8rem;
+}
+
+.imp_img p {
+	line-height: 2;
+	text-align: left;
+	color: #999;
+	padding: 0 0.4rem;
+}
+
+.lmp_info_group {
+	border-bottom: 2px solid #eeeeee;
+	padding: 0 0.4rem;
+	overflow: hidden;
+}
+
+.lmp_info_group h4 {
+	color: #333333;
+	line-height: 3;
+}
+
+.lmp_info_group p {
+	color: #999;
+	line-height: 1.5;
+	margin-bottom: 0.466667rem;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.lmp_btn {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: #d40f42;
+	line-height: 3;
+	text-align: center;
+	color: #fff;
+}
+
+.exchange_mask_wrap {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 14;
+	transition: .3s;
+	-webkit-transition: .3s;
+	transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	padding-top: 0.333333rem;
+	box-sizing: border-box;
+}
+
+.exchange_mask_wrap.active {
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+}
+
+.exchange_mask_wrap h3 {
+	overflow: hidden;
+	background: transparent;
+}
+
+.exchange_mask_wrap ul {
+	background: #fff;
+	overflow: hidden;
+}
+
+.exchange_mask_wrap h3 span {
+	display: block;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../images/icon/close_mask.png) no-repeat;
+	background-size: cover;
+	margin-bottom: 0.333333rem;
+	margin-right: 0.266667rem;
+}
+
+.exchange_mask_wrap li,
+.exchange_msg li {
+	line-height: 1.28rem;
+	color: #3f3f3f;
+	border-bottom: 1px solid #eeeeee;
+	text-align: center;
+	overflow: hidden;
+	padding: 0 0.4rem;
+}
+
+.exchange_mask_wrap li:last-child,
+.exchange_msg li:last-child {
+	border-bottom: 0;
+}
+
+.exchange_mask_wrap li dd,
+.exchange_msg li dd {
+	color: #bcbbbb;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+	overflow: hidden;
+	text-align: right;
+}
+
+.exchange_msg {
+	padding: 0.666667rem 0 1.333333rem;
+}
+
+.exchange_btn {
+	width: 85%;
+	margin: 0.533333rem auto;
+	background: #d40f42;
+	line-height: 0.906667rem;
+	border-radius: 0.08rem;
+	text-align: center;
+	color: #fff;
+	display: block;
+}
+
+.exchange_msg .points_adress_group input {
+	width: 6.503rem;
+}
+
+#mall_name {
+	width: 77%;
+}
+
+
+/*  我的积分*/
+
+.back_tab span,
+.back_tab a {
+	line-height: 1.2rem;
+	color: #34393C;
+}
+
+.myscore {
+	margin-left: 0.466667rem;
+}
+
+.lottery_game_tit {
+	width: 100%;
+	height: 1.08rem;
+	background: url(../images/home/lottery/lottery_bg01.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.lottery_game_tit h3 {
+	color: #343333;
+	line-height: 1.08rem;
+	text-align: center;
+}
+
+.lottery_game_tit a {
+	position: absolute;
+	top: 0.266667rem;
+	right: 0.4rem;
+	color: #90002E;
+	border: 1px solid #90002E;
+	padding: 0 0.133333rem;
+	text-align: center;
+	line-height: 0.533333rem;
+	display: block;
+	border-radius: 0.2rem;
+}
+
+
+/*lottery_game */
+
+.lottery_game_wrap {}
+
+#lottery {
+	margin: 0 auto;
+	width: 100%;
+	padding: 33% 2% 10%;
+	background: url(../images/integral_mall/bg.png) no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+#lottery ul {
+	width: 100%;
+	overflow: hidden;
+	padding: 0.346667rem 0.24rem;
+	/*height: 10rem;*/
+	background: url(../images/integral_mall/border.png) no-repeat;
+	box-sizing: border-box;
+	background-size: cover;
+}
+
+#lottery ul li {
+	width: 33.3333333333333%;
+	height: 3.12rem;
+	float: left;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	color: #333;
+	padding: 0.173333rem 0.106667rem;
+	background: #fff;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#lottery ul li .start_btn {
+	width: 100%;
+	height: 1.666667rem;
+}
+
+#lottery ul li .start_btn img {
+	width: 1.466667rem;
+	height: 1.493333rem;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#lottery ul li.active2 {
+	background: url(../images/integral_mall/img_bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+#lottery ul li.active {
+	background: url(../images/integral_mall/img_cur.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 1;
+}
+
+
+/*#lottery ul li.active:before {
+content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/integral_mall/img_cur.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}*/
+
+#lottery img {
+	width: 2.0rem;
+	height: 2.0rem;
+	overflow: hidden;
+}
+
+#lottery ul li p span {
+	display: block;
+	color: #757474;
+	text-align: left;
+	display: block;
+	line-height: 3;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
+	overflow: hidden;
+}
+
+
+/*#lottery ul .hmp_game_btn span{
+ line-height: 1.4;
+}*/
+
+
+/*#lottery .hmp_game_btn img{
+  margin: 0.266667rem 0 0.16rem;
+}*/
+
+#lottery .hmp_game_btn p {
+	text-align: center;
+	/*line-height: 1.5;*/
+}
+
+.hmp_game_btn p a {
+	color: #90002E;
+	line-height: 2;
+	display: block;
+}
+
+.mask_win_prize {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 7.586666rem;
+	height: 5.266666rem;
+	transform: translate(-50%, -30%);
+	-ms-transform: translate(-50%, -30%);
+	/* IE 9 */
+	-moz-transform: translate(-50%, -30%);
+	/* Firefox */
+	-webkit-transform: translate(-50%, -30%);
+	/* Safari 和 Chrome */
+	-o-transform: translate(-50%, -30%);
+	box-sizing: border-box;
+	background: #f8d064;
+	z-index: 1000;
+	border-radius: 0.4rem;
+	display: none;
+}
+
+.mask_points_less {
+	position: absolute;
+	top: 3.506667rem;
+	left: 0.48rem;
+	background: url(../images/home/lottery/mask_less.png) no-repeat;
+	background-size: cover;
+	width: 8.706667rem;
+	height: 5.12rem;
+	box-sizing: border-box;
+	z-index: 1000;
+	display: none;
+}
+
+.mask_points_less_02 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background: url(../images/home/lottery/mask_less.png) no-repeat;
+	background-size: cover;
+	width: 8.706667rem;
+	height: 5.12rem;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	display: none;
+}
+
+.mask_points_less_d {
+	position: absolute;
+	top: 3.506667rem;
+	left: 0.48rem;
+	background: url(../images/home/lottery/mask_less.png) no-repeat;
+	background-size: cover;
+	width: 8.706667rem;
+	height: 5.12rem;
+	box-sizing: border-box;
+	z-index: 1000;
+	display: none;
+}
+
+.mask_win_prize h4 {
+	line-height: 2;
+	text-align: center;
+	color: #e5343a;
+	font-weight: normal;
+	padding-top: 39%;
+}
+
+.mask_win_prize a {
+	color: #90002E;
+}
+
+.mask_win_prize p {
+	margin-top: 0.266667rem;
+	text-align: center;
+}
+
+.get_prize_list {}
+
+.prize_tit {
+	color: #333;
+	line-height: 1.466667rem;
+	text-align: center;
+}
+
+.prize_tit::before {
+	display: inline-block;
+	content: '';
+	width: 0.293333rem;
+	height: 0.28rem;
+	background: url(../images/integral_mall/dot.png) no-repeat;
+	background-size: contain;
+	margin-right: 0.333333rem;
+}
+
+.poin_rule {
+	padding: 0 0.4rem;
+}
+
+.poin_rule p {
+	color: #666666;
+	line-height: 2;
+}
+
+.get_prize_list {
+	padding: 0 0.4rem;
+	overflow: hidden;
+}
+
+.get_prize_list .swiper-slide {
+	width: 100%;
+	background: #e4efff;
+	border-radius: 0.106667rem;
+	padding: 0.333333rem 0.56rem;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.get_prize_list .swiper-slide img {
+	width: 0.906667rem;
+	height: 0.906667rem;
+	margin-right: 0.2rem;
+}
+
+.get_prize_list .swiper-slide span {
+	line-height: 0.906667rem;
+	color: #6d6c6c;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 85%;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 6.72rem;
+}
+
+.swiper-slide {
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.not_enough_msg {
+	color: #a11c3f;
+	padding-left: 0.4rem;
+}
+
+
+/* 抽中奖品列表 */
+
+.prize_win_one {
+	padding: 0.666666rem 0.4rem;
+	margin: 0.4rem auto 0;
+	width: 9.2rem;
+	box-sizing: border-box;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 0.266666rem;
+	position: relative;
+}
+
+.prize_win_one .prize_win_img {
+	width: 2.8rem;
+	height: 2.4rem;
+	overflow: hidden;
+	margin-top: 0.226666rem;
+}
+
+.prize_win_one .prize_win_img img {
+	width: 2.4rem;
+	height: 2.4rem;
+	overflow: hidden;
+}
+
+.prize_win_detalis {
+	width: 5.6rem;
+	position: relative;
+}
+
+.prize_win_detalis h4 {
+	color: #34393C;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 1;
+	margin-bottom: 0.266666rem;
+}
+
+.prize_win_detalis h5 {
+	line-height: 1.2;
+	color: #989898;
+	margin: 0 0 0.4rem;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+	overflow: hidden;
+	height: 0.826666rem;
+}
+
+.prize_win_detalis p {
+	line-height: 1;
+	color: #989898;
+}
+
+.prize_win_detalis p:nth-of-type(2) {
+	color: #D40F42;
+	margin-top: 0.266666rem;
+}
+
+.prize_win_one a.font_size22 {
+	position: absolute;
+	right: 0.4rem;
+	bottom: 0.88rem;
+	width: 1.28rem;
+	background: #cbb693;
+	border-radius: 0.266666rem;
+	line-height: 0.533333rem;
+	color: #fff;
+	text-align: center;
+}
+
+.prize_win_one.default h4,
+.prize_win_one.default h5,
+.prize_win_one.default p {
+	color: #ccc;
+}
+
+.prize_win_one.default a {
+	background: #ccc;
+}
+
+.lotter_win_none {
+	text-align: center;
+	padding: 0.666667rem;
+	overflow: hidden;
+}
+
+.lotter_win_none img {
+	width: 2.893333rem;
+	height: 2.56rem;
+}
+
+.lotter_win_none h3 {
+	text-align: center;
+	color: #d2d0d0;
+	margin-top: 1.333333rem;
+}
+
+
+/* integral_mall order */
+
+.points_prized_wrap {
+	background: #fff;
+	padding-bottom: 1.733333rem;
+	overflow: hidden;
+}
+
+.points_order_adress {
+	width: 100%;
+	padding: 0.666666rem 0 0.666666rem 0.4rem;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: url(../images/integral_mall/adress_bg.png) repeat-x left bottom;
+	background-size: 1.6rem 0.133333rem;
+}
+
+.points_order_adress h4 {
+	padding: 0.266667rem 0;
+}
+
+.points_order_adress h4 span {
+	color: #000;
+	display: inline-block;
+	margin-right: 0.2rem;
+}
+
+.points_order_adress p {
+	color: #34393C;
+	line-height: 0.48rem;
+	padding-right: 0.8rem;
+	position: relative;
+	word-break: break-all;
+}
+
+.points_order_adress p:after {
+	position: absolute;
+	content: "";
+	width: 0.933333rem;
+	height: 0.826666rem;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	background: url(../images/integral_mall/icon_toaddressslis.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.order_adreess_have h4 {
+	padding: 0 0.933333rem 0.533333rem 0;
+	color: #34393C;
+}
+
+.order_adreess_have h4 span {
+	background: none;
+}
+
+.points_order_msg {
+	overflow: hidden;
+	padding: 0.533333rem 0.4rem;
+	border-bottom: 0.266666rem solid #f2f2f2;
+}
+
+.points_orderm_img {
+	width: 2.666666rem;
+	height: 2.666666rem;
+}
+
+.points_orderm_img img {
+	width: 2.666666rem;
+	height: 2.666666rem;
+	overflow: hidden;
+}
+
+.points_orderm_detalis {
+	width: 6.0rem;
+	padding-top: 0.266666rem;
+	box-sizing: border-box;
+}
+
+.points_orderm_detalis h4 {
+	color: #34393c;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: left;
+	line-height: 1;
+	margin-bottom: 0.266666rem;
+	padding-left: 0.533333rem;
+}
+
+.points_orderm_detalis p {
+	color: #989898;
+	line-height: 1.2;
+	padding-left: 0.533333rem;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+	overflow: hidden;
+	margin-bottom: 0.4rem;
+}
+
+.points_orderm_detalis h5 {
+	color: #D40F42;
+	padding-left: 0.533333rem;
+	line-height: 1;
+	font-weight: normal;
+}
+
+.points_orderm_detalis h5 span {
+	margin-left: 0.266667rem;
+	background: url(../images/home/lottery/icon/01.png) no-repeat;
+	background-size: 0.44rem 0.373333rem;
+	padding-left: 0.533333rem;
+}
+
+.points_orderm_detalis i {
+	font-style: normal;
+}
+
+.prized_msg dl {
+	border-bottom: 1px solid #ccc;
+	width: 9.2rem;
+	margin: 0 auto;
+	padding: 0.613333rem 0;
+	overflow: hidden;
+}
+
+.prized_msg dl dt {
+	width: 2.666666rem;
+	color: #34393c;
+}
+
+.prized_msg dl dd {
+	color: #989898;
+	width: 6.533333rem;
+}
+
+.prized_msg dl dd.cur {
+	color: #d40f42;
+}
+
+.prized_msg dl:last-child {
+	border-bottom: 0;
+}
+
+.points_prize_footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1.76rem;
+	box-shadow: 0 -0.026666rem 0.16rem rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	background: #fff;
+}
+
+.prized_msg_version01 dl dt {
+	line-height: 1.2;
+}
+
+.prized_msg_version01 dl dd {
+	width: 75%;
+	text-overflow: inherit;
+	white-space: normal;
+	overflow: auto;
+	line-height: 1.2;
+}
+
+.points_prize_footer li {}
+
+.points_prize_footer ul li h5 {
+	color: #d40f42;
+	line-height: 1.76rem;
+}
+
+.points_prize_footer li:nth-child(1) {
+	width: 5.866666rem;
+	color: #d40f42;
+	text-align: center;
+}
+
+.points_prize_footer li:nth-child(2) {
+	width: 4rem;
+	text-align: center;
+	/*background: #d40f42;*/
+	color: #fff;
+	overflow: hidden;
+}
+
+.points_prize_footer li:nth-child(2) a {
+	line-height: 1.76rem;
+	display: block;
+}
+
+.points_prize_footer li.default {
+	background: #ccc;
+	color: #FFF;
+}
+
+.order_adreess_no {
+	text-align: center;
+	padding-right: 0.4rem;
+	padding-top: 0.586666rem;
+}
+
+.order_adreess_no a {
+	color: #D40F42;
+	position: relative;
+	padding-left: 0.853333rem;
+}
+
+.order_adreess_no a:before {
+	content: "";
+	width: 0.586666rem;
+	height: 0.586666rem;
+	background: url(../images/integral_mall/icon_addaddress.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+
+/*抽中奖品 样式*/
+
+.mask_win_prize {
+	padding: 0.4rem 0.373333rem;
+	overflow: hidden;
+}
+
+.mask_win_prize h3 {
+	color: #fff;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 30px;
+	white-space: nowrap;
+}
+
+.close_btn {
+	position: absolute;
+	top: 0.4rem;
+	right: 0.373333rem;
+	display: block;
+	width: 0.44rem;
+	height: 0.44rem;
+	background: url(../images/integral_mall/close.png);
+	background-size: cover;
+}
+
+.prize_gain_img {
+	text-align: center;
+}
+
+.prize_gain_img img {
+	display: inline-block;
+	width: 2.4rem;
+	height: 2.4rem;
+	border: 4px solid #ffd8bb;
+	border-radius: 100%;
+}
+
+.close_sure_btn {
+	width: 1.866666rem;
+	line-height: 2;
+	background: #6dcdac;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+
+
+/*积分规则*/
+
+.points_rule_wrap {
+	background: url(../images/home/lottery/points_rule_bg01.png) no-repeat, url(../images/home/lottery/points_rule_bg02.png) no-repeat left bottom;
+	background-size: 100% 3.6rem;
+	background-color: #f8f8f8;
+}
+
+.points_rule_con {
+	padding: 0.933333rem 0.4rem;
+}
+
+.points_rule_con h3 {
+	text-align: center;
+}
+
+.points_rule_con h3 img {
+	width: 5.32rem;
+	height: 1.253333rem;
+}
+
+.points_rule_points {
+	width: 100%;
+	background: #fff;
+	border-radius: 0.266667rem;
+	margin-top: 1.173333rem;
+	padding: 0.4rem;
+	box-sizing: border-box;
+}
+
+.points_rule_points p,
+.points_rule_points dl dd {
+	color: #3a3a3a;
+	line-height: 1.8;
+	margin: 0.066667rem 0;
+}
+
+.points_rule_points dl {
+	margin-bottom: 0.133333rem;
+	overflow: hidden;
+}
+
+.points_rule_points dl dt {
+	color: #333;
+	line-height: 0.533333rem;
+	margin: 0.266667rem 0;
+}
+
+.points_rule_points dl dt span {
+	display: inline-block;
+	width: 0.533333rem;
+	height: 0.533333rem;
+	background: #40a2fb;
+	color: #fff;
+	text-align: center;
+	line-height: 0.533333rem;
+	border-radius: 100%;
+	margin-right: 0.133333rem;
+}
+
+.lmp_info_group_nolimit p {
+	-webkit-line-clamp: 3;
+}
+
+.mask_invset_static {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	background: #fff;
+	width: 5.733333rem;
+	z-index: 19;
+	border-radius: 0.36rem;
+	padding: 0.2rem 0;
+	box-sizing: border-box;
+	display: none;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+
+.mask_invset_static p {
+	color: #666;
+	text-align: center;
+	line-height: 2;
+}
+
+.mask_invset_static h5 {
+	color: #40a2fb;
+	line-height: 2;
+	border-top: 1px solid #ccc;
+	margin-top: 0.2rem;
+	padding-top: 0.2rem;
+}
+
+.point_ul li b {
+	color: #adacac;
+	font-weight: normal;
+	margin-top: 0.106666rem;
+	display: block;
+}
+
+.point_ul li a {
+	line-height: 1;
+	padding-top: 0.56rem;
+}
+
+.points_prized_wrap {
+	padding-top: 1.173333rem;
+}
+
+.point_ul {
+	padding-left: 0.213333rem;
+}
+
+.integral_mall_banner li {
+	padding-left: 0.733333rem;
+}
+
+.integral_mall_banner li a {
+	display: block;
+	line-height: 1;
+}
+
+.integral_mall_banner li a span {
+	display: block;
+	color: #34393C;
+}
+
+.integral_mall_banner li a b {
+	margin-top: 0.026666rem;
+	color: #989898;
+}
+
+.imList_wrap {
+	border-top: 0.266666rem solid #f2f2f2;
+}
+
+.integral_mall_hot dl {
+	margin-right: 0.4rem;
+	margin-bottom: 0.4rem;
+}
+
+.integral_mall_hot dl dt a {
+	width: 4.4rem;
+	height: 4.4rem;
+	border-radius: 0.133333rem;
+	box-shadow: 0 0.026666rem 0.16rem rgba(0, 0, 0, 0.05);
+	position: relative;
+}
+
+.integral_mall_hot dl dt a img {
+	width: 3.333333rem;
+	height: 3.333333rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.integral_mall_hot dl:nth-of-type(even) {
+	margin-right: 0;
+}
+
+#coupon dl:nth-last-of-type(1),
+#coupon dl:nth-last-of-type(2) {
+	margin-bottom: 0;
+}
+
+.points_my {
+	margin-top: 1.173333rem;
+	width: 100%;
+	height: 13.36rem;
+	background: url(../images/integral_mall/bg_01.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.points_my_wrap {
+	background: none;
+	padding: 2.826666rem 0 0;
+}
+
+#lottery {
+	padding: 1.333333rem 0.4rem 0;
+	background: url(../images/integral_mall/bg_02.png) no-repeat;
+	background-size: 100% 100%;
+	height: 10.533333rem;
+}
+
+#lottery ul {
+	padding: 0.4rem;
+	background: none;
+	box-sizing: border-box;
+}
+
+#lottery ul li {
+	width: 2.666666rem;
+	height: 2.213333rem;
+	background: url(../images/integral_mall/img_bg.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 0.213333rem 0.12rem 0;
+	border: 0;
+	box-sizing: border-box;
+	margin-bottom: 0.106666rem;
+	text-align: center;
+	margin-right: 0.106666rem;
+}
+
+#lottery ul .lottery-unit-0,
+#lottery ul .lottery-unit-6,
+#lottery ul .lottery-unit-7 {
+	margin-left: 0.093333rem;
+}
+
+#lottery ul .lottery-unit-0,
+#lottery ul .lottery-unit-1,
+#lottery ul .lottery-unit-2 {
+	margin-top: 0.106666rem;
+}
+
+#lottery ul .lottery-unit-2,
+#lottery ul .lottery-unit-3,
+#lottery ul .lottery-unit-4 {
+	margin-right: 0;
+}
+
+#lottery img {
+	width: 1.333333rem;
+	height: 1.333333rem;
+}
+
+#lottery ul li p {
+	line-height: 1;
+	margin-top: 0.08rem;
+}
+
+#lottery ul li p span {
+	line-height: 1;
+	color: #63061d;
+}
+
+#lottery ul li .start_btn img {
+	width: 100%;
+	height: 100%;
+}
+
+#lottery ul li.hmp_game_btn {
+	padding: 0;
+}
+
+#lottery ul li .start_btn {
+	height: 100%;
+}
+
+.mask_win_prize {
+	position: fixed;
+	width: 8.666666rem;
+	height: 13.333333rem;
+	background: url(../images/integral_mall/bg_03.png) no-repeat;
+	background-size: 100% 100%;
+	top: 1.653333rem;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	padding: 5.786666rem 0 0;
+	box-sizing: border-box;
+}
+
+.prize_gain_img {
+	padding: 0 2rem;
+}
+
+.prize_gain_img img {
+	width: 2.933333rem;
+	height: 2.933333rem;
+	border-radius: 0;
+	border: 0;
+}
+
+.prize_gain_img p {
+	color: #fff;
+	margin-top: 0.32rem;
+	line-height: 1.2;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.get_msg {
+	margin-top: 1.066666rem;
+	text-align: center;
+	color: #fff;
+}
+
+.get_msg p {
+	margin-top: 0;
+	margin-bottom: 0.266666rem;
+}
+
+.mask_win_no {
+	position: fixed;
+	width: 10rem;
+	height: 12.133333rem;
+	background: url(../images/integral_mall/bg_04.png) no-repeat;
+	background-size: 100% 100%;
+	top: 2.293333rem;
+	left: 50%;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	padding: 5.786666rem 0 0;
+	z-index: 12;
+	box-sizing: border-box;
+	display: none;
+}
+
+#lottery ul {
+	position: relative;
+}
+
+#lottery ul:before {
+	content: "";
+	position: absolute;
+	height: 7.866666rem;
+	width: 9.2rem;
+	left: 0;
+	top: 0;
+	background: url(../images/integral_mall/bg_05.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.integral_candle {
+	width: 100%;
+	padding-top: 0.72rem;
+}
+
+.integral_candle a {
+	color: #fff;
+	position: relative;
+	padding-right: 0.48rem;
+	line-height: 0.48rem;
+}
+
+.integral_candle a:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0.48rem;
+	height: 0.48rem;
+	background: url(../images/integral_mall/go.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.integral_candle span {
+	line-height: 0.48rem;
+	color: #fff;
+}
+
+.section_wrap {
+	width: 100%;
+	overflow: hidden;
+	background: url(../images/integral_mall/section_02.png) repeat;
+	background-size: 100% auto;
+}
+
+.section_01 {
+	width: 9.2rem;
+	margin: 0.56rem auto 1.066666rem;
+	box-sizing: border-box;
+	padding: 0.586666rem 0.133333rem 0.586666rem 0.4rem;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 0.266666rem;
+	overflow: hidden;
+	color: #fff;
+	box-shadow: 0 0.026666rem 0.16rem rgba(0, 0, 0, 0.2);
+}
+
+.section_01 li {
+	line-height: 0.48rem;
+}
+
+.section_01 li span {
+	color: #FFFf00;
+}
+
+.section_01 li a {
+	color: #fff;
+	position: relative;
+	padding-right: 0.48rem;
+	line-height: 0.48rem;
+}
+
+.section_01 li a:before {
+	content: "";
+	position: absolute;
+	width: 0.48rem;
+	height: 0.48rem;
+	background: url(../images/integral_mall/go.png) no-repeat;
+	background-size: 100% 100%;
+	right: 0;
+	top: 0;
+}
+
+.section_tit img {
+	width: 100%;
+	height: 0.506666rem;
+	margin-bottom: 0.8rem;
+}
+
+.get_prize_list {
+	padding: 0;
+	background: rgba(255, 255, 255, 0.2);
+	margin: 0 auto;
+	border-radius: 0.266666rem;
+	width: 9.2rem;
+	box-shadow: 0 0.026666rem 0.16rem rgba(0, 0, 0, 0.2);
+}
+
+.get_prize_list .swiper-slide {
+	background: transparent;
+}
+
+.get_prize_list .swiper-slide span {
+	color: #fff;
+	width: 100%;
+}
+
+.get_prize_list .swiper-slide span b {
+	font-weight: normal;
+	padding: 0 0.266666rem;
+}
+
+.get_prize_list .swiper-slide {
+	padding: 0;
+}
+
+.swiper-container {
+	padding: 0.4rem 0.4rem;
+	box-sizing: border-box;
+	height: 4.8rem;
+}
+
+.swiper-wrapper {}
+
+.get_prize_list .swiper-slide span b:nth-of-type(2) {
+	color: #FFFF00;
+}
+
+.get_prize_list {
+	margin-bottom: 0.8rem;
+}
+
+.poin_rule {
+	background: rgba(255, 255, 255, 0.2);
+	margin: 0 auto 0.733333rem;
+	border-radius: 0.266666rem;
+	width: 9.2rem;
+	box-sizing: border-box;
+	box-shadow: 0 0.026666rem 0.16rem rgba(0, 0, 0, 0.2);
+	padding: 0.8rem 0.4rem;
+}
+
+.poin_rule p {
+	color: #fff;
+	line-height: 0.64rem;
+}
+
+.points_rule_wrap {
+	background: #f2f2f2;
+}
+
+.points_rule_con {
+	padding: 0.4rem;
+}
+
+.points_rule_points {
+	padding: 0.533333rem 0.4rem;
+	margin-top: 0;
+}
+
+.points_rule_points dl,
+.points_rule_points p {
+	margin-bottom: 0.933333rem;
+}
+
+.points_rule_points p,
+.points_rule_points dl dd {
+	color: #34393C;
+	line-height: 0.666666rem;
+}
+
+.points_rule_points dl:last-child {
+	margin-bottom: 0;
+}
+
+.imp_img p {
+	color: #D40F42;
+	line-height: 1;
+	margin-bottom: 0.266666rem;
+}
+
+.imp_introduce {}
+
+.imp_introduce {
+	width: 9.2rem;
+	box-sizing: border-box;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	padding-left: 1.12rem;
+	color: #34393C;
+	line-height: 0.666666rem;
+}
+
+.imp_introduce i {
+	min-width: 0.853333rem;
+	box-sizing: border-box;
+	line-height: 1;
+	padding: 0.04rem 0;
+	background: #cbb693;
+	border-radius: 0.053333rem;
+	text-align: center;
+	position: absolute;
+	color: #fff;
+	font-style: normal;
+	top: 0.133333rem;
+	left: 0;
+}
+
+.imp_introduce span {
+	padding-right: 0.266666rem;
+}
+
+.lmp_info_group h4 {
+	line-height: 1;
+	margin: 0.666666rem 0 0.4rem;
+	color: #CBB693;
+}
+
+.lmp_info_group_nolimit p {
+	line-height: 0.666666rem;
+	color: #989898;
+	margin-bottom: 0;
+}
+
+.integrall_mall_product_wrap {
+	padding-bottom: 1.76rem;
+}
+
+.lmp_info_group {
+	border-bottom: 0;
+}
+
+.lmp_btn {
+	background: #fff;
+	padding: 0.4rem;
+	box-sizing: border-box;
+	height: 1.76rem;
+	box-shadow: 0 0.026666rem 0.16rem rgba(0, 0, 0, 0.1);
+}
+
+.lmp_btn span {
+	background: #d40f42;
+	border-radius: 0.48rem;
+	line-height: 0.96rem;
+	display: block;
+}
+
+.exchange_mask_wrap {
+	height: 7.893333rem;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 0.4rem;
+	border-top-left-radius: 0.266666rem;
+	border-top-right-radius: 0.266666rem;
+}
+
+.exchange_mask_wrap .close_mask {
+	width: 1.173333rem;
+	height: 1.173333rem;
+	background: url(../images/integral_mall/close_02.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0.133333rem;
+	right: 0;
+	display: block;
+}
+
+.exchange_mask_wrap dl {
+	margin-bottom: 0.933333rem;
+	overflow: hidden;
+}
+
+.exchange_mask_wrap dl dt {
+	width: 2.666666rem;
+	height: 2.666666rem;
+}
+
+.exchange_mask_wrap dl dt img {
+	width: 2.666666rem;
+	height: 2.666666rem;
+}
+
+.exchange_mask_wrap dd {
+	width: 5.373333rem;
+	margin-left: 0.4rem;
+	padding-top: 0.8rem;
+}
+
+.exchange_mask_wrap dd span {
+	display: block;
+	margin-bottom: 0.266666rem;
+}
+
+.exchange_mask_wrap dd span:nth-of-type(2) {
+	color: #D40;
+}
+
+.exchange_mask_wrap li {
+	padding: 0;
+	text-align: left;
+	border: 0;
+	line-height: 1;
+	color: #34393C;
+	margin-bottom: 0.666666rem;
+}
+
+.exchange_btn {
+	width: 100%;
+	line-height: 0.96rem;
+	border-radius: 0.48rem;
+	margin: 0.4rem 0 0;
+}
+
+.get_msg {
+	display: none;
+}
+
+.news_null_wrap {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.order_adreess_have p.default:after {
+	background: none;
+}
+
+
+/*points_ddetails 2018-08-27*/
+
+.points_wrap {
+	padding-top: 1.173333rem;
+}
+
+.points_top {
+	width: 9.2rem;
+	height: 4.4rem;
+	background: url(../images/integral_mall/points_bg.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0.4rem auto 0.666666rem;
+	padding: 0.666666rem 1.066666rem 0;
+	box-sizing: border-box;
+}
+
+.points_top dl {
+	text-align: center;
+	color: #fff;
+}
+
+.points_top dl dt {
+	line-height: 1;
+}
+
+.points_top dl dd {
+	line-height: 1;
+	margin: 0.266666rem 0 1.066666rem;
+}
+
+.points_top li a:before {
+	content: "";
+	position: absolute;
+	width: 0.48rem;
+	height: 0.48rem;
+	background: url(../images/integral_mall/go.png) no-repeat;
+	background-size: 100% 100%;
+	right: 0;
+	top: 0;
+}
+
+.points_top li a {
+	color: #fff;
+	position: relative;
+	line-height: 0.48rem;
+	padding-right: 0.48rem;
+}
+
+.point_tab li {
+	width: 33.33333%;
+	text-align: center;
+	color: #34393c;
+}
+
+.point_tab {
+	position: relative;
+	padding-bottom: 0.266666rem;
+}
+
+.point_tab ul {
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 0.133333rem;
+}
+
+.point_tab ul:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.16rem;
+	background: url(../images/integral_mall/box_shadow.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.points_wrap {
+	background: #fff;
+	padding-bottom: 0.266666rem;
+}
+
+.point_tab li {
+	margin-bottom: 0.133333rem;
+	background: #fff;
+	overflow: hidden;
+}
+
+.point_tab li span {
+	line-height: 1;
+	color: #34393C;
+	display: inline-block;
+	padding-bottom: 0.213333rem;
+	position: relative;
+	overflow: hidden
+}
+
+.point_tab li.cur span:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	width: 100%;
+	height: 0.053333rem;
+	border-radius: 0.026666rem;
+	-webkit-mask-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#e7dcc5), to(#cbb693));
+	background-image: -webkit-gradient(linear, left 0, right 0, from(#e7dcc5), to(#cbb693));
+}
+
+.point_tab li.cur span {
+	color: #cbb693;
+}
+.points_con{
+	padding: 0 0.4rem;
+}
+.points_con li{
+	padding: 0.666666rem 0 0.72rem;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	
+}
+.points_con li dt{
+	width: 50%;
+	color: #34393C;
+	margin-bottom: 0.266666rem;
+}
+.points_con li dd{
+	width: 50%;
+}
+.points_con li dd.fr{
+text-align: right;
+}
+.points_con li dd.fr:nth-of-type(2){
+	color: #34393c;
+}.points_con li dd.fr:nth-of-type(1){
+	margin-bottom: 0.266666rem;
+}
+.points_con li dd.fl{
+color: #989898;
+clear: both;
+}
+.points_con li.add dl dd.fr:nth-of-type(1){
+	color:#00cbbb;
+}.points_con li.reduce dl dd.fr:nth-of-type(1){
+	color:#ff0000;
+}
+.win_tab{
+	padding:0 0.906666rem;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+height: 1.2rem;
+}
+.win_tab li{
+
+
+	text-align: center;
+	color: #cbb693;
+	position: relative;
+	padding-right: 0.04rem;
+	box-sizing: border-box;
+    position: relative;
+}
+.win_tab li span{
+	width: 3.2rem;
+	
+	display: block;
+	line-height: 1.2rem;
+	
+}
+.win_tab li span:before{
+content: "";
+width: 0.4rem;
+height: 0.4rem;
+position: absolute;
+top: 50%;
+right: 0.266666rem;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+background: url(../images/integral_mall/down.png) no-repeat;
+background-size: 100% 100%;
+}
+.win_tab li.cur span:before{
+	background: url(../images/integral_mall/up.png) no-repeat;
+    background-size: 100% 100%;
+}
+.win_tab_li{
+	position: absolute;
+	top: 0.853333rem;
+	left: 0;
+	width: 3.2rem;
+	height: 4.053333rem;
+	background: url(../images/account/tab.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 2;
+	box-sizing: border-box;
+	padding-top: 0.266666rem;
+	display: none;
+}
+.win_tab_li ul{
+	padding: 0 0.293333rem;
+}
+.win_tab_li li{
+	border-bottom:1px solid #ccc;
+	line-height: 1.2rem;
+	color: #989898;
+}
+.win_tab_li li:nth-of-type(3){
+	border-bottom: 0;
+}
+.win_tab_li li.cur{
+	color: #cbb693;
+}

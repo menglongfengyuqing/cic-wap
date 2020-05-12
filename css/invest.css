@@ -1,0 +1,1875 @@
+/*
+* @Author: Fern
+* @Date:   2017-07-14 09:41:04
+* @Last Modified by:   timefiles
+* @Last Modified time: 2017-08-03 12:06:31
+*/
+
+
+/* invet_home */
+.item_select_tab {
+	width: 100%;
+
+  line-height: 1.2rem;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: #fff;
+	border-bottom:1px solid #ccc;
+}
+
+.item_select_tab li {
+	width: 33.333%;
+	color:#34393C;
+
+	text-align: center;
+}
+
+.item_select_tab li.cur {
+	color:#a11c3f;
+}
+
+.item_one_wrap {
+	position: relative;
+	padding: 0.16rem 0.4rem;
+	background: #fff;
+}
+
+.item_one_novice .item_info_wrap,
+.item_discount .item_info_wrap {
+	border: 0;
+}
+
+.item_info_wrap {
+	border-bottom: 1px solid #efefef;
+}
+
+.account_invest_safe_wrap .item_info_wrap {
+	border-bottom: 0;
+}
+
+.item_kind_wrap .item_info_wrap:last-child {
+	border: 0;
+}
+
+.item_type {
+	width: 2.533333rem;
+	line-height: 0.666667rem;
+	color: #fff;
+	background: #f6ca52;
+	border-top-right-radius: 0.4rem;
+	border-bottom-right-radius: 0.4rem;
+	text-align: center;
+	overflow: hidden;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+	padding: 0.133333rem 0;
+}
+
+.item_info_wrap {
+	padding: 0.32rem 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.item_one_discount .item_info_wrap,
+.item_one_novice .item_info_wrap {
+	padding: 0 0.4rem;
+}
+
+.item_info_wrap h4,
+.item_info_wrap h4 a {
+	color: #333;
+	line-height: 2;
+}
+
+.item_info_wrap em {
+	color: #e5343a;
+	display: block;
+	line-height: 2;
+	overflow: hidden;
+}
+
+.item_info_wrap span {
+	color: #989898;
+	line-height: 1.4;
+}
+
+.item_info_l {
+	padding-right: 1.2rem;
+	position: relative;
+}
+
+.item_info_l::before {
+	content: "";
+	display: block;
+	width: 0.026667rem;
+	height: 1.2rem;
+	background: #e6e6e6;
+	position: absolute;
+	top: 0.373333rem;
+	right: 0;
+}
+
+.item_info_c {
+	padding-left: 0.506667rem;
+}
+
+.item_info_c em {
+	color: #34393c;
+}
+
+.item_info_r {
+	padding-top: 0.56rem;
+}
+
+.item_info_r a {
+	display: block;
+	width: 1.893333rem;
+	line-height: 0.8rem;
+	color: #fff;
+	background: #40a2fb;
+	text-align: center;
+	border-radius: 3px;
+}
+
+.item_info_r.default a {
+	background: #ccc;
+}
+
+.item_one_wrap::before {
+	content: "";
+	width: 1.24rem;
+	height: 1.013333rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.item_one_discount,
+.item_one_novice {
+	padding: 0.32rem 0;
+}
+
+.item_one_discount::before {
+	background: url(../images/invest/icon_01.png) no-repeat;
+	background-size: cover;
+}
+
+.item_one_discount.cur::after,
+.item_one_novice.cur::after {
+	content: "";
+	position: absolute;
+	top: 0.986667rem;
+	right: 0.426667rem;
+	width: 1.36rem;
+	height: 1.226667rem;
+	background: url(../images/invest/img_01.png) no-repeat;
+	background-size: cover;
+}
+
+.item_bar {
+	width: 100%;
+	height: 0.2rem;
+	clear: both;
+}
+
+.item_one_hot::before {
+	background: url(../images/invest/icon_02.png) no-repeat;
+	background-size: cover;
+}
+
+.item_one_novice::before {
+	background: url(../images/invest/icon_03.png) no-repeat;
+	background-size: cover;
+}
+
+.item_one_hot .item_info_l {
+	padding-right: 2.533333rem;
+}
+
+.item_one_hot .item_info_c {
+	padding-left: 2.666667rem;
+}
+
+.invet_btn {
+	width: 100%;
+	background:#d40f42;
+	line-height: 0.906667rem;
+	border-radius: 0.08rem;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 0.133333rem;
+}
+
+.invet_btn.default {
+	background: #ccc;
+}
+
+.hot_bar {
+	width: 5.36rem;
+	height: 0.453333rem;
+	background: url(../images/invest/bar.png) no-repeat;
+	background-size: cover;
+	margin: 0.2rem auto;
+}
+
+.item_one_list {
+	margin-bottom: 0.04rem;
+}
+
+.item_kind_wrap {
+	padding-bottom: 1.6rem;
+	background:#fff;
+}
+
+
+/* invet_details */
+
+.item_tab_con {
+	display: none;
+	padding: 0 0.4rem;
+}
+
+.item_tab_nopd {
+	padding: 0;
+}
+
+.item_tab_con.cur {
+	display: block;
+}
+
+.bg_white {
+	background: #fff;
+}
+
+.item_details_wrap {
+	background: #f2f2f2;
+}
+
+.item_details_base {
+	padding: 0.4rem 0 0.8rem;
+	background: #fff;
+	text-align: center;
+	color: #848587;
+}
+
+.item_details_base h3 {
+	color:#a11c3f;
+   padding:0.933333rem 0 0.533333rem;
+	font-weight: normal;
+}
+
+.item_details_base_li {
+	overflow: hidden;
+
+}
+
+.item_details_base_li li {
+	width: 33.3333%;
+	box-sizing: border-box;
+	overflow: hidden;
+	  position: relative;
+}
+.item_details_base_li li:nth-of-type(1){
+
+}
+.item_details_base_li li:nth-of-type(2):before{
+ content: "";
+ position:absolute;
+ width: 1px;
+ height:84%;
+ background: #ccc;
+ top: 50%;
+ left: 0;
+ transform: translateY(-50%);
+ -webkit-transform: translateY(-50%);
+ 
+}
+.item_details_base_li li:nth-of-type(2):after{
+ content: "";
+ position:absolute;
+ width: 1px;
+ height:84%;
+ background: #ccc;
+ top: 50%;
+ right: 0;
+ transform: translateY(-50%);
+ -webkit-transform: translateY(-50%);
+ 
+}
+.item_details_base_li li em {
+	display: block;
+	color: #34393C;
+	line-height: 1;
+	margin-bottom: 0.266666rem;
+}
+
+.item_details_base_li li span {
+	line-height: 1;
+	color: #989898;
+}
+
+.item_safe {
+	padding: 0 0.4rem;
+	background: #fff;
+	margin: 0.266667rem 0;
+	overflow: hidden;
+	line-height: 1.173333rem;
+}
+
+.item_safe a {
+	display: block;
+	color: #3f3f3f;
+}
+
+.item_safe a span {
+	color: #999;
+}
+
+.item_safe a span::after {
+	content: "";
+	display: block;
+	width: 0.173333rem;
+	height: 0.36rem;
+	background: url(../images/invest/arrow_right.png) no-repeat;
+	background-size: cover;
+	float: right;
+	margin-top: 0.4rem;
+	margin-left: 0.32rem;
+}
+
+.item_details_tab {
+	overflow: hidden;
+	background: #fff;
+}
+
+.item_details_tab li {
+	width:25%;
+	box-sizing: border-box;
+	text-align:center;
+	overflow: hidden;
+
+}
+
+.item_details_tab li a,
+.item_details_tab li span {
+    padding: 0.613333rem 0;
+    display: inline-block;
+    color: #34393c;
+}
+
+.item_details_tab li.cur a,
+.item_details_tab li.cur span {
+	color: #a11c3f;
+	border-bottom: 0.053333rem solid #a11c3f;
+
+}
+
+
+.item_details_con {
+
+	overflow: hidden;
+	background: #fff;
+}
+
+.item_msg p {
+	color:#989898;
+	line-height: 1.6;
+	margin-top: -1.2%;
+}
+
+.item_details_con .invet_btn {
+	margin: 0.266667rem 0;
+}
+
+.invet_mask_wrap {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 14;
+	-webkit-transition: .3s;
+	bottom: 0px;
+	transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	padding-top: 0.333333rem;
+	box-sizing: border-box;
+}
+
+.invest_mask_con {
+	background: #fff;
+	overflow: hidden;
+	padding-top: 0.533333rem;
+	padding-bottom: 0.8rem;
+}
+
+.invet_mask_wrap.active {
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+}
+
+.invet_mask_wrap h3 {
+	overflow: hidden;
+	background: transparent;
+}
+
+.invet_mask_wrap h3 span {
+	display: block;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../images/icon/close_mask.png) no-repeat;
+	background-size: cover;
+	margin-bottom: 0.333333rem;
+	margin-right: 0.266667rem;
+}
+
+.invet_mask_wrap li {
+	border-bottom: 1px solid #eeeeee;
+	padding: 0.133333rem 0.4rem;
+	color: #3f3f3f;
+	position: relative;
+	line-height: 2;
+	overflow: hidden;
+}
+
+.invet_mask_wrap li:last-child {
+	border: none;
+}
+
+.invet_mask_wrap li em {
+	color: #bcbbbb;
+}
+
+.invet_mask_wrap li input {
+	width: 5.386666rem;
+	/*height: 0.666667rem;*/
+	line-height: 0.666667rem;
+	border: none;
+}
+
+.regular_radio {
+	display: none;
+}
+
+.regular_radio+label {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	padding: 0.266666rem;
+	border-radius: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.regular_radio+label::after {
+	display: none;
+}
+
+.regular_radio:checked+label:after {
+	content: ' ';
+	width: 0.266666rem;
+	height: 0.266666rem;
+	border-radius: 100%;
+	position: absolute;
+	top: 0.146666rem;
+	background: #99a1a7;
+	text-shadow: 0px;
+	left: 0.133333rem;
+	display: block;
+}
+
+.regular_radio:checked+label {
+	background-color: #e9ecee;
+	color: #99a1a7;
+	border: 1px solid #adb8c0;
+}
+
+.radio_select {
+	margin-top: 0.053333rem;
+}
+
+.invet_mask_wrap ul {
+	overflow: hidden;
+}
+
+.invet_mask_wrap li a {
+	/*width: 8.586667rem;*/
+	margin-left: 0.2rem;
+	box-sizing: border-box;
+	color: #989898;
+}
+
+.invet_mask_wrap .invet_btn {
+	width: 85%;
+	margin: 0.533333rem auto 0;
+}
+
+.invet_mask_wrap li b {
+	position: absolute;
+	top: 0.16rem;
+	right: 0.4rem;
+	color:#a11c3f;
+	font-weight: normal;
+}
+
+.invet_mask_wrap li i {
+	width: 1.16rem;
+	line-height: 0.48rem;
+	background:#d40f42;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 0.293333rem;
+	right: 0.4rem;
+	border-radius: 4px;
+	font-style: normal;
+}
+
+
+/*  account_invest_safe_wrap*/
+
+.account_invest_safe_wrap {
+	background: #fff;
+}
+
+.account_invest_safe_wrap a {
+	color: #40a2fb;
+	background: #fff;
+}
+
+.account_invest_safe_wrap .item_one_wrap {
+	border-bottom: 3px solid #f6f6f6;
+}
+
+
+.invet_mask_wrap .profit_li {
+	background: #d40f42;
+	color: #fff;
+	text-align: center;
+}
+
+.invet_mask_wrap li {
+	position: relative;
+}
+
+.invet_mask_wrap .profit_li_before,
+.invet_mask_wrap .border_bn {
+	border-bottom: none;
+}
+
+.invet_mask_wrap .profit_li_before::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 2.666667rem;
+	width: 0;
+	height: 0;
+	border-width: 0 0.333333rem 0.266667rem;
+	border-style: solid;
+	border-color: transparent transparent #d40f42;
+}
+
+.mask_counpon {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 15;
+	-webkit-transition: .3s;
+	bottom: 0px;
+	transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	box-sizing: border-box;
+	background: #fff;
+}
+
+.mask_counpon.active {
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+}
+
+.coupon_btn {
+	display: block;
+	color:#a11c3f;
+}
+
+.account_coupon_one {
+	background: #fff;
+	margin: 0.133333rem 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.account_coupon_one dl {
+	width: 7.573333rem;
+	overflow: hidden;
+	color: #bbbbbb;
+}
+
+.account_coupon_one dl dt {
+	overflow: hidden;
+	line-height: 0.8rem;
+	padding-bottom: 0.266667rem;
+}
+
+.account_coupon_one dl b {
+	font-weight: normal;
+	color: #34393c;
+	width: 3.413333rem;
+}
+
+.account_coupon_one dl dd {
+	line-height: 2;
+}
+
+.coupon_name {
+	width: 1.6rem;
+	box-sizing: border-box;
+	color: #e5343a;
+	writing-mode: horizontal-tb;
+	writing-mode: vertical-rl;
+	writing-mode: vertical-lr;
+	border-left: 1px solid #e6e6e6;
+	margin-top: 0.533333rem;
+	padding: 0 0.466667rem 0 0.533333rem;
+}
+
+.account_coupon_one::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 0.266667rem;
+	background: #efefef;
+}
+
+.account_coupon_one a,
+.account_coupon_one>span {
+	display: block;
+	overflow: hidden;
+	padding: 0.4rem;
+}
+
+
+/* 出借记录 */
+
+.invest_tab li {
+	float: left;
+	list-style: none;
+	width: 33.333%;
+	text-align: center;
+	color: #34393C;
+}
+
+.invest_tab #sliderSegmentedControl {
+	height: 0.906667rem;
+	overflow: hidden;
+	background: #efefef;
+}
+
+.invest_one {
+	overflow: hidden;
+	padding: 0.373333rem 0.133333rem 0;
+	position: relative;
+}
+
+.invest_user_tab {
+	line-height: 1.626666rem;
+	overflow: hidden;
+	padding: 0 0.4rem;
+
+}
+.invest_user_tab ul{
+	overflow: hidden;
+	border-bottom:1px solid #ccc;
+}
+.invest_user_group {
+	overflow: hidden;
+}
+.invest_record_wrap{
+	padding: 0 0.4rem;
+}
+.invest_user_group_one li {
+	line-height: 1.253333rem;
+	color: #989898;
+	float: left;
+	width: 33.333%;
+	text-align: center;
+}
+
+.invest_user_group_one li p {
+	line-height: 0.466667rem;
+	padding-top: 0.2rem;
+}
+.invest_record_con{
+	/*border-bottom:1px solid #ccc;*/
+}
+.invest_user_group_one,
+.invest_mine_one {
+	/*border-bottom: 3px solid #efefef;*/
+	overflow: hidden;
+}
+
+.bidlist_modify .invest_mine_one {
+	border: 0;
+}
+
+.mask_bank_open,
+.mask_bank_two,.mask_risk ,.mask_wait{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	background: #fff;
+	width:8.533333rem;
+	height:5.866666rem;
+	z-index: 19;
+	border-radius: 0.36rem;
+	padding:1.333333rem 0 0;
+	box-sizing: border-box;
+	display: none;
+	border: 1px solid #ccc;
+}
+.mask_wait{
+	height: auto;
+	padding-bottom: 0.266666rem;
+}
+
+.mask_risk h4,
+.mask_bank_two h4,.mask_wait h4{
+	color: #34393c;
+	text-align: center;
+}
+.mask_risk span,
+.mask_bank_two span {
+	position: absolute;
+	top: 0.2rem;
+	right: 0.2rem;
+	color: #7a7979;
+}
+
+.mask_risk p,
+.mask_bank_two p,.mask_wait p{
+	line-height: 0.6rem;
+	margin:0.586666rem 0;
+	padding: 0 0.4rem 0.266667rem;
+	text-align: center;
+	color: #34393c;
+}
+
+.mask_operation_one {
+	text-align: center;
+}
+.mask_operation_one a{
+	width:2.933333rem;
+	line-height: 0.96rem;
+	border-radius: 0.48rem;
+	background: #d41042;
+	display: inline-block;
+	color: #fff;
+}
+.mask_operation_one a:nth-of-type(1)
+{
+background: #fff;
+border:1px solid #d41042;
+margin-right: 0.8rem;
+color: #d41042;
+}
+.mask_operation_one em {
+	color: #f37018;
+	display: block;
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	line-height: 2;
+}
+
+
+.mask_operation_one em:nth-of-type(1) {
+border-right:1px solid #ccc;
+}
+
+
+/*出借成功 失败状态*/
+
+.mask_invset_static {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	background: #fff;
+	width: 5.733333rem;
+	z-index: 19;
+	border-radius: 0.36rem;
+	padding: 0.2rem 0;
+	box-sizing: border-box;
+	display: none;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+
+.mask_invset_static p {
+	color: #666;
+	text-align: center;
+	line-height: 2;
+}
+
+.mask_invset_static h5 {
+	color: #40a2fb;
+	line-height: 2;
+	border-top: 1px solid #ccc;
+	margin-top: 0.2rem;
+	padding-top: 0.2rem;
+}
+
+.mask_login_tip {
+	width:8.533333rem;
+	padding-top:1.2rem;
+	padding-bottom: 0.96rem;
+	box-sizing: border-box;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 33;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	background:#fff;
+	background-size: cover;
+	border-radius: 0.36rem;
+	text-align: center;
+	display: none;
+}
+
+.mask_login_tip p {
+	line-height: 1;
+	color:#34393C;
+	margin-bottom: 0.586666rem;
+}
+.mask_login_tip p:nth-of-type(2){
+	margin-bottom: 0;
+}
+.mask_login_tip .mask_login_btn {
+	width:6.133333rem;
+	border-radius:0.48rem;
+	margin-top: 1.2rem;
+	background: #d40f42;
+	line-height:0.96rem;
+	text-align: center;
+	display: inline-block;
+	overflow: hidden;
+	color: #fff;
+}
+
+.mask_login_tip a {
+	color: #a11c3f;
+}
+
+
+/*常见问题*/
+
+.common_group {
+	margin-bottom: 0.466666rem;
+}
+
+.quesstion_group h3 {
+	color: #333;
+	line-height: 2;
+}
+
+.quesstion_group h3 b {
+	color:#a11c3f;
+	font-weight: normal;
+}
+.borrower_msg .program_img h4 a{
+		color:#a11c3f;
+}
+
+.quesstion_group p {
+	color: #999;
+	line-height: 1.6;
+}
+
+.invest_btn_fixed_wrap {
+	position: fixed;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	background: #fff;
+	width: 100%;
+	/*padding: 0.266666rem 0;*/
+}
+
+
+
+#invest_msg_tip {
+	color: #90002E;
+}
+
+
+/*项目产品介绍*/
+
+.project_introduce {
+	padding: 0 0.4rem 0.466666rem 0.4rem;
+}
+
+.project_msg li {
+	border-top: 3px solid #f6f6f6;
+	overflow: hidden;
+	padding: 0 0.4rem;
+}
+
+.project_msg li a {
+	color: #3f3f3f;
+	line-height: 3;
+	display: block;
+}
+
+.project_msg li a::after {
+	content: "";
+	display: block;
+	width: 0.173333rem;
+	height: 0.36rem;
+	background: url(../images/invest/arrow_right.png) no-repeat;
+	background-size: cover;
+	float: right;
+	margin-top: 0.4rem;
+}
+
+.bar_border {
+	height: 0.133333rem;
+	background: #F6F6F6;
+}
+
+.item_repayment_plan_wrap .invest_tab {
+	background: #fff;
+	margin-bottom: 0.04rem;
+}
+
+.item_repayment_plan_wrap .invest_user_group {
+	background: #fff;
+}
+
+.item_repayment_plan_wrap .invest_user_group p {
+	line-height: 1.253333rem;
+	padding-top: 0;
+}
+
+.account_invest_new .item_one_wrap {
+	border-bottom: 3px solid #f6f6f6
+}
+
+.account_invest_new .item_one_wrap::before {
+	background: url(../images/invest/icon_03.png) no-repeat;
+	background-size: cover;
+	content: "";
+	width: 1.24rem;
+	height: 1.013333rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.account_invest_new .item_one_wrap .item_info_r a {
+	background: #fff;
+	color: #40a2fb;
+}
+
+.account_coupon_list {
+	height: 100%;
+	overflow: scroll;
+	padding-bottom: 29%;
+	box-sizing: border-box;
+}
+
+
+/*invest——details-scf*/
+
+.invest_scf_group {
+	padding: 0 0.4rem;
+
+}
+
+.invest_scf_group dl {
+    padding: 0.613333rem 0;
+    border-bottom: 1px solid #cccccc;
+    overflow: hidden;
+
+}
+
+.invest_scf_group dl dt {
+    color: #34393c;
+    font-weight: normal;
+    line-height: 1;
+    width: 2.8rem;
+}
+
+.invest_scf_group dl dd {
+	color: #989898;
+  line-height: 1;
+  width: 69%;
+}
+
+.invest_scf_group dl dd a {
+	color:#a11c3f;
+	display: block;
+	line-height:1;
+}
+.invest_scf_group dl dd a:nth-of-type(2){
+	margin-top: 0.133333rem;
+}
+.invest_scf_group dl dt a {
+	color: #666;
+	display: block;
+}
+
+.invest_scf_group ul li a,
+.invest_scf_group ul li span {
+	background: #fff;
+
+	overflow: hidden;
+
+}
+.invest_scf_group ul li{
+	    padding: 0.613333rem 0;
+    border-bottom: 1px solid #cccccc;
+    overflow: hidden;
+}
+
+.invest_scf_group ul li.even a,
+.invest_scf_group ul li.even span {
+	background: #fafafa;
+}
+
+.invest_scf_group ul li a,
+.invest_scf_group ul li span {
+	color:#34393C;
+	display: block;
+	line-height: 1;
+	width: 2.8rem;
+}
+.invest_scf_group ul li{
+  position: relative;
+}
+
+.invest_scf_group ul li:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right:-0.4rem;
+	width: 1.626666rem;
+	height:1.626666rem;
+	background: url(../images/invest/arrow_right.png) no-repeat;
+	background-size: cover;
+
+
+}
+
+.invest_scf_group li:nth-of-type(2) span::after,
+.invest_scf_group li:nth-of-type(3) span::after {
+	width: 0.373333rem;
+	height: 0.173333rem;
+	background: url(../images/invest/arrow_down.png) no-repeat;
+	background-size: cover;
+}
+
+.invest_scf_group .common_quesstion {
+	padding: 0 0.186666rem 0.2rem;
+	display: none;
+}
+
+.invest_scf_group li:nth-of-type(2) span.cur::after,
+.invest_scf_group li:nth-of-type(3) span.cur::after {
+	background: url(../images/invest/arrow_up.png) no-repeat;
+	background-size: cover;
+}
+
+.invest_scf_group .common_quesstion.cur {
+	display: block;
+}
+
+.invest_scf_group li>p {
+width: 69%;
+
+
+
+}
+
+.invest_scf_group li>p.cur {
+	display: block;
+}
+
+.borrower_msg {
+	padding: 0 0.32rem;
+	overflow: auto;
+}
+
+.borrower_msg .program_img {
+	background: #fefefe;
+}
+
+.borrower_msg .program_img {
+	background: #fff;
+	line-height: 1.173333rem;
+	overflow: hidden;
+	margin-top: 0.186666rem;
+	padding: 0 0.133333rem 0.2rem 0.186666rem;
+}
+
+.borrower_msg .program_img:nth-of-type(1) {
+	margin-top: 0;
+}
+
+.borrower_msg .program_img.even {
+	background: #fafafa;
+}
+
+.borrower_msg .program_img span {
+	width: 30%;
+	color: #666;
+}
+
+.borrower_msg .program_img>div {
+	width: 70%;
+}
+
+.borrower_msg .program_img h4 {
+	color: #a4a4a4;
+	line-height: 3.3;
+}
+
+.borrower_msg .program_img ul li {
+	width: 30%;
+	margin: 0 1.6% 0.266666rem;
+}
+
+.borrower_msg .program_img ul li img {
+	width: 100%;
+	height: 2.533333rem;
+	overflow: hidden;
+}
+
+.borrower_msg .program_img ul li u {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	color: #a4a4a4;
+}
+
+.borrower_msg .program_img ul li a {
+	display: block;
+	height: 2.533333rem;
+}
+
+.lb-outerContainer {
+	justify-content: center;
+	align-items: center;
+	display: -webkit-flex;
+	height: 100%!important;
+}
+
+.program_img .risk_item_msg p {
+	color: #a4a4a4;
+	padding-top: 0.346666rem;
+	line-height: 0.533333rem;
+}
+
+.risk_con ul {
+	width: 100%;
+}
+
+
+
+.more_pic {
+
+	color:#989898;
+	padding-top: 0.533333rem;
+position: relative;
+padding-left: 0.333333rem;
+	
+}
+.more_pic:before{
+	content: "";
+	display: inline-block;	
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-right: 0.133333rem;
+	background: url(../images/invest/down.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/**/
+
+.mui-preview-image.mui-fullscreen {
+	position: fixed;
+	z-index: 20;
+	background-color: #000;
+}
+
+.mui-preview-header,
+.mui-preview-footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 10;
+}
+
+.mui-preview-header {
+	height: 44px;
+	top: 0;
+}
+
+.mui-preview-footer {
+	height: 50px;
+	bottom: 0px;
+}
+
+.mui-preview-header .mui-preview-indicator {
+	display: block;
+	line-height: 25px;
+	color: #fff;
+	text-align: center;
+	margin: 0.2rem auto 0.053333rem;
+	width: 1.333333rem;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 12px;
+	font-size: 16px;
+}
+
+.mui-preview-image {
+	display: none;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.mui-preview-image.mui-preview-in {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+.mui-preview-image.mui-preview-out {
+	background: none;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+
+.mui-preview-image.mui-preview-out .mui-preview-header,
+.mui-preview-image.mui-preview-out .mui-preview-footer {
+	display: none;
+}
+
+.mui-zoom-scroller {
+	position: absolute;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+}
+
+.mui-zoom {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+	width: 100%;
+}
+
+.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+	display: inline-table;
+}
+
+.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mui-preview-loading {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.mui-preview-loading.mui-active {
+	display: block;
+}
+
+.mui-preview-loading .mui-spinner-white {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+	height: 50px;
+	width: 50px;
+}
+
+.mui-preview-image img.mui-transitioning {
+	-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+p img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*-----2018-01-30-----*/
+
+.item_kind_tab .account_tab_li li {
+	margin: 0 0;
+	width: 50%;
+	line-height: 0.853333rem;
+	float: left;
+	color: #535151;
+}
+
+.item_kind_tab .account_tab_li {
+	background: rgba(255, 255, 255, 0.6);
+	/* display: inline-block; */
+	overflow: hidden;
+	width: 55%;
+	margin: 0.16rem auto 0;
+	height: 0.853333rem;
+	border-radius: 0.48rem;
+}
+
+.account_tab_li li.cur {
+	background:url(../images/invest/test.png) no-repeat;
+	background-size:100% 100%;
+	border-radius: 0.48rem;
+	position: relative;
+}
+
+.invest_mine_wrap {}
+
+.invest_record_one {
+  width: 9.2rem;
+  margin: 0 auto;
+	padding:0.933333rem 0;
+	border-bottom:1px solid #ccc;
+}
+
+.invest_record_one h4 a {
+	color: #34393c;
+	line-height: 1;
+}
+
+.invest_record_msg {
+	margin-top:0.8rem;
+	overflow: hidden;
+}
+
+.invest_record_msg dl:nth-of-type(1) dt {
+	color:#a11c3f;
+}
+
+.invest_record_msg dl dt {
+	color: #34393c;
+  height: 0.88rem;
+}
+.invest_record_msg dl:nth-of-type(3) dt{
+	padding-top:0.106666rem;
+	box-sizing: border-box;
+	
+}
+.invest_record_msg dl {
+	width: 33.333%;
+}
+
+.invest_record_msg dl dd {
+	color: #989898;
+}
+
+.invest_record_msg dl dt.payment_finished {
+	color: #989898;
+}
+
+.invest_record_one .dis_bl {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.counpon_new {
+	width: 8.933333rem;
+	/*height: 3.453333rem;*/
+	background: url(../images/invest/counpon.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 0.266666rem auto;
+	padding: 0.4rem 0.373333rem 0.373333rem;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.counpon_selected {
+	background: url(../images/invest/counpon_cur.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.coupon_list_bg {
+	background: #f6f6f6;
+}
+
+.coupon_list_bg h5 {
+	padding-top: 0.133333rem;
+	color: #a6a6a7;
+	line-height: 2;
+	padding-left: 0.533333rem;
+}
+
+.counpon_new dl dt {
+	color:#a11c3f;
+	line-height: 2;
+}
+
+.counpon_new dl dd {
+	color: #393838;
+	line-height: 1.5;
+}
+
+.counpon_new dl {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px dashed #d2d2d2;
+	padding-bottom: 0.2rem;
+}
+
+.counpon_new dl span {
+	position: absolute;
+	top: 0.6rem;
+	right: 0;
+}
+
+.counpon_new h6 {
+	padding-top: 0.266666rem;
+}
+
+.counpon_new h6 i {
+	content: "";
+	width: 0.36rem;
+	height: 0.36rem;
+	margin-right: 0.066666rem;
+	background: url(../images/invest/time.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.counpon_not_enough {
+	padding: 0.666666rem 0;
+	width: 5.2rem;
+	background: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	color: #fff;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	display: none;
+	z-index: 16;
+}
+
+.mask_counpon header ul span {
+	line-height: 1.2rem;
+	color:#34393C;
+}
+
+.invet_mask_wrap li span em {
+	color:#a11c3f;
+}
+
+.invet_mask_wrap li span i {
+	position: static;
+	background: transparent;
+	color: #a0a0a0;
+	padding-left: 0.2rem;
+}
+.invet_mask_wrap li .fl a{
+	display: block;
+	color:#a11c3f;
+}
+
+/*account_invest_details*/
+.account_invest_details_tab li{
+ border: none; 
+ 
+}
+.account_invest_details_tab{
+	margin: 0;
+}
+.account_invest_details_tab li b,.account_invest_details_tab li p{
+	color: #a11c3f;
+     display: block;
+	margin-bottom: 0.2rem;
+	line-height: 1.2;
+	height: 0.96rem;
+
+}
+.item_fixed_base{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  border-bottom: 10px solid #f6f6f6;
+  z-index: 2;
+}
+.item_fixed_wrap{
+margin-top:28%;
+}
+.reimbursement_plan{
+    padding:0.4rem 0 0;
+    overflow: hidden;
+    background: #fff;
+     border-bottom: 10px solid #f6f6f6;
+     display: none;
+}
+.reimbursement_plan h3{
+	text-align: center;
+	color: #3f3f3f;
+	line-height: 2;
+	margin-bottom: 0.133333rem;
+}
+.reimbursement_plan ul li{
+	padding:0.533333rem  0.4rem;
+	overflow: hidden;
+	line-height: 0.506666rem;
+}
+.reimbursement_plan ul li.cur  span:nth-of-type(1){
+		background:#cbb693;
+}
+.reimbursement_plan ul li span:nth-of-type(1){
+	width:1.866666rem;
+	line-height:0.56rem;
+	background:#cccccc;
+	text-align: center;
+	color: #fff;
+	display: block;
+	float: left;
+	border-radius:0.28rem;
+	margin-right:0.266666rem;
+}
+.reimbursement_plan ul li span:nth-of-type(2){
+	float: left;
+	color:#989898;
+	line-height:0.586666rem;
+}
+.reimbursement_plan ul li em{
+	float: left;
+	color:#989898;
+	line-height:0.586666rem;
+	padding-right:0.266666rem;
+	
+}
+.reimbursement_plan ul li b{
+	width:1.2rem;
+	line-height:0.56rem;
+	float: right;
+	color: #ccc;
+	border:1px solid #ccc;
+	border-radius: 0.28rem;
+	text-align: center;
+	font-weight: normal;
+	
+}
+/**/
+.new_item_v,.new_item_axt{
+    width: 100%;
+    padding: 0 0.4rem;
+    overflow: hidden;
+    box-sizing: border-box;
+ 
+}
+.preferred_item{
+	overflow: hidden;
+	padding: 0.8rem 0 0.933333rem;
+	 border-bottom:1px solid #cccccc ;
+}
+.preferred_item dt{
+	color: #34393c;
+	padding-bottom: 0.8rem;
+	overflow: hidden;
+}
+.preferred_item dl dd {
+
+    clear: both;
+}
+.preferred_item dl dd:nth-of-type(1) >div:nth-of-type(1){
+	 width:6.133333rem;
+}
+.preferred_item dl dd span{
+	display: block;
+	color: #a11c3f;
+	height: 1.2rem;
+	box-sizing: border-box;
+}
+.preferred_item dl dd b{
+	display: block;
+}
+.preferred_item dd div b {
+    color: #989898;
+    font-weight: normal;
+}
+.preferred_item dd i,.preferred_item dd em{
+	font-style: normal;
+	line-height: 1.2rem;
+	
+}
+.preferred_item dd:nth-of-type(2){
+	padding-top: 0.8rem;
+}
+.outer {
+    width:7.466666rem;
+    height: 0.08rem;
+    background:#dddddd;
+    position: relative;
+    border-radius:0.04rem;
+}
+.inner{
+	position: absolute;
+	top: 0;
+    background: -webkit-linear-gradient(left, #d40f42 0%,#a11c3f 100%);
+    background: -o-linear-gradient(left, #d40f42 0%,#a11c3f 100%);
+    background: -ms-linear-gradient(left, #d40f42 0%,#a11c3f 100%);
+    background: linear-gradient(left, #d40f42 0%,#a11c3f 100%);
+    position: absolute;
+    height: 100%;
+    border-radius:0.04rem;
+    left: 0;
+    width: 50%;
+}
+.inner_cic{
+	position: absolute;
+	top: 50%;
+	left: 49%;
+	width:0.213333rem;
+	height: 0.213333rem;
+	border:0.053333rem solid #a11c3f;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 100%;
+	transform: translateY(-50%);
+}
+.item_static{
+	color:#989898;
+	margin-left: 0.066666rem;
+}
+.progress {
+	margin-top: 0.2rem;
+}
+.preferred_item_cur .item_static {
+    color: #a11c3f;
+   
+}
+.preferred_item_overdue dl dd span{
+  color:#989898;
+}
+.preferred_item_overdue .inner,.preferred_item_overdue .outer{
+	background:#989898;
+}
+.preferred_item_overdue .inner_cic{
+	border: 0.053333rem solid #989898;
+}
+.preferred_item_repayments .inner,.preferred_item_reimbursement .inner{
+	width: 100%;
+}
+.preferred_item dl dd:nth-of-type(1) >div:nth-of-type(2) span{
+	color:#34393c;
+	padding-top: 0.133333rem;
+}
+.preferred_item_reimbursement .inner{
+	background:#989898;
+}
+.preferred_item_cur dt:after{
+  float: left;
+  content: "";
+  display: inline-block;
+  width: 0.853333rem;
+  height: 0.4rem;
+  background: url(../images/invest/hot.png) no-repeat;
+  background-size: cover;
+  margin-top:0.106666rem;
+  margin-left: 0.266666rem;
+}
+.preferred_item dt span{
+	max-width:7.946666rem;
+	 display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    overflow: hidden;
+}
+.preferred_item_overdue dl dd:nth-of-type(1) >div:nth-of-type(2) span{
+	color: #989898;
+}
+.new_item_axt .preferred_item dl dd:nth-of-type(1) >div:nth-of-type(1){
+ width:4.88rem;
+}
+.preferred_item dd div b u{
+	text-decoration:none;
+	display: inline-block;
+
+}
+.preferred_item dd div b u:before{
+	content: "|";
+	display: inline-block;
+	padding: 0 0.266666rem;
+	
+}
+.new_item_axt .preferred_item_cur dd div b u{
+	color: #a11c3f;
+}
+.new_item_axt .preferred_item_reimbursement.preferred_item dl dd span,.new_item_axt .preferred_item_reimbursement.preferred_item dl dd:nth-of-type(1) >div:nth-of-type(2) span{
+	color: #989898;
+} 
+.account_coupon_list {
+		padding-top:1.2rem;
+}
+#titleName{
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    text-align: center;
+}
+.preferred_item .item_static,.preferred_item dd div b u{
+	color: #a11c3f;
+}
+.preferred_item_repayments dd div b u,.preferred_item_reimbursement dd div b u,.preferred_item_overdue dd div b u{
+	color:#989898;
+}
+.tab_invest_home li.cur span {
+    color: #a11c3f;
+}
+.tab_invest_home li span{
+    padding: 0 0.666666rem;
+    color: #34393c;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+.tab_invest_home li.cur span:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    border-bottom: 4px solid #a11c3f;
+}
+.preferred_item_overdue .item_static{
+	color: #989898;
+}
+.preferred_item_overdue.preferred_item dt,.preferred_item_reimbursement.preferred_item dt{
+	color: #989898;
+}
+.preferred_item_reimbursement dl dd span{
+	    color: #989898;
+}
+.preferred_item_reimbursement dl dd:nth-of-type(1) >div:nth-of-type(2) span{
+ color: #989898;	
+}
+.preferred_item_reimbursement .item_static {
+    color: #989898;
+}.preferred_item_reimbursement .inner_cic {
+    border: 0.053333rem solid #989898;
+}
+.tab_invest_home ul li{
+	position: static!important;
+	width: auto!important;
+	}
+.item_details_wrap{
+
+}
+.overdue_pr dt:after {
+    float: left;
+    content: "";
+    display: inline-block;
+    width: 0.853333rem;
+    height: 0.4rem;
+    background: url(../images/invest/hot.png) no-repeat;
+    background-size: cover;
+    margin-top: 0.106666rem;
+    margin-left: 0.266666rem;
+}
+.preferred_item_repayments.preferred_item .item_static{
+	color: #989898;
+}
+
+.item_msg ul li a{
+	width: 100%;
+}

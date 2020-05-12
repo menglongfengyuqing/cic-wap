@@ -1,0 +1,704 @@
+/*
+* @Author: Fern
+* @Date:   2017-07-19 15:59:07
+* @Last Modified by:   timefiles
+* @Last Modified time: 2018-07-26 10:00:46
+*/
+
+
+/* 忘记密码 */
+
+.form_wrap {
+	margin-top: 1.2rem;
+	padding: 0 0.4rem;
+	overflow: hidden
+}
+
+.verification_code {
+	position: absolute;
+	top: 0.4rem;
+	right: 0;
+	width:1.6rem;
+	height: 0.8rem;
+	background: url("../images/form/code.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+.verification_code .code {
+	line-height:0.8rem;
+	color: #fff;
+	text-align: center;
+}
+
+.next_btn {
+	margin-top: 50%
+}
+
+.send_code {
+	position: relative
+}
+
+.send_code span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #a11c3f;
+	line-height:1.76rem
+}
+
+.code_msg {
+	color: #999;
+	line-height: 3;
+	text-align: center
+}
+
+.account_setting_wrap {
+	padding: 0 0.4rem;
+	overflow: hidden
+}
+
+.account_setting_wrap li {
+	line-height: 1.2rem;
+	border-bottom: 1px solid #c1c1c1
+}
+
+.account_setting_wrap li a {
+	display: block;
+	color: #a1a1a2
+}
+
+.account_setting_wrap li a::after {
+	content: "";
+	display: block;
+	width: 0.173333rem;
+	height: 0.36rem;
+	background: url("../images/invest/arrow_right.png") no-repeat;
+	background-size: cover;
+	float: right;
+	margin-top: 0.4rem;
+	margin-left: 0.32rem
+}
+
+.login_other_01 a {
+	display: block;
+	line-height: 1.8
+}
+
+.login_other_01 a:nth-of-type(2):before {
+	content: ""
+}
+
+.tip_msg_p {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%
+}
+
+.setting_bankcord_wrap {
+	padding: 0.866667rem 0.4rem;
+	overflow: hidden
+}
+
+.input_group {
+	border-bottom: 1px solid #c1c1c1;
+	overflow: hidden;
+	line-height: 1.2rem
+}
+
+.input_group label {
+	width: 40%
+}
+
+.input_group input {
+	width: 60%;
+	border: 0;
+	line-height: 1.2rem;
+	text-align: right;
+	background: #fff
+}
+
+.invest_btn {
+	width: 100%;
+	text-align: center;
+	margin: 1.626666rem 0 1.066666rem;
+}
+
+.invest_btn a {
+	width: 100%;
+	margin: 0 auto;
+	background: #d40f42;
+	line-height: 0.96rem;
+	border-radius: 0.48rem;
+	text-align: center;
+	color: #fff;
+	display: block;
+}
+
+.setting_backcord_msg p {
+	line-height: 0.613333rem;
+	color: #666;
+	display: block
+}
+
+#errorMsg {
+	text-align: center;
+	margin: 0.266667rem 0;
+	display: none;
+	color: #e11c1c
+}
+
+#errorMsg span {
+	content: "";
+	float: left;
+	width: 0.56rem;
+	height: 0.56rem;
+	background: url("../images/icon/bank_msg.png") no-repeat;
+	background-size: contain;
+	margin-right: 0.106667rem
+}
+
+#errorMsg a {
+	display: inline-block;
+	line-height: 0.56rem;
+	color: #e11c1c
+}
+
+.points_adress_wrap {
+	overflow: hidden
+}
+
+.points_adress_group {
+	border-bottom: 1px solid #ccc;
+	padding:0.613333rem 0;
+	box-sizing: border-box;
+	width: 9.2rem;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative
+}
+
+.points_adress_group label {
+
+	line-height: 1;
+	width: 2.8rem;
+	color: #34393c;
+	min-height:0.4rem;
+}
+
+.points_adress_group input {
+	border: none;
+	background: transparent;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 2.8rem;
+    width: 6.4rem;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+}
+
+.points_adress_group textarea {
+	border: none;
+	background: transparent;
+	width:100%;
+line-height: 1;
+display: block;
+    left: 2.8rem;
+    width: 6.4rem;
+
+}
+.points_adress_group span {
+	display: block;
+	width:1.36rem;
+	height:0.826666rem;
+    background: url(../images/integral_mall/btn_switch_01.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.points_adress_group span.save {
+	display: block;
+	width:1.36rem;
+	height:0.826666rem;
+	width: 1.346667rem;
+	height: 0.84rem;
+
+ background: url(../images/integral_mall/btn_switch_02.png) no-repeat;
+	background-size: 100% 100%;
+}
+.adress_save_btn {
+	clear: both;
+	margin: 0.666667rem 0;
+	text-align: center
+}
+.points_adress_group:nth-of-type(5){
+	border-bottom: 0;
+}
+.candle_list{
+	border-top: 0.266666rem solid #f2f2f2;
+}
+.candle_list .points_adress_group:nth-of-type(1){
+	padding:0.4rem 0;
+}
+.candle_list .points_adress_group label{
+	line-height: 0.826666rem;
+}
+.candle_list .points_adress_group:nth-of-type(2){
+ border-bottom: 0;
+     padding: 0.4rem 0;
+}
+.candle_list .points_adress_group:nth-of-type(2) label{
+		color:#D40F42 ;
+}
+.adress_save_btn{
+	position: absolute;
+	top: 50%;
+	right: 0.4rem;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	color: #34393c;
+	margin: 0;
+	
+}
+.points_adress_wrap{
+	background: #fff;
+}
+.adress_save_btn a {
+	width: 66%;
+	background: #eeeeee;
+	border-radius: 0.186667rem;
+	line-height: 1.12rem;
+	text-align: center;
+	display: inline-block;
+	overflow: hidden;
+	color: #cecece
+}
+
+.adress_save_btn a.active {
+	background: #d40f42;
+	color: #fff
+}
+
+.adress_list_one {
+	padding: 0.333333rem 0.4rem;
+	box-sizing: border-box;
+	width: 100%;
+	border-bottom: 1px solid #efefef;
+	overflow: hidden
+}
+
+.adress_list_one h4 b {
+	color: #232326;
+	font-weight: normal;
+	margin-right: 0.133333rem;
+	display: inline-block;
+	line-height: 2
+}
+
+.adress_list_one p {
+	color: #3f3f3f;
+	line-height: 1.4
+}
+
+.adress_list_one li {
+	overflow: hidden;
+	height: 0.8rem
+}
+
+.adress_list_one li:nth-of-type(1) {
+	width: 5.333333rem
+}
+
+.adress_list_one li span {
+	color: #3f3f3f;
+	display: block;
+	background: url("../images/home/lottery/icon/10.png") no-repeat left center;
+	background-size: 0.426667rem 0.426667rem;
+	padding-left: 0.666667rem;
+	line-height: 0.8rem
+}
+
+.adress_list_one li span.current {
+	color: #3f3f3f;
+	display: block;
+	background: url("../images/home/lottery/icon/07.png") no-repeat left center;
+	background-size: 0.426667rem 0.426667rem;
+	padding-left: 0.666667rem;
+	line-height: 0.8rem
+}
+
+.adress_list_one li a {
+	color: #3f3f3f;
+	display: inline-block;
+	background: url("../images/home/lottery/icon/08.png") no-repeat left center;
+	background-size: 0.426667rem 0.426667rem;
+	padding-left: 0.666667rem;
+	line-height: 0.8rem;
+	margin-right: 0.906667rem
+}
+
+.adress_list_one li em {
+	color: #3f3f3f;
+	display: inline-block;
+	background: url("../images/home/lottery/icon/09.png") no-repeat left center;
+	background-size: 0.426667rem 0.426667rem;
+	padding-left: 0.666667rem;
+	line-height: 0.8rem
+}
+
+.address_points_icon {
+	overflow: hidden;
+	margin-top: 0.133333rem
+}
+
+
+.ad_remove_no {
+	width: 100%;
+	background: #fff;
+	border-radius: 0.266667rem;
+	margin-bottom: 0.4rem;
+	line-height: 2;
+	text-align: center;
+	color: #002daf
+}
+
+.points_adress_group select {
+	color: #3f3f3f;
+	position: absolute;
+	top: 0.48rem;
+	left: 0;
+
+	border: none;
+	width: 100%;
+	-webkit-appearance: none;
+	color: #3f3f3f;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 2.8rem;
+    width: 6.4rem;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+	background: transparent;
+	line-height: 0.48rem!important;
+	padding: 0 0 0 2.453333rem!important !important;
+	margin: 0!important !important
+}
+
+.setting_success {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 5.733333rem;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	background: #fff;
+	border-radius: 8px;
+	display: none;
+	z-index: 12;
+	padding: 20px 0
+}
+
+.setting_success span {
+	position: absolute;
+	top: 0.2rem;
+	right: 0.2rem;
+	color: #7a7979
+}
+
+.setting_success_mail img {
+	margin: 0.266667rem 0
+}
+
+.setting_success p {
+	color: #ff6c00;
+	line-height: 0.8rem;
+	padding: 0 0.266667rem
+}
+
+.adress_list_one {
+	padding: 0.533333rem 0.4rem;
+	box-sizing: border-box;
+	width: 9.2rem;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 0.266666rem;
+	margin: 0.4rem auto 0;
+}
+.adress_list_one h4 {
+	margin-bottom: 0.266666rem;
+}
+.adress_list_one h4 b {
+	color: #34393C;
+	font-weight: normal;
+	margin-right:0.266666rem;
+	display: inline-block;
+	line-height: 1
+}
+.adress_list_one h4 b:nth-of-type(2){
+	color: #989898;
+	margin-right: 0;
+}
+.adress_list_one p {
+    color: #34393c;
+    width: 7.066666rem;
+    word-break: break-all;
+    line-height: 1.2;
+}
+.adress_list_one p span{
+	color: #CBB693;
+}
+.adress_list_one li {
+	overflow: hidden;
+	height: 0.8rem
+}
+
+.adress_list_one_l{
+	width:7.466666rem;
+	border-right: 1px solid #ccc;
+}
+.adress_list_one{
+	position: relative;
+}
+.adress_list_one a{
+	color: #989898;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 1.333333rem;
+	text-align: center;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	
+}
+
+.address_points_icon {
+	overflow: hidden;
+	margin-top: 0.133333rem
+}
+
+.mask_points_adress_remove {
+	    display: none;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+   padding: 0 0.4rem;
+   box-sizing: border-box;
+    background: #fff;
+}
+
+.ad_remove_yes {
+	width: 100%;
+	background: #fff;
+
+}
+
+.ad_remove_yes h5 {
+	padding:0.586666rem 0;
+	color: #D40F42;
+	text-align: center;
+	border-bottom: 1px solid #dbdbdf;
+	line-height: 1
+}
+
+.ad_remove_yes p {
+	line-height: 1;
+	padding:0.586666rem 0;
+	text-align: center;
+	color: #34393c
+}
+
+.ad_remove_no {
+	width: 100%;
+	background: #fff;
+	border-radius: 0.266667rem;
+	margin-bottom: 0.4rem;
+	line-height: 2;
+	text-align: center;
+	color: #002daf
+}
+
+.tip_msg_r {
+	color: #b3b3b3;
+	text-align: center;
+	line-height: 0.8rem;
+	overflow: hidden;
+	background: #fff
+}
+
+.rechange_static {
+	width: 100%;
+	text-align: center;
+	padding-top: 0.586667rem
+}
+
+.rechange_static img {
+	display: inline-block;
+	width: 1.466667rem;
+	height: 1.493333rem;
+	overflow: hidden
+}
+
+.rechange_static p {
+	line-height: 0.8rem;
+	color: #ff6c00;
+	margin-top: 0.133333rem
+}
+
+.rechange_write li {
+	line-height: 1.066667rem;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	padding-left: 0.4rem;
+	color: #b7b5b5
+}
+
+.rechange_write li span {
+	color: #ff6c00
+}
+
+.rechange_back_a {
+	text-align: center;
+	overflow: hidden
+}
+
+.rechange_back_a a {
+	line-height: 0.8rem;
+	color: #666
+}
+
+.register_img img {
+	width: 100%
+}
+
+.regist_form_wrap {
+	margin-top: 0;
+}
+
+.register_img {
+	padding-top: 1.173333rem;
+}
+
+.send_code span.default {
+	color: #989898;
+}
+
+
+/*--v-2-2.0*/
+
+.all_page {
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	-webkit-transform: translateY(200%);
+	transform: translateY(200%);
+}
+
+.all_page.active {
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+}
+
+.login_wrap {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 0.4rem;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.login_wrap .login_close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1.173333rem;
+	height: 1.173333rem;
+	background: url(../images/form/close.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.login_wrap h1 {
+	text-align: center;
+	margin: 1.333333rem 0 1.333333rem;
+}
+
+.login_wrap h1 img {
+	width: 3.6rem;
+	height: 1.573333rem;
+}
+
+.input_wrap {
+	position: relative;
+}
+
+.input_wrap em {
+	position: absolute;
+	top: 0.52rem;
+	right: 0;
+	width: 0.586666rem;
+	height: 0.586666rem;
+	background: url(../images/form/btn_deleteall.png) no-repeat;
+	background-size: 100% 100%;
+	display: none;
+}
+
+.pwd_wrap em {
+	right: 0.853333rem;
+}
+
+input[name=fakeusernameremembered],
+input[name=fakepasswordremembered] {
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.regist_wrap{
+overflow:hidden;
+margin-top: 1.173333rem;
+}
+.code_wrap em{
+	right: 1.866666rem;
+	
+}
+.regist_btn_input .login_btn{
+	background: #cccccc;
+}
+.regist_btn_input .login_btn.active{
+	background: #d40f42;
+}
+.login_input span#btnSendCode{
+	position: static;
+}
+.login_input em.fr{
+	position: static;
+	margin-top:0.586666rem;
+    margin-right: 0.133333rem;
+}
+.send_code input{
+	width: 5rem;
+}
+.newUserAddress_icon{
+	width: 1.173333rem;
+	height: 1.173333rem;
+	background: url(../images/integral_mall/add.png) no-repeat;
+	background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}

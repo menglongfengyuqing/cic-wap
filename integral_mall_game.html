@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根-领先的互联网借贷信息交互平台-积分抽奖</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/integral.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+	</head>
+
+	<body class="bg_white">
+		<header>
+			<div class="item_kind_tab back_tab">
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur">
+						积分抽奖
+					</li>
+					<a href="javascript:window.location.reload();" class="refresh_icon"></a>
+				</ul>
+			</div>
+		</header>
+		<div class="points_my">
+			<div class="points_my_wrap">
+
+				<div id="lottery">
+
+					<ul>
+						<li class="lottery-unit lottery-unit-0">
+							<!--<img src="images/home/lottery/prize/01.jpg" />
+
+						<p class="font_size20"><span class="font_size20">使用时间:11/22-12/12</span></p>-->
+						</li>
+						<li class="lottery-unit lottery-unit-1">
+							<!--<img src="images/home/lottery/prize/02.jpg" />
+
+						<p class="font_size20"><span class="font_size20">使用时间:11/22-12/12</span></p>-->
+						</li>
+						<li class="lottery-unit lottery-unit-2">
+							<!--<img src="images/home/lottery/prize/01.jpg" />
+
+						<p class="font_size20"><span class="font_size20">使用时间:11/22-12/12</span></p>-->
+						</li>
+						<li class="lottery-unit lottery-unit-7">
+							<!--<img src="images/home/lottery/prize/02.jpg" />
+
+						<p class="font_size20"><span class="font_size20">使用时间:11/22-12/12</span></p>-->
+						</li>
+						<li class="hmp_game_btn">
+							<!-- 注： 当积分不足  不能抽奖时  使用deafult.png    -->
+							<div class="start_btn" ondblclick="copyText()">
+								<img src="images/integral_mall/btn.png" />
+
+							</div>
+
+						</li>
+						<li class="lottery-unit lottery-unit-3">
+							<!--<img src="images/home/lottery/prize/02.jpg" />
+
+						<p class="font_size20"><span class="font_size20">使用时间:11/22-12/12</span></p>-->
+						</li>
+						<li class="lottery-unit lottery-unit-6">
+							<!--<img src="images/home/lottery/prize/01.jpg" />
+
+						<p class="font_size20"><span class="font_size20">使用时间:11/22-12/12</span></p>-->
+						</li>
+						<li class="lottery-unit lottery-unit-5">
+							<!--<img src="images/home/lottery/prize/02.jpg" />
+
+						<p class="font_size20"><span class="font_size20">使用时间:11/22-12/12</span></p>-->
+						</li>
+						<li class="lottery-unit lottery-unit-4">
+							<!--<img src="images/home/lottery/prize/01.jpg" />
+
+						<p class="font_size20"><span class="font_size20">使用时间:11/22-12/12</span></p>-->
+						</li>
+					</ul>
+					<div class="integral_candle">
+						<a href="integral_mall_win.html" class="fl font_size30">查看我的奖品</a>
+						<span class="fr font_size30">今日剩余次数：<em id="drawLotteryNum"></em></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section_wrap">
+			<div class="section_01">
+				<ul>
+					<li class="fl font_size34">我的积分:<span id="myscore"></span>分</li>
+					<li class="fr font_size30">
+						<a href="integral_mall_rule.html">积分规则</a>
+					</li>
+				</ul>
+			</div>
+			<div class="section_tit clear"><img src="images/integral_mall/tit_01.png" /></div>
+
+			<!--获奖名单 -->
+			<div class="get_prize_list">
+				<div class="swiper-container">
+					<div class="swiper-wrapper" id="awardsUserList"></div>
+				</div>
+			</div>
+			<div class="section_tit clear"><img src="images/integral_mall/tit_02.png" /></div>
+
+			<div class="poin_rule">
+				<p class="font_size30">1. 抽奖赢不停每次抽奖消耗10积分，每日抽奖次数最多10次。</p>
+				<p class="font_size30">2. 实物类奖品需要您配合填写邮寄信息，奖品将在兑换后20个工作日内寄出，邮费由中投摩根承担。</p>
+				<p class="font_size30">3. 中奖物品可以到我的奖品查看。</p>
+				<p class="font_size30">4. 若抽到实物物品，请到我的奖品填写收货地址。</p>
+				<p class="font_size30">5. 以上抽奖规则最终解释权归中投摩根所有。</p>
+			</div>
+		</div>
+		<div class="mask_backdrop"></div>
+		<!--抽中奖品状态-->
+		<div class="mask_win_prize">
+			<div class="prize_gain_img" id="prizePic">
+				<img src="" />
+				<p class="font_size34"></p>
+			</div>
+			<div class="get_msg">
+				<p class="font_size26">温馨提示:请在<span id="deadline"></span>小时之内去“我的奖品”</p>
+				<p class="font_size26">进行下单，否则奖品将会失效。</p>
+			</div>
+		</div>
+		<div class="mask_win_no"></div>
+		<!--积分不足 -->
+		<div class="mask_investNo_tip font_size30"></div>
+		<input type="hidden" id="userbouns" value="" />
+		<input type="hidden" name="isDrawnPrize" id="isDrawnPrize" value="" />
+	</body>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/integral_mall_game.js"></script>
+	</body>
+
+</html>

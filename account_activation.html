@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台—账户-激活账户</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/account.css">
+		<link rel="stylesheet" href="css/account_new.css">
+	</head>
+
+	<body class="bg_white">
+		<header class="position_rel">
+			<div class="item_kind_tab back_tab">
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur">
+						激活账户
+					</li>
+				</ul>
+			</div>
+			<b class="kefu_btn fr"></b>
+		</header>
+		<div class="mui-content" id="_mui-content">
+			<div class="account_activation_wrap">
+				<h2><img src="images/account/u67.png"/></h2>
+				<h3><img src="images/account/u65.png"/></h2>
+		    	<h4 class="font_size36">存管升级改造</h4>
+		    	<div class="account_activation_tip">
+		    		<h5 class="font_size28">尊敬的用户：</h5>
+		    		<p class="font_size28">中投摩根与海口联合农村商业银行已经完成存管接口2.0升级改造，激活账户后即可体验。如有使用问题，请您点击右上角联系平台客服，中投摩根团队祝您使用愉快！</p>
+		    	</div>
+		    </div>
+			<div class="recharge_btn clear cur">
+				<a class="font_size36 setting_submite" href="javascript:toActive();">去激活</a>
+			</div>
+		</div>
+		<div class="mask_backdrop"></div>
+		<!--error-->
+		<div class="mask_investNo_tip font_size30"></div>
+		<!--kefu-->
+		<div class="kefu_mask_wrap">
+			<ul>
+				<li class="font_size28">
+					<a href="zt_phone.html" id="kefu">在线客服</a>
+				</li>
+
+				<li class="font_size28">
+					<a href="tel:400-666-9068" id="phoneNum">400-666-9068</a>
+				</li>
+
+				<li class="font_size28"><span class="font_size28">取消</span></li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+	jQuery.support.cors = true;
+	var _tmp_a = getArgumentsByName("a");
+	var ainfo = _tmp_a.split("-").reverse().join('')
+	console.log(">>>>>> ainfo = " + ainfo)
+		/*kefu info*/
+		$(".kefu_btn").click(function() {
+			$(".kefu_mask_wrap").addClass("active");
+			$(".mask_backdrop").show();
+		})
+		$(".kefu_mask_wrap span").click(function() {
+			$(".kefu_mask_wrap").removeClass("active");
+			$(".mask_backdrop").hide();
+		});
+
+		$(function() {
+			console.log("token=" + token)
+		});
+
+		function toActive() {
+			$.ajax({
+				url: ctxpath + "/lanmaoAccount/memberActivation",
+				type: 'post',
+				dataType: 'json',
+				data: {
+					from: '1',
+					token: ainfo
+				},
+				success: function(result) {
+					console.log(JSON.stringify(result))
+					openPostWindow(result.data)
+				},
+				fail: function(fail){
+
+					console.log("fail=" + JSON.stringify(fail))
+				}
+			});
+		}
+	</script>
+</html>

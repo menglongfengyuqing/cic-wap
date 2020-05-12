@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台—交易记录</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/account.css">
+		<link rel="stylesheet" href="css/account_new.css">
+		<style>
+			.account_trading_record_tab {
+				padding-top: 1.173333rem;
+			}
+			
+			.mui-content {
+				padding-top: 0;
+			}
+		</style>
+	</head>
+
+	<body class="bg_white">
+		<header>
+			<div class="item_kind_tab back_tab">
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur">交易记录</li>
+					<a href="javascript:window.location.reload();" class="refresh_icon"></a>
+				</ul>
+			</div>
+		</header>
+		<div class="account_trading_record_tab">
+			<ul>
+				<li class="cur" id="item_01">
+					<a href="javascript:;" class="font_size30">全部</a>
+				</li>
+				<li id="item_02">
+					<a class="font_size30" href="javascript:;">充值</a>
+				</li>
+				<li id="item_03">
+					<a class="font_size30" href="javascript:;">提现</a>
+				</li>
+				<li id="item_04">
+					<a class="font_size30" href="javascript:;">出借</a>
+				</li>
+				<li id="item_05">
+					<a class="font_size30" href="javascript:;">还款</a>
+				</li>
+			</ul>
+		</div>
+		<div class="mui-content">
+
+			<!--<div class="record_trading">
+		   	  <dl class="fl">
+		   	  	<dt class="font_size30">出借</dt>
+		   	  	<dd class="font_size26">2018-02-03</dd>
+		   	  </dl>		   	 
+		   	  <dl class="fr">
+		   	  	<dt class="font_size30 out">-1000</dt>
+		   	  	<dd class="font_size26">余额(元)：3939,00</dd>
+		   	  </dl>
+		   </div>-->
+		</div>
+		<!-- 暂无数据... -->
+		<div class="news_null_wrap">
+			<img src="images/account/null.png" />
+			<p class="font_size30">暂无交易记录哟~</p>
+		</div>
+		<div class="error_msg_wrap">
+			<p class="font_size30" style="text-align: center;"></p>
+		</div>
+		<div>
+			<input type="hidden" name="last" id="last" value="" />
+			<input type="hidden" name="pageNo" id="pageNo" value="" />
+			<input type="hidden" name="type" id="type" value="" />
+			<input type="hidden" name="bindCard" id="bindCard" value="" />
+		</div>
+		<div class="mask_backdrop"></div>
+		<div class="mask_bank_open">
+			<p class="font_size30">您尚未开户，为了您的资产安全请先开户</p>
+			<div class="mask_operation_one">
+				<a href="account_setting_bankcard.html" class="font_size30">是</a>
+				<a href="javascript:;" class="font_size30" id="bindcardno">否</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/account_trading_record.js"></script>
+
+</html>

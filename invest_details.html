@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台—出借金额-项目详情页</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/swiper04.min.css">
+		<link rel="stylesheet" href="css/invest.css">
+		<link rel="stylesheet" href="css/invest_details.css">
+		<style>
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				background: #F2F2F2!important;
+			}
+			
+			.item_details_con {
+				padding-bottom: 1.76rem;
+				background: #f2f2f2;
+			}
+			
+			.item_tab_con {
+				background: #fff;
+			}
+			
+			.item_details_tab {
+				/*display: none;*/
+			}
+		</style>
+	</head>
+
+	<body class="bg_white">
+		<header>
+			<div class="item_kind_tab back_tab">
+				<ul>
+					<span class="back_icon" onclick="javascript:history.go(-1);"></span>
+					<li class="font_size34 cur" id="titleName"></li>
+					<a href="javascript:window.location.reload();" class="refresh_icon"></a>
+
+				</ul>
+			</div>
+		</header>
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="page_01 page" id="page_01">
+
+						<div class="item_details_base">
+							<h3 class="font_size100" id="projectstate"></h3>
+							<p class="font_size30">年化利率</p>
+							<div class="item_details_base_li">
+								<ul>
+									<li class="fl">
+										<em class="font_size34" id="projectsurplus"></em>
+										<span class="font_size26">剩余金额(元)</span>
+									</li>
+									<li class="fl">
+										<em class="font_size34" id="projectspan2"></em>
+										<span class="font_size26">出借期限(天)</span>
+									</li>
+									<li class="fl">
+										<em class="font_size34" id="projectminamount"></em>
+										<span class="font_size26">出借最低金额(元)</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="item_li_wrap">
+							<ul>
+								<li><b class="font_size30 fl">还款方式</b><span class="font_size30 fr" id="repaytype"></span></li>
+								<li><b class="font_size30 fl">起息时间</b><span class="font_size30 fr" id="interestDate"></span></li>
+								<li><b class="font_size30 fl">募集进度</b><span class="font_size30 fr" id="progress"></span></li>
+							</ul>
+						</div>
+						<div class="slide_up"><span class="font_size26">上滑查看详情</span></div>
+					</div>
+				</div>
+				<div class="swiper-slide" id="proPage02">
+					<div class="page_02 page">
+
+						<div class="item_details_con" id="conTop">
+
+							<div class="item_tab_con  item_msg cur item_tab_nopd">
+
+								<div class="invest_scf_group">
+									<dl>
+										<dt class="font_size30 fl">项目名称</dt>
+										<dd class="font_size30 fl" id="project_name2">
+										</dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">借款方</dt>
+										<dd class="font_size30 fl" id="borrowerName"></dd>
+									</dl>
+									<dl class="hidePaymentName">
+										<dt class="font_size30 fl">付款方</dt>
+										<dd class="font_size30 fl">
+											<a href="zt_mth.html" class="font_size30 core_tit" id="paymentName"></a>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">借款金额</dt>
+										<dd class="font_size30 fl" id="projectAmount">元</dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">借款期限</dt>
+										<dd class="font_size30 fl" id="projectspan">天</dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">借款用途</dt>
+										<dd class="font_size30 fl" id="purpose"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">募集期限</dt>
+										<dd class="font_size30 fl">不超过20个工作日</dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">年化利率</dt>
+										<dd class="font_size30 fl" id="projectstate2">%</dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">还款方式</dt>
+										<dd class="font_size30 fl repaytype"><span id="repaytype02" class="fl"></span><em class="fl"></em></dd>
+									</dl>
+									<dl class="rate_star" >
+										<dt class="font_size30 fl">项目评级</dt>
+										<dd class="font_size30 fl">
+											<div class="star fl" id="star"><i class="all"></i><i class="all"></i><i class="all"></i><i class="all"></i><i></i></div>
+											<span></span>
+											<h6 class="font_size20"><i>星级越高，风险等级越低</i>（内部评级，仅供参考）</h6>
+
+										</dd>
+
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">费用说明</dt>
+										<dd class="font_size30 fl">
+											<span>加入费用：0元</span>
+											<span>提现费用：每月两次免费机会，两次以上1元/笔</span>
+										</dd>
+									</dl>
+
+									<dl>
+										<dt class="font_size30 fl">出借规则</dt>
+										<dd class="font_size30 fl"><span id="loanMoney"></span></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">出借人条件</dt>
+										<dd class="font_size30 fl">风险承受能力<em>“稳健型”</em>及以上</dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">风险提示</dt>
+										<dd class="font_size30 fl">
+											<a href="zt_protocol_risk.html" class="font_size30">《出借人网络借贷风险提示》</a>
+											<a href="zt_protocol_prohibit.html" class="font_size30">《出借人网络借贷禁止性行为提示》</a>
+										</dd>
+									</dl>
+
+									<ul>
+										<li id="protocolModel">
+											<a href="invest_mine_agreement.html" class="font_size30">协议范本</a>
+										</li>
+										<li class="repaymentPlan">
+											<a href="javascript:;" class="font_size30" id="repaymentPlan">还款计划</a>
+										</li>
+										<li id="questionCommon">
+											<a href="invest_question.html" class="font_size30 cq_btn">常见问题</a>
+
+										</li>
+										<li>
+											<span class="font_size30 fl">项目简介</span>
+											<p class="font_size30 fl" id="project_introduction">
+											</p>
+										</li>
+									</ul>
+
+								</div>
+
+								<div class="font_size26 tip_msg_p tip_msg_cg">
+									<p class="font_size26">海口联合农商银行存管已接入 资金受监管</p>
+									<a href="zt_protocol_risk.html" class="font_size26">* 市场有风险，出借需谨慎</a>
+								</div>
+							</div>
+							<div class="item_tab_con loan_msg item_tab_nopd">
+								<div class="invest_scf_group">
+									<dl>
+										<dt class="font_size30 fl">公司名称</dt>
+										<dd class="font_size30 fl" id="borrowerCompanyName"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">注册资本</dt>
+										<dd class="font_size30 fl" id="borrowerRegisterAmount"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">实缴资本</dt>
+										<dd class="font_size30 fl" id="contributedCapital"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">注册地址</dt>
+										<dd class="font_size30 fl" id="address"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">成立时间</dt>
+										<dd class="font_size30 fl" id="borrowerRegisterDate"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">法定代表人</dt>
+										<dd class="font_size30 fl" id="agentPersonName"></dd>
+									</dl>
+									<dl id="LoanBasicInfo">
+										<dt class="font_size30 fl">股东信息</dt>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">所属行业</dt>
+										<dd class="font_size30 fl" id="industry"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">办公地点</dt>
+										<dd class="font_size30 fl" id="addressBS"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">经营区域</dt>
+										<dd class="font_size30 fl" id="operatingArea"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">收入及负债<br />情况</dt>
+										<dd class="font_size30 fl">年收入:<u id="annualRevenue">500000</u>元;负债:<u id="liabilities"></u>元</dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">经营及财务<br />状况</dt>
+										<dd class="font_size30 fl" id="businessFinancialSituation"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">还款能力变化<br />情况</dt>
+										<dd class="font_size30 fl" id="abilityToRepaySituation"></dd>
+									</dl>
+
+									<dl>
+										<dt class="font_size30 fl">是否涉诉</dt>
+										<dd class="font_size30 fl" id="litigationSituation"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">是否行政处罚</dt>
+										<dd class="font_size30 fl" id="administrativePunishmentSituation"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">逾期情况</dt>
+										<dd class="font_size30 fl" id="platformOverdueSituation"></dd>
+									</dl>
+									<dl>
+										<dt class="font_size30 fl">其他平台借<br />款余额</dt>
+										<dd class="font_size30 fl" id="otherCreditInformation"></dd>
+									</dl>
+									<!--<dl>
+									<dt class="font_size30 fl">在其他网贷平<br />台借款信息</dt>
+									<dd class="font_size30 fl"id="otherCreditInformation" ></dd>
+								</dl>-->
+								</div>
+								<div class="font_size26 tip_msg_p tip_msg_cg">
+									<p class="font_size26">海口联合农商银行存管已接入 资金安全再升级</p>
+									<a href="zt_protocol_risk.html" class="font_size26">* 市场有风险，出借需谨慎</a>
+								</div>
+							</div>
+							<!---->
+							<div class="item_tab_con borrower_msg item_tab_nopd">
+								<div class="invest_scf_group hidePaymentName">
+									<dl>
+										<dt class="font_size30 fl">付款方</dt>
+										<dd class="font_size30 fl" id="paymentName2"></dd>
+
+									</dl>
+								</div>
+								<div class="invest_scf_group">
+									<dl>
+										<dt class="font_size30 fl">借款方</dt>
+										<dd class="fl">
+
+											<div class="risk_con">
+												<ul class="fl">
+													<h4 class="font_size30" id="borrowerName2"></h4>
+
+													<div id="businessLicenses"></div>
+													<div id="bankPermitCerts"></div>
+												</ul>
+											</div>
+
+										</dd>
+									</dl>
+								</div>
+								<div class="invest_scf_group">
+									<dl>
+										<dt class="font_size30 fl">还款来源</dt>
+										<dd class="font_size30 fl">
+											<p class="font_size30" id="sourceofrepayment"></p>
+										</dd>
+									</dl>
+								</div>
+								<div class="invest_scf_group">
+									<dl>
+										<dt class="font_size30 fl">还款保障措施</dt>
+										<dd class="font_size30 fl">
+											<p class="font_size30" id="repaymentGuaranteeMeasures"></p>
+										</dd>
+									</dl>
+								</div>
+								<div class="invest_scf_group">
+									<dl>
+										<dt class="fl font_size30">相关文件</dt>
+										<dd class="fl">
+
+											<div class="risk_con file_more">
+
+												<ul class="fl" id="fileList">
+													<div id="filePro"></div>
+													<div id="fileTb"></div>
+													<div id="fileRisk"></div>
+
+												</ul>
+												<div class="more_pic font_size30 clear">查看更多</div>
+												<div class=" font_size30 clear" id="close_pic">取消</div>
+											</div>
+
+										</dd>
+									</dl>
+
+								</div>
+
+								<div class="invest_scf_group no_border">
+									<dl>
+										<dt class="fl font_size30">风控措施</dt>
+										<dd class="fl">
+
+											<div class="risk_con">
+												<div class="risk_item_msg" id="risk_item_msg"></div>
+
+											</div>
+
+										</dd>
+									</dl>
+								</div>
+
+								<div class="font_size26 tip_msg_p tip_msg_cg">
+									<p class="font_size26">海口联合农商银行存管已接入 资金安全再升级</p>
+									<a href="zt_protocol_risk.html" class="font_size26">* 市场有风险，出借需谨慎</a>
+								</div>
+							</div>
+							<div class="item_tab_con  invest_record item_tab_nopd">
+								<div class="invest_tab invest_user_tab">
+									<ul>
+										<li class="font_size30">出借人</li>
+										<li class="font_size30">出借金额</li>
+										<li class="font_size30">出借时间</li>
+									</ul>
+								</div>
+								<div class="invest_record_wrap">
+									<div class="invest_record_con"></div>
+
+								</div>
+
+								<div class="font_size26 tip_msg_p tip_msg_cg">
+									<p class="font_size26">海口联合农商银行存管已接入 资金安全再升级</p>
+									<a href="zt_protocol_risk.html" class="font_size26">* 市场有风险，出借需谨慎</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="item_details_tab">
+			<ul>
+				<li class="font_size30 fl cur">
+					<span>项目介绍</span>
+				</li>
+				<li class="font_size30 fl">
+					<span>借款方信息</span>
+				</li>
+				<li class="font_size30 fl">
+					<span>风控情况</span>
+				</li>
+				<li class="font_size30 fl">
+					<span>出借记录</span>
+				</li>
+			</ul>
+		</div>
+		<div class="invest_btn_fixed_wrap">
+			<!--once即将上线  cur立即加入   default 还款中 已过期 已还款-->
+			<div class="invet_btn font_size34 clear invest_btn_fixed" id="invest_btn"></div>
+		</div>
+
+		<input type="hidden" name="" id="projectProductType" value="" />
+		<input type="hidden" name="" id="number" value="" />
+		<input type="hidden" name="" id="userName" value="" />
+		<input type="hidden" name="" id="proStatic" value="" />
+
+		<!-- invset_btn mask -->
+		<div class="mask_backdrop"></div>
+		<div class="mask_backdrop_rep" ></div>
+		<!--还款方式弹框-->
+		<div class="repaytype_wrap">
+			<p class="font_size30">计算方式为：</p>
+			<p class="font_size30">借款金额为X,年利率为Y,借款期限为Z月,则<span>每月应还利息</span>计算公式为：<span>X×Y/12</span>,应还<span>总利息</span>计算公式为：<span>X×Y/12×Z</span>,</p>
+			<p class="font_size30">应还<span>本金</span>为<span>X</span>。</p>
+		</div>
+		<!--星级弹框-->
+		<div class="star_wrap">
+			<img src="images/invest/tip.png"/>
+		</div>
+		<!--未登录提示-->
+		<div class="mask_login_tip">
+			<p class="font_size42">您还未登录</p>
+			<p class="font_size30">登录后才能查看更多项目详情</p>
+			<div class="mask_login_btn font_size36">立即登录</div>
+
+		</div>
+		<!--未出借-->
+		<div class="mask_investNo_tip font_size30">您未出借该项目，暂不可查看相关信息</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script src="js/mui.zoom.js"></script>
+	<script src="js/mui.previewimage.js"></script>
+	<script type="text/javascript" src="js/swiper04.min.js"></script>
+	<script type="text/javascript" src="js/invest_details.js"></script>
+	<script>
+		mui.previewImage();
+		mui('body').on('tap', 'a', function() {
+			document.location.href = this.href;
+		});
+	</script>
+</html>

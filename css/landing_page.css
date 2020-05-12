@@ -1,0 +1,357 @@
+@charset"utf-8";
+.landing_page {
+	padding-bottom: 0.48rem;
+	overflow: hidden;
+	background: #e2452f
+}
+
+.img_logo,
+.img_logo img {
+	width: 100%;
+	height: 5.706666rem;
+	overflow: hidden
+}
+
+.login_wrap {
+	width: 9.44rem;
+	height: 10.72rem;
+	background: url("../images/landing_page/login.png") no-repeat;
+	background-size: 100% 100%;
+	margin-left: 0.32rem
+}
+
+.login_wrap h3 {
+	padding: 1.12rem 0 0.533333rem 1.6rem;
+	color: #d9321a;
+	line-height: 0.426666rem
+}
+
+.login_wrap h3:before {
+	content: "";
+	width: 0.4rem;
+	height: 0.453333rem;
+	background: url("../images/landing_page/safe.png") no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	margin-right: 0.24rem
+}
+
+.login_input_wrap {
+	width: 8rem;
+	margin-left: 0.613333rem
+}
+
+.landing_input {
+	width: 100%;
+	margin-bottom: 0.266666rem;
+	position: relative
+}
+
+.landing_input input {
+	line-height: 1.066666rem;
+	background: #fff;
+	border: 0;
+	width: 100%;
+	padding-left: 0.346666rem;
+	box-sizing: border-box;
+	border-radius: 0.133333rem
+}
+
+.login_wrap input::-webkit-input-placeholder {
+	color: #9a9a9a
+}
+
+.login_wrap input::-moz-placeholder {
+	color: #9a9a9a
+}
+
+.login_wrap input::-ms-input-placeholder {
+	color: #9a9a9a
+}
+
+.landing_input_samll input:nth-of-type(1) {
+	width: 4.56rem
+}
+
+.landing_input_samll input:nth-of-type(2) {
+	width: 3.173333rem;
+	float: right;
+	padding-left: 0;
+	text-align: center;
+	color: #000000;
+	display: block
+}
+
+#phoneCodeBtn {
+	background: #fd6519;
+	color: #fff;
+	width: 3.173333rem;
+	float: right;
+	padding-left: 0;
+	text-align: center;
+	line-height: 1.066666rem;
+	border-radius: 0.133333rem;
+	display: block
+}
+
+.confirm_file {
+	padding-top: 0.32rem;
+	overflow: hidden
+}
+
+.confirm_file a {
+	color: #e28a2f
+}
+
+.inputRad {
+	position: relative;
+	width: 0.346666rem;
+	height: 0.346666rem;
+	margin-right: 0.16rem
+}
+
+.inputRad input {
+	width: 0.293333rem;
+	height: 0.2rem
+}
+
+.inputRad label {
+	width: 0.346666rem;
+	height: 0.346666rem;
+	background: #fdc26a url("../images/landing_page//icon_checkbox.png") no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	position: absolute;
+	top: 0.08rem;
+	left: 0
+}
+
+.inputRad label.cur {
+	background: #fdc26a url("../images/landing_page/icon_checkbox_cur.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.landing_login_btn {
+	margin-top: 0.533333rem;
+	width: 8rem;
+	line-height: 1.066666rem;
+	background: #ee3219;
+	color: #fff;
+	text-align: center;
+	border-radius: 0.133333rem
+}
+
+.loanding_introduce {
+	margin-top: 0.2rem;
+	width: 9.386666rem;
+	height: 16.186666rem;
+	margin-left: 0.32rem;
+	background: url("../images/landing_page/introduce.png") no-repeat;
+	background-size: 100% 100%
+}
+
+.loanding_introduce h4 {
+	text-align: center;
+	padding: 0.746666rem 0
+}
+
+.introduce_img {
+	width: 9.2rem;
+	margin-left: 0.08rem
+}
+
+.introduce_li li {
+	width: 33.333%;
+	text-align: center
+}
+
+.introduce_li li span {
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin: 0.4rem 0 0.613333rem
+}
+
+.introduce_msg {
+	padding: 0.266666rem 0.533333rem 0;
+	overflow: hidden
+}
+
+.introduce_li {
+	overflow: hidden
+}
+
+.introduce_msg p {
+	color: #666;
+	line-height: 1.2;
+	margin-bottom: 0.586666rem
+}
+
+.landing_java {
+	width: 7.96rem;
+	line-height: 1.013333rem;
+	margin: 0.426666rem auto 0;
+	background: #ee3118;
+	text-align: center;
+	border-radius: 0.133333rem
+}
+
+.landing_java a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff
+}
+
+.introduce_li img {
+	width: 1.52rem;
+	height: 1.52rem
+}
+
+.loanding_introduce h4 img {
+	width: 6.026666rem;
+	height: 0.413333rem;
+	overflow: hidden
+}
+
+.loanding_refer {
+	width: 9.413333rem;
+	height: 11.773333rem;
+	background: url("../images/landing_page/refer.png") no-repeat;
+	background-size: cover;
+	margin-left: 0.32rem;
+	margin-top: 0.2rem;
+	padding-bottom: 0.266666rem
+}
+
+.loanding_refer h4 {
+	text-align: center;
+	padding: 0.746666rem 0 0.2rem
+}
+
+.loanding_refer h4 img {
+	width: 6.293333rem;
+	height: 0.44rem
+}
+
+.recommended_wrap {
+	width: 7.693333rem;
+	padding-bottom: 0.8rem;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 0.133333rem;
+	position: relative;
+	background: url("../images/landing_page/png.png") no-repeat;
+	background-size: 100% 100%;
+	padding-top: 0.56rem
+}
+
+.refer_item li:nth-of-type(2) .recommended_wrap {
+	margin-top: -0.4rem
+}
+
+.refer_item li:nth-of-type(1) .recommended_wrap {
+	margin-top: -0.133333rem
+}
+
+.recommended_wrap dt {
+	line-height: 0.933333rem;
+	overflow: hidden;
+	color: #323232;
+	padding: 0 0.4rem;
+	border-bottom: 1px solid #eeeeee
+}
+
+.recommended_wrap dt span {
+	color: #999;
+	padding-left: 0.24rem
+}
+
+.recommended_wrap dd {
+	overflow: hidden;
+	clear: both;
+	margin: 0.32rem 0 0.48rem
+}
+
+.recommended_wrap dd div {
+	width: 50%
+}
+
+.recommended_wrap dd b,
+.recommended_wrap dd span {
+	display: block;
+	font-weight: normal;
+	text-align: center
+}
+
+.recommended_wrap dd span {
+	height: 0.8rem;
+	margin-bottom: 0.293333rem
+}
+
+.recommended_wrap dd em {
+	color: #cd2e1b
+}
+
+.preferred_item dd i,
+.recommended_wrap dd i {
+	font-style: normal
+}
+
+.recommended_wrap dd div:nth-of-type(2) em {
+	color: #333
+}
+
+.invest_btn {
+	width: 5.173333rem;
+	line-height: 0.666666rem;
+	text-align: center;
+	color: #fff;
+	background: #ee3219;
+	margin: 0 auto
+}
+
+.invest_btn a {
+	color: #fff;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.133333rem
+}
+
+.icp_msg {
+	text-align: center;
+	color: #f9ac9f;
+	margin-top: 0.666666rem
+}
+
+.icp_msg p {
+	color: #f9ac9f;
+	margin-bottom: 0.266666rem
+}
+
+#hidePwd_rs {
+	position: absolute;
+	overflow: hidden;
+	top: 0.346666rem;
+	right: 0.506666rem;
+	height: 1.066666rem;
+	width: 0.853333rem
+}
+
+#hidePwd_rs::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url("../images/icon/eye_close.png") no-repeat;
+	background-size: 100% 100%!important;
+	width: 0.466666rem;
+	height: 0.333333rem;
+	z-index: 1
+}
+
+#hidePwd_rs.cur::before {
+	background: url("../images/icon/eye_open.png") no-repeat;
+	background-size: 100% 100%!important
+}

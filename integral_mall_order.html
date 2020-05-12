@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台-订单确认</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/integral.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="item_kind_tab back_tab">
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur">
+						确认订单
+					</li>
+					<a href="javascript:window.location.reload();" class="refresh_icon"></a>
+				</ul>
+			</div>
+		</header>
+		<div class="points_prized_wrap points_order_wrap">
+			<input type="hidden" id="defauleAddressId" value="" />
+			<div class="points_order_adress"></div>
+			<div class="prized_msg">
+				<div class="points_order_msg" id="awardInfoDetail">
+				</div>
+				<dl class="clear">
+					<dt class="fl font_size30">退换信息：</dt>
+					<dd class="fl font_size30">不支持退换</dd>
+				</dl>
+				<dl>
+					<dt class="fl font_size30"> 支持配送：</dt>
+					<dd class="fl font_size30">快递运输工作日、节假日均可送货</dd>
+				</dl>
+				<dl>
+					<dt class="fl font_size30">剩余积分：</dt>
+					<dd class="fl font_size30" id="availableBouns"></dd>
+				</dl>				
+				<dl>
+					<dt class="fl font_size30">失效时间：</dt>
+					<dd class="fl font_size30" id="deadline"></dd>
+				</dl>				
+				<dl class="noHidden">
+					<dt class="fl font_size30">承运来源：</dt>
+					<dd class="fl font_size30" id="expressName"></dd>
+				</dl>			
+				<dl class="noHidden">
+					<dt class="fl font_size30">快递单号：</dt>
+					<dd class="fl font_size30" id="expressNo"></dd>
+				</dl>
+			</div>
+		 <div class="msg_error font_size20" style="color: #90002E; text-align: center; display: none;"></div>
+		</div>
+		<div class="mask_points_less"></div>
+		<div class="mask_backdrop"></div>
+		<div class="points_prize_footer">
+			<ul>
+
+				<li class="fl points_prize_orderli">
+					<h5 class="font_size34"></h5>
+				</li>
+				<li class="fr">
+					<a class="font_size34" id="stateBtn"></a>
+				</li>
+			</ul>
+		</div>
+   <div class="mask_investNo_tip"></div>
+   <input type="hidden" name="addressId" id="addressIdDefalut" value="" />
+	</body>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/integral_mall_order.js"></script>
+
+</html>

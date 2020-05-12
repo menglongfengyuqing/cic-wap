@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台-账户信息</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="x-rim-auto-match" content="none">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/account.css">
+
+	</head>
+
+	<body class="bg_white">
+		<header>
+			<div class="item_kind_tab back_tab">
+
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur">
+						个人头像
+					</li>
+					<a href="javascript:window.location.reload();" class="refresh_icon"></a>
+				</ul>
+			</div>
+		</header>
+		<div class="account_info_wrap">
+			<div class="flie_wrap">
+				<div class="z_photo" id="z_photo">
+					<div class="z_file">
+						<img src="images/account/user_icon.png" id="userImg" />
+						<input class="huodong-msg" type="file" name="file" multiple="false" id="file" value="" accept="image/jpg,image/jpeg,image/png" multiple onchange="imgChange('z_photo','z_file');" />
+					</div>
+				</div>
+			</div>
+			<div class="invet_btn font_size32 clear" id="setting_submite">上传头像</div>
+		</div>
+		<div class="font_size26 tip_msg_p">
+			<a href="zt_protocol_risk.html" class="font_size26">* 市场有风险，出借需谨慎</a>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/account_photo.js"></script>
+	<script type="text/javascript">
+		$("#userImg").click(function() {
+			$("#file").click();
+		})
+
+		function imgChange(obj1, obj2) {
+			var fileNum1 = 0;
+			var fileNum2 = event.target.files.length;
+			var a = document.getElementById("z_photo"),
+				b = a.getElementsByTagName("div");
+			fileNum1 = b.length;
+			var j = fileNum1 + fileNum2 - 1;
+			//上传图片个数限制
+			if(fileNum1 > 1 || j > 1) {
+				alert("只能上传1张图片！");
+				return;
+			}
+			//获取点击的文本框
+			var file = document.getElementById("file");
+			//存放图片的父级元素
+			var imgContainer = document.getElementsByClassName(obj1)[0];
+			//获取的图片文件
+			var fileList = file.files;
+			//文本框的父级元素
+			var input = document.getElementsByClassName(obj2)[0];
+			var imgArr = [];
+			//遍历获取到得图片文件
+			for(var i = 0; i < fileList.length; i++) {
+				var imgUrl = window.URL.createObjectURL(file.files[i]);
+				imgArr.push(imgUrl);
+				var img = document.createElement("img");
+				img.setAttribute("src", imgArr[i]);
+				var imgAdd = document.createElement("div");
+				var imgAddInput = document.createElement("input");
+				imgAddInput.setAttribute("type", "hidden");
+				imgAddInput.setAttribute("value", imgArr[i]);
+				imgAdd.appendChild(imgAddInput);
+				imgAdd.setAttribute("class", "z_addImg");
+				imgAdd.appendChild(img);
+				imgContainer.appendChild(imgAdd);
+
+			};
+			file.classList.add("z_cl");
+
+		};
+	</script>
+
+</html>

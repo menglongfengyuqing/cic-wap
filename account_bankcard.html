@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台—账户-安全设置-开户信息</title>
+	    <meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/account.css">
+		<link rel="stylesheet" href="css/account_new.css">
+
+	</head>
+
+	<body class="bg_white">
+		<header class="position_rel">
+			<div class="item_kind_tab back_tab">
+
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon fl"></a>
+					<li class="font_size34">我的银行卡</li>
+
+				</ul>
+			</div>
+			<b class="kefu_btn fr"></b>
+		</header>
+		<div class="mui-content">
+			<div class="rechange_con">
+				<ul>
+					<li class="bankcard_li"><i class="font_size30">绑定银行</i><span class="font_size30" id="bankName"></span></li>
+				</ul>
+
+			</div>
+
+			<div class="setting_backcord_msg">
+				<span class="font_size26">温馨提示:</span>
+				<span class="font_size26">1.如需解绑银行卡，请联系客服进行线下沟通。 </span>
+				<span class="font_size26">2.点击更改银行卡后会跳转到存管银行界面，请按照提示操作，输入您新卡信息，进行提交。 </span>
+				<span class="font_size26">3.提交完成后，请您邮件发送到Kefu@cicmorgan.com邮箱，提供您的平台注册手机号码、银行预留手机号、新旧银行卡号、变更原因及手持身份证和新卡照片。</span>
+				<span class="font_size26">4.为保证您的资金安全，请您理解，如有问题，请及时联系平台客服400-666-9068。</span>
+
+				</span>
+				</span>
+			</div>
+		</div>
+		<div class="mask_investNo_tip font_size30"></div>
+		<div class="font_size26 tip_msg_p">
+			<a href="zt_protocol_risk.html" class="font_size26">* 市场有风险，出借需谨慎</a>
+		</div>
+		<!--kefu-->
+		<div class="mask_backdrop"></div>
+		<div class="kefu_mask_wrap">
+			<ul>
+				<li class="font_size28">
+					<a href="zt_phone.html">在线客服</a>
+				</li>
+
+				<li class="font_size28">
+					<a href="tel:400-666-9068">400-666-9068</a>
+				</li>
+
+				<li class="font_size28"><span class="font_size28">取消</span></li>
+			</ul>
+		</div>		
+		<div class="bank_mask_wrap">
+			<ul>
+				<li class="font_size28" id="bind_untying_btn">解绑银行卡</li>
+
+				<li class="font_size28" onclick="lanMaoModifyPhone()">更换银行预留手机号</li>
+
+				<li class="font_size28"><span class="font_size28">取消</span></li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/account_bankcard.js"></script>
+	<script>
+		/*kefu info*/
+		$(".kefu_btn").click(function() {
+			$(".kefu_mask_wrap").addClass("active");
+			$(".mask_backdrop").show();
+		})
+		$(".kefu_mask_wrap span,.bank_mask_wrap span").click(function() {
+			$(".kefu_mask_wrap,.bank_mask_wrap").removeClass("active");
+			$(".mask_backdrop").hide();
+		});
+		
+		$(".bankcard_li").click(function(){
+			$(".bank_mask_wrap").addClass("active");
+			$(".mask_backdrop").show();	
+		});
+	</script>
+
+</html>

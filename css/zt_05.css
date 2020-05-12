@@ -1,0 +1,501 @@
+/*Supply Chain Finance*/
+
+.bir_banner img {
+	width: 100%;
+}
+
+.scf_con {
+	width: 100%;
+	padding: 0 0.4rem;
+}
+
+.scf_tit {
+	padding: 0.4rem 0 0.266666rem 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.scf_tit h4 {
+	color: #333;
+	line-height: 3;
+	font-weight: normal;
+	position: relative;
+}
+
+.scf_tit h4:before {
+	content: "";
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	border-bottom: 1px solid #d2d2d2;
+	z-index: 0;
+}
+
+.scf_tit h4 span {
+	display: inline-block;
+	border-bottom: 1px solid #ef3430;
+}
+
+.scf_tit h5 {
+	color: #666;
+	line-height: 3;
+	font-weight: normal;
+}
+
+.scf_img {
+	text-align: center;
+}
+
+.scf_img img {
+	max-width: 90%;
+}
+
+.scf_bg_con {
+	width: 100%;
+	position: relative;
+	padding-bottom: 0.533333rem;
+}
+
+.scf_bg_con {
+	overflow: hidden;
+	width: 100%;
+	background: url(../images/zt/scf/bg.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.scf_bg_con_02 {
+	background: url(../images/zt/scf/bg_02.jpg) center center no-repeat;
+	background-size: cover;
+	margin-top: 0.4rem;
+}
+
+.scf_bg_con h4,
+.scf_bg_con h5 {
+	color: #fff;
+}
+
+.scf_adv li {
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 0.266666rem;
+}
+
+.scf_adv li img {
+	width: 2.186666rem;
+	height: 3.146666rem;
+}
+
+.scf_adv {}
+
+.scf_ced {
+	padding: 0.6rem 0.533333rem;
+	margin: 0 auto;
+	border: 2px solid #fff;
+	display: block;
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.scf_ced_logo {
+	float: left;
+	width: 3.266666rem;
+}
+
+.scf_ced_logo img {
+	width: 100%;
+}
+
+.scf_ced_msgs {
+	float: left;
+	width: 4.466666rem;
+	padding: 0 0.133333rem 0 0.4rem;
+	box-sizing: border-box;
+}
+
+.scf_ced_logo h6 {
+	color: #fff;
+	margin-top: 0.4rem;
+	line-height: 2;
+}
+
+.scf_ced_msgs p {
+	color: #fff;
+	line-height: 1.6;
+}
+
+.scf_ced:hover:before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	content: "";
+	box-shadow: -4px -4px 8px #918f8b inset;
+	-moz-box-shadow: -4px -4px 8px #918f8b inset;
+	-webkit-box-shadow: -4px -4px 8px #918f8b inset;
+}
+
+.scf_ced:hover:after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	content: "";
+	-moz-box-shadow: 4px 4px 8px #918f8b inset;
+	-webkit-box-shadow: 4px 4px 8px #918f8b inset;
+	box-shadow: 4px 4px 8px #918f8b inset;
+}
+
+.scf_img P {
+	color: #666;
+	line-height: 2;
+	font-size: 16px;
+	text-align: left;
+}
+
+.scf_img_bg {
+	padding: 0.266666rem 0.4rem;
+	background: url(../images/zt/scf/sub_bg_01.jpg) no-repeat;
+	background-size: cover;
+}
+
+.scf_sub_bg {
+	position: relative;
+}
+
+.scf_sub_bg:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	z-index: 0;
+	background: url(../images/zt/scf/sub_bg_02.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.scf_adv dl {
+	float: left;
+	width: 50%;
+	color: #fff;
+	padding: 0 0.4rem;
+	height: 6.066666rem;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin-bottom: 0.4rem;
+}
+
+.scf_adv dl dt {
+	text-align: center;
+	height: 1.266666rem;
+	position: relative;
+}
+
+.scf_adv dl dt img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.scf_adv dl h5 {
+	text-align: center;
+	line-height: 4;
+	font-weight: normal;
+}
+
+.scf_adv dl dd p {
+	line-height: 2;
+}
+
+.scf_sub_adv {
+	overflow: hidden;
+	margin-top: 0.266666rem;
+}
+
+.scf_sub_pb {
+	padding-bottom: 60px;
+}
+
+
+/*national day*/
+
+.nd_prize_one {
+	width: 100%;
+	background: url(../images/zt/national_day/background-02.png);
+	background-size: cover;
+}
+
+.nd_one_con {
+	width: 9.36rem;
+	background: url(../images/zt/national_day/background-04.png) no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+.nd_one_con ul {
+	padding: 1.626666rem 0.293333rem 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+.nd_one_con li {
+	width: 48%;
+	height: 5.2rem;
+	position: relative;
+	float: left;
+	color: #ff0711;
+	margin: 0 1% 0.346666rem;
+	background: #ffc335;
+	overflow: hidden;
+}
+
+.nd_one_con li:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 1.213333rem;
+	height: 0.933333rem;
+	background: url(../images/zt/national_day/image-18.png) no-repeat;
+	background-size: cover;
+}
+
+.nd_one_con h5 {
+	padding-left: 1.306666rem;
+	color: #ff0711;
+	font-size: 13px;
+	line-height: 0.666666rem;
+	text-align: left;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.nd_one_con li img {
+	width: 100%;
+	height: 3.12rem;
+}
+
+.nd_one_con li dl {
+	overflow: hidden;
+}
+
+.nd_one_con li dl dt {
+	float: left;
+	width: 66%;
+	box-sizing: border-box;
+	padding: 0.066666rem 0 0.066666rem 0.186666rem;
+}
+
+.nd_one_con li dl dt span {
+	display: block;
+	line-height: 1.5;
+	text-align: left;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	color: #ff0903;
+}
+
+.nd_one_con li dl dd {
+	float: right;
+	width: 34%;
+	height: 1.106666rem;
+	background: #ff162b;
+	padding-right: 0.106666rem;
+	box-sizing: border-box;
+}
+
+.nd_one_con li dl dd a {
+	width: 100%;
+	height: 1.106666rem;
+	display: block;
+	background: url(../images/zt/national_day/image-16.png) no-repeat;
+	background-size: cover;
+}
+
+.nd_one_con li:after {
+	width: 100%;
+	height: 0.066666rem;
+	background: #fff;
+	content: "";
+	display: block;
+	margin-top: 0.133333rem;
+}
+
+.nd_one_con .more {
+	float: left;
+	width: 48%;
+}
+
+.nd_one_con .more img {
+	margin-top: 1.16rem;
+	max-width: 100%;
+}
+
+.nd_invest_btn {
+	text-align: center;
+	clear: both;
+}
+
+.nd_invest_btn a {
+	display: block;
+}
+
+.nd_prize_two {
+	width: 100%;
+	background: url(../images/zt/national_day/background-03.png) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.nd_bar {
+	width: 100%;
+	height: 1.92rem;
+	background: url(../images/zt/national_day/image-03.png);
+	background-size: cover;
+}
+
+.nd_mi_one {
+	width: 100%;
+	padding: 1.32rem 0.32rem 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.nd_mi_one>img {
+	padding-left: 0.933333rem;
+	width: 7.44rem;
+	height: 4.413333rem;
+	box-sizing: border-box;
+}
+
+.nd_mi_one a {
+	position: absolute;
+	right: 2.773333rem;
+	bottom: 0;
+}
+
+.nd_mi_one a img {
+	width: 1.8rem;
+	height: 0.533333rem;
+}
+
+.nd_mi_two_img {
+	width: 100%;
+	padding: 0.666666rem 0.32rem;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.nd_mi_two_img img {
+	width: 9.253333rem;
+}
+
+.nd_mi_two_img a {
+	position: absolute;
+	right: 1.333333rem;
+	bottom: 11%;
+	width: 1.8rem;
+	height: 0.533333rem;
+}
+
+.nd_mi_two_img a img {
+	width: 1.8rem;
+	height: 0.533333rem;
+}
+
+.na_mi_two {
+	width: 100%;
+	padding: 0 0.186666rem 0.133333rem;
+	background: #300f60;
+	margin: 0.666666rem auto 0;
+	overflow: hidden;
+}
+
+.na_mi_two li {
+	width: 48%;
+	/*height: 586px;*/
+	margin: 0.266666rem 1% 0;
+	position: relative;
+	background: #5d1793;
+	border-radius: 5px;
+	text-align: center;
+	float: left;
+}
+
+.na_mi_two li:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 1.213333rem;
+	height:0.933333rem;
+	background: url(../images/zt/national_day/image-18.png) no-repeat;
+	background-size: cover;
+}
+
+.na_mi_two li h5 {
+	color: #fff;
+	background: #d34d25;
+	text-align: left;
+	padding-left: 1.6rem;
+	line-height: 0.666666rem;
+}
+
+.na_mi_two li img {
+	margin: 0.72rem auto 0.333333rem;
+	display: inline-block;
+	width: 2.813333rem;
+	height: 2.706666rem;
+}
+
+.na_mi_two li dl {
+	padding-left: 0.266666rem;
+	overflow: hidden;
+	text-align: left;
+}
+
+.na_mi_two li dl dt {
+	color: #fff;
+}
+
+.na_mi_two li dl dt span {
+	display: block;
+	line-height: 1.5;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	width: 100%;
+	overflow: hidden;
+}
+
+.na_mi_two li dl dd {
+	display: block;
+	text-align: center;
+	padding: 0.133333rem 0 0.266666rem;
+}
+
+.na_mi_two li dl dd a {
+	display: inline-block;
+	width: 1.8rem;
+	height: 0.533333rem;
+	margin-right: 0.266666rem;
+	background: url(../images/zt/national_day/image-19.png) no-repeat;
+	background-size: cover;
+}
+.nd_invest_btn{
+	padding-top: 0.533333rem;
+	overflow: hidden;
+}

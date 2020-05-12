@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css?version=0.1">
+		<link rel="stylesheet" href="css/zt_06.css">
+	</head>
+	<body>
+		<div class="banner_wrap">
+			<img src="images/zt/scf_suggestion/banner.jpg" />
+		</div>
+		<div class="scf_con">
+			<div class="add_wrap">
+			<div class="scf_group_one">
+				<div class="form_group">
+				   <ul>
+				   	<li>
+				   		<label for="" class="fl font_size24">联系人姓名&nbsp;:</label>
+				   		<input type="text" name="" id="name" value=""  class="fl font_size24" />
+				   	</li>				   
+				   	<li>
+				   		<label for="mobile" class="fl font_size24">联系人手机号&nbsp;:</label>
+				   		<input type="text" name="" id="mobile" value=""  class="fl font_size24" />
+				   	</li>				   
+				   	<li>
+				   		<label for="" class="fl font_size24">公司名称&nbsp;:</label>
+				   		<input type="text" name="" id="bussinessName" value=""  class="fl font_size24" />
+				   	</li>				   	
+				   	<li class="txt_hg">
+				   		<label for="" class="fl font_size24">合作&nbsp;:</label>
+
+				   		<textarea name="" rows="3" cols="4" id="message" placeholder="我的业务or我的资源" class="fl"></textarea>
+				   	</li>
+				   	<div class="input_btn">
+				   		<input type="submit" name="" id="leaveMessage" value="立即合作" class="font_size24"/>
+				   	</div>
+				   </ul>
+				</div>
+			</div>
+			<div class="scf_group_two">
+				 <div class="scf_tab">
+				 	<ul>
+				 		<li class="fl cur"><img src="images/zt/scf_suggestion/tit_01.png"/></li>
+				 		<li class="fl"><img src="images/zt/scf_suggestion/tit_02.png"/></li>
+				 	</ul>
+				 </div>
+				 <div class="scf_con_group">
+				 	<ul>
+
+				 		<li class="font_size24 cur">中投摩根是一家综合性的金融科技公司，业务领域覆盖互联网金融、保理业务、财富管理、区块链技术驱动供应链金融等综合服务范畴，致力于打造实力雄厚的综合供应链服务平台。自2014年成立至今，中投摩根公司一直为中小微企业提供供应链金融服务，通过互联网技术与大数据风控，让沉积于中小企业的应收账款获得流动性，是深受投资者信赖的品牌。</li>
+				 		<li class="font_size24">利用区块链不可篡改、多方共享的分布式账本特性，创新性的将区块链技术与供应链金融结合，释放/传递核心企业信用，打破信息不对称、降低信任成本、优化资金配置；为金融机构提供更多投资场景，提高碎片化经济下资金流转效益；打造“供应链＋区块链＝产业链”的生态网络，至今已合作华夏银行、贵阳银行，已撮合线上交易30亿元，目前覆盖零售、餐饮、制造、汽配、医药、物流行业。</li>
+				 	</ul>
+				 </div>
+			</div>
+		</div>
+		<div class="scf_group_three">
+				<img src="images/zt/scf_suggestion/bg7.jpg"/>
+				<img src="images/zt/scf_suggestion/bg4.jpg"/>
+				<img src="images/zt/scf_suggestion/bg5.jpg"/>
+				<img src="images/zt/scf_suggestion/bg6.jpg"/>
+			</div>
+		</div>
+		<div class="mask"></div>
+		<div class="mask_static" id="mask_static">
+			<p class="font_size28">提示</p>
+			<p class="font_size28" id="submit_static">留言成功</p>
+			<h5 class="font_size30 close_mask_static">我知道了</h5>
+		</div>
+		<div class="mask_static" id="mask_static_n">
+			<p class="font_size28">提示</p>
+			<p class="font_size28" id="submit_static_n">留言成功</p>
+			<h5 class="font_size30 close_mask_static_n">我知道了</h5>
+		</div>
+	    
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	
+	<script type="text/javascript" src="js/zt_scf_suggestion.js"></script>
+	<script>
+		$(".scf_tab li").click(function(){
+			$(this).addClass("cur").siblings().removeClass("cur");
+			$(".scf_con_group li").eq($(this).index()).addClass("cur").siblings().removeClass("cur");
+		})
+	</script>
+</html>

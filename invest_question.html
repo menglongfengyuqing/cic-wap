@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台—常见问题</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/invest_details.css">
+		<style>
+			#Q1,#Q2{
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body class="bg_white">
+		<header>
+			<div class="item_kind_tab back_tab">
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur" id="titleName">
+						常见问题
+					</li>
+					<a href="javascript:window.location.reload();" class="refresh_icon"></a>
+
+				</ul>
+			</div>
+		</header>
+		<div class="common_quesstion">
+			<div class="quesstion_group" id="Q1">
+				<h3 class="font_size30"><b>Q1</b>供应链金融项目安全么？</h3>
+				<p class="font_size30">扶持优质资产端，锁定核心企业供应链，为企业提供应收/应付账款管理和信用输出、批量为核心企业上下游提供供应链金融综合解决方案，核心企业信用背书项目贸易真实透明并按时回款。</p>
+			</div>			
+			<div class="quesstion_group" id="Q2">
+				<h3 class="font_size30"><b>Q1</b>房产抵押项目安全吗？</h3>
+				<p class="font_size30">中投摩根以严谨负责的态度对待每笔借款进行严格筛选，抵押物全部为北京房产和太原房产，并且为首次足值抵押，支付与海口联合农商银行进行合作，保证资金去向透明可追踪，每笔出借信息真实有效。</p>
+			</div>
+			<div class="quesstion_group">
+				<h3 class="font_size30"><b>Q2 </b>出借资金的起点是多少？</h3>
+
+				<p class="font_size30">最低1000元出借，100的倍数递增</p>
+			</div>
+			<div class="quesstion_group">
+				<h3 class="font_size30"><b>Q3 </b>  什么时间开始计算利息？</h3>
+				<p class="font_size30">满标日(放款日)开始计息</p>
+			</div>
+			<div class="quesstion_group">
+				<h3 class="font_size30"><b>Q4 </b>利息和本金什么时发放？</h3>
+				<p class="font_size30">项目会按照还款计划的时间，每月付息，到期退还本金；付息日期如赶上周末或节假日，顺延至下一个工作日。</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script>
+		var type = getArgumentsByName("projectProductType");
+		if(type==1){
+			$("#Q2").show();
+		}
+		else{
+				$("#Q1").show();
+		}
+	</script>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台-运营报告列表</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/more.css">
+		<style>
+			html,
+			body {
+				background: #fff;
+			}
+			header{
+				z-index: 3;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="item_kind_tab back_tab">
+
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur" id="disclosureDataMonthTitle">
+						月份运营报告
+					</li>
+					<a href="javascript:window.location.reload();" class="refresh_icon"></a>
+
+				</ul>
+			</div>
+		</header>
+		<div class="data_wrap">
+			<div class="month_data_group">
+				<h3><img src="images/more/1.png"/></h3>
+				<div class="month_tit">
+					<b class="font_size24">累计借贷金额(元)</b>
+					<span><em class="font_size36" id="investTotalAmount_id">0</em></span>
+
+				</div>
+				<div class="month_tit">
+					<b class="font_size24">累计借贷笔数(笔)</b>
+					<span><em class="font_size36" id="loanTotalNumbers_id">0</em></span>
+
+				</div>
+				<div class="data_platform">
+					<ul>
+						<li class="fl">
+							<dl>
+								<dt class="font_size36" id="interestTotalAmount_id">0</dt>
+								<dd class="font_size24">累计算为用户赚取（元）</dd>
+							</dl>
+						</li>
+						<li class="fr">
+							<dl>
+								<dt class="font_size36" id="loanUserTotalInterestAmount_id">0</dt>
+								<dd class="font_size24">借贷利息余额（元）</dd>
+							</dl>
+
+						</li>
+						<li class="fl">
+							<dl>
+								<dt class="font_size36" id="loanUserInfoTotalNumbers_id">0</dt>
+								<dd class="font_size24">累计出借人总数(人)</dd>
+							</dl>
+						</li>
+						<li class="fr">
+							<dl>
+								<dt class="font_size36" id="investPerCapitaTotalAmount_id">0</dt>
+								<dd class="font_size24">人均出借金额（元）</dd>
+							</dl>
+
+						</li>
+						<li class="fl">
+							<dl>
+								<dt class="font_size36" id="loanUserTotalNumbers_id">0</dt>
+								<dd class="font_size24">累计借款人总数(人)</dd>
+							</dl>
+						</li>
+						<li class="fr">
+							<dl>
+								<dt class="font_size36" id="loanPerCapitaTotalAmount_id">0</dt>
+								<dd class="font_size24">人均借款金额（元）</dd>
+							</dl>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="month_data_group">
+				<h3><img src="images/more/2.png"/></h3>
+				<div class="month_tit">
+					<b class="font_size24">成交金额(元)</b>
+					<span><em class="font_size36" id="loanInvestTotalAmount_id">0</em></span>
+
+				</div>
+				<div class="data_platform">
+					<ul>
+						<li class="fl">
+							<dl>
+								<dt class="font_size36" id="investPeopleTotalCount_id">0</dt>
+								<dd class="font_size24">出借人数(人)</dd>
+							</dl>
+						</li>
+						<li class="fr">
+							<dl>
+								<dt class="font_size36" id="investTotalCount_id">0</dt>
+								<dd class="font_size24">出借笔数(笔)</dd>
+							</dl>
+
+						</li>
+				</div>
+				<div class="month_project" id="mainProject">
+					<div id="mainProject"></div>
+					<div class="info_project"></div>
+				</div>
+				<div class="month_project">
+					<h3><img src="images/more/3.png"/></h3>
+					<div class="month_three">
+						<div class="month_three_top">
+							<ul>
+								<li>
+									<dl>
+										<dd class="font_size24" id="theTopTenStayStillTotalAmountPercentage_id">前十大借款人待还金额占比0.00%</dd>
+										<dt>
+            				  		
+										<div class="progress">
+											<div class="outer"><span class="inner" id="theTopTenStayStillTotalAmountPercentage_span"></span></div>
+										</div>
+
+            				  	        </dt>
+										<dd class="font_size24" id="otherTheTopTenStayStillTotalAmountPercentage_id">其他占比0.00%</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dd class="font_size24" id="theBiggestStayStillTotalAmountPercentage_id">最大单一借款人待还金额0.00%</dd>
+										<dt>
+            				  		
+										<div class="progress">
+											<div class="outer"><span class="inner" id="theBiggestStayStillTotalAmountPercentage_span"></span></div>
+										</div>
+
+            				  	</dt>
+										<dd class="progress" id="otherTheBiggestStayStillTotalAmountPercentage_id">其他占比0.00%</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+						<div class="month_three_bottom">
+							<div class="user_data">
+								<ul>
+									<li>
+										<div class="canvas_wrap">
+											<div class="rate_cic_dis"></div>
+											<div id="sexDistribution" class="userChart"></div>
+										</div>
+									</li>
+									<li class="li_posi">
+										<div class="canvas_wrap">
+											<div class="rate_cic_dis"></div>
+											<div id="ageDistribution" class="userChart"></div>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="month_project">
+					<h3><img src="images/more/4.png"/></h3>
+					<div class="month_tit">
+						<b class="font_size24">累计代偿金额(元)</b>
+						<span><em class="font_size36">0</em></span>
+
+					</div>
+					<div class="month_tit">
+						<b class="font_size24">累计代偿笔数(笔)</b>
+						<span><em class="font_size36">0</em></span>
+
+					</div>
+					<div class="data_ouerdue_msg">
+						<ul>
+							<li class="fl">
+								<dl>
+
+									<dd class="font_size32">0.00</dd>
+									<dt class="font_size22">逾期金额(元)</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+									<dd class="font_size32">0.00%</dd>
+
+									<dt class="font_size22">金额逾期率(%)</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+									<dd class="font_size32">0.00%</dd>
+									<dt class="font_size22">项目逾期率(%)</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+									<dd class="font_size32">0</dd>
+
+									<dt class="font_size22">逾期笔数(笔)</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+									<dd class="font_size32">0.00</dd>
+
+									<dt class="font_size22">逾期90天以上金额(元)</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+									<dd class="font_size32">0</dd>
+
+									<dt class="font_size22">逾期90天以上笔数(笔)</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+									<dd class="font_size32">0.00%</dd>
+
+									<dt class="font_size22">项目分级逾期率(%)1～90(天)</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+									<dd class="font_size32">0.00%</dd>
+
+									<dt class="font_size22">项目分级逾期率(%)91～180(天)</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+									<dd class="font_size32">0.00%</dd>
+
+									<dt class="font_size22">项目分级逾期率(%)180(天)以上</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+									<dd class="font_size32">0.00%</dd>
+
+									<dt class="font_size22">金额分级逾期率(%)1～90(天)</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+
+									<dd class="font_size32">0.00%</dd>
+									<dt class="font_size22">金额分级逾期率(%)91～180(天)</dt>
+
+								</dl>
+							</li>
+							<li class="fl">
+								<dl>
+									<dd class="font_size32">0.00%</dd>
+
+									<dt class="font_size22">金额分级逾期率(%)180(天)以上</dt>
+
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+				<div class="month_overdata">
+					<p class="font_size24" id="dataEnd">数据截止：</p>
+				</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/zt_data_details.js"></script>
+</html>

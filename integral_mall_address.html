@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台—账户-安全设置-收货地址</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/form.css">
+		<style>
+			html,body,.mui-content{
+				background: #f2f2f2!important;
+			}
+		</style>
+	</head>
+
+	<body class="bg_white">
+		<header>
+			<div class="item_kind_tab back_tab">
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur" id="title"></li>
+				</ul>
+			</div>
+				<span  id="newUserAddress" class="adress_save_btn font_size30">保存</span>
+		</header>
+		<div class="mui-content">
+			<div class="points_adress_wrap">
+				<div class="points_adress_group">
+					<label for="" class="font_size30 fl">收货人</label>
+					<input type="text" class="font_size30 fl" id="name" placeholder="请输入收货人姓名">
+				</div>
+				<div class="points_adress_group">
+					<label for="" class="font_size30 fl">联系方式</label>
+					<input type="text" class="font_size30 fl" id="mobile" placeholder="请输入收货人联系方式">
+					<input type="hidden" class="font_size30 fl" id="phoneNum">
+				</div>
+
+				<div class="points_adress_group">
+					<label for="" class="font_size30 fl">所在省份</label>
+					<select id="selProvince" class="font_size30">
+				      <option value="请选择所在省份">请选择所在省份</option>
+					</select>
+				</div>
+				<div class="points_adress_group">
+					<label for="" class="font_size30 fl">所在市区</label>
+					<select id="selCity" class="font_size30">
+				      <option value="请选择所在市区">请选择所在市区</option>
+					</select>
+				</div>
+				<div class="points_adress_group">
+					<label for="" class="font_size30 fl">详细地址</label>
+					<textarea name="" id="address" class="font_size30 fl" placeholder="请输入详细地址，如门牌号、小区、楼栋号、单元室等"></textarea>
+				</div>
+				<div class="candle_list">
+					<div class="points_adress_group save_ad">
+					<label for="" class="font_size30 fl">设为默认地址</label>
+					<span class="fr"></span>
+					<input type="hidden" value="0" id="setDefault" />
+				</div>				
+				<div class="points_adress_group save_ad">
+					<label for="" class="font_size30" id="deleteOne">删除该地址</label>
+					
+				</div>
+				</div>
+			
+			</div>
+	
+		</div>
+        <div>
+        	<input type="hidden" name="addressID" id="addressID" value="" />
+        </div>
+		<!-- 删除弹框.. -->
+		<div class="mask_backdrop"></div>
+		<div class="mask_points_adress_remove">
+			<div class="ad_remove_yes">
+				<h5 class="font_size34" id="deleteYes">确认删除该地址?</h5>
+				<p class="font_size34"  id="deleteNo">取消</p>
+			</div>
+
+		</div>
+	<div class="mask_investNo_tip font_size30"></div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/CityJson.js"></script>
+	<script type="text/javascript" src="js/ProJson.js"></script>
+	<script type="text/javascript" src="js/integral_mall_address.js"></script>
+	<script>
+		var autoTextarea = function(elem, extra, maxHeight) {
+			extra = extra || 0;
+			var isFirefox = !!document.getBoxObjectFor || 'mozInnerScreenX' in window,
+				isOpera = !!window.opera && !!window.opera.toString().indexOf('Opera'),
+				addEvent = function(type, callback) {
+					elem.addEventListener ?
+						elem.addEventListener(type, callback, false) :
+						elem.attachEvent('on' + type, callback);
+				},
+				getStyle = elem.currentStyle ? function(name) {
+					var val = elem.currentStyle[name];
+
+					if(name === 'height' && val.search(/px/i) !== 1) {
+						var rect = elem.getBoundingClientRect();
+						return rect.bottom - rect.top -
+							parseFloat(getStyle('paddingTop')) -
+							parseFloat(getStyle('paddingBottom')) + 'px';
+					};
+
+					return val;
+				} : function(name) {
+					return getComputedStyle(elem, null)[name];
+				},
+				minHeight = parseFloat(getStyle('height'));
+
+			elem.style.resize = 'none';
+
+			var change = function() {
+				var scrollTop, height,
+					padding = 0,
+					style = elem.style;
+
+				if(elem._length === elem.value.length) return;
+				elem._length = elem.value.length;
+
+				if(!isFirefox && !isOpera) {
+					padding = parseInt(getStyle('paddingTop')) + parseInt(getStyle('paddingBottom'));
+				};
+				scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+				elem.style.height = minHeight + 'px';
+				if(elem.scrollHeight > minHeight) {
+					if(maxHeight && elem.scrollHeight > maxHeight) {
+						height = maxHeight - padding;
+						style.overflowY = 'auto';
+					} else {
+						height = elem.scrollHeight - padding;
+						style.overflowY = 'hidden';
+					};
+					style.height = height + extra + 'px';
+					scrollTop += parseInt(style.height) - elem.currHeight;
+					document.body.scrollTop = scrollTop;
+					document.documentElement.scrollTop = scrollTop;
+					elem.currHeight = parseInt(style.height);
+				};
+			};
+			addEvent('propertychange', change);
+			addEvent('input', change);
+			addEvent('focus', change);
+			change();
+		};
+		var text = document.getElementById("address");
+		autoTextarea(text); // 调用
+	</script>
+
+</html>

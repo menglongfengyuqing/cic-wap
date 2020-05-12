@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台—注册</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/form.css">
+	</head>
+
+	<body class="bg_white">
+		<!-- fake fields are a workaround for chrome autofill getting the wrong fields -->
+		<input type="text" name="fakeusernameremembered" />
+		<input type="password" name="fakepasswordremembered" />
+		<header>
+			<div class="item_kind_tab back_tab">
+
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur">
+						注册
+					</li>
+					<a href="javascript:window.location.reload();" class="refresh_icon"></a>
+				</ul>
+			</div>
+		</header>
+<!--
+	APPId:wx18fecbc45e8ba28b
+	
+-->
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jweixin-1.2.0.js"></script>
+<script type="text/javascript" src="js/sha1.js"></script>
+<script>
+		$(document).ready(function(e) {
+	var appId ;
+	var timestamp ;
+	var nonceStr ;
+	var jsapi_ticket ;
+	var signature ;
+	var string1 ;
+    var url = location.href;
+	$.ajax({
+		url: ctxpath+"/weChatShare/getWeixinShare",
+		type: 'post',
+		data: {
+			from:'2',
+			token:token,
+			url:url
+			
+		}, //以键/值对的形式
+		async: false,
+		dataType: "json",
+		success: function(data) {
+			appId = data.appId;
+			timestamp = data.timestamp;
+			nonceStr = data.nonceStr;
+			jsapi_ticket = data.jsapi_ticket;	
+			signature=data.signature;
+			console.log(signature);
+			wx.config({
+				debug: true,
+				appId: appId,
+				timestamp: timestamp,
+				nonceStr: nonceStr,
+				signature: signature,
+				jsApiList: [
+					'onMenuShareTimeline',
+					'onMenuShareAppMessage',
+				]
+			});
+		},
+		error: function(result, status) {
+			console.log(result);
+		}
+	});
+	
+		wx.ready(function() {
+			var shareData = {
+				title: '爱亲员工专享福利', // 分享标题
+				desc: '出借中投摩根平台任何项目均享加息2%', // 分享描述
+				link: location.hostname + location.pathname,
+				imgUrl: 'images/zt/aiqin_activity/logo.png'
+			};
+			wx.onMenuShareAppMessage(shareData);
+			wx.onMenuShareTimeline(shareData);
+			wx.onMenuShareQQ(shareData);
+			wx.onMenuShareWeibo(shareData);
+			wx.onMenuShareQZone(shareData);
+		});
+		});			
+</script>
+
+</html>

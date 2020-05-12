@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台—信息披露-审计报告</title>
+		<meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/more.css">
+		<link rel="stylesheet" href="css/more_new.css">
+	</head>
+
+	<body class="bg_white">
+		<header>
+			<div class="item_kind_tab back_tab">
+
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur">
+						审计信息
+					</li>
+					<a href="javascript:window.location.reload();" class="refresh_icon"></a>
+
+				</ul>
+			</div>
+		</header>
+		<div class="safety_control_wrap">
+			<div class="safety_con mt36">
+				<div class="module_03_wrap">
+					<div class="module_03_con ar_wrap">
+						<span class="font_size28">展开</span>
+
+						<h5 class="font_size28">财务审计报告</h5>
+
+						<div class="audit_report_img">
+							<img src="images/more/audit_01.jpg" />
+							<img src="images/more/audit_02.jpg" />
+							<img src="images/more/audit_03.jpg" />
+							<img src="images/more/audit_04.jpg" />
+						</div>
+
+					</div>
+					<div class="module_03_con ar_wrap">
+						<span class="font_size28">展开</span>
+						<h5 class="font_size28">合规性审查报告</h5>
+						<div class="audit_report_img">
+							<p class="font_size28">建设中...</p>
+						</div>
+
+					</div>
+					<div class="module_03_con ar_wrap">
+						<span class="font_size28">展开</span>
+						<h5 class="font_size28">重点环节审计结果</h5>
+						<div class="audit_report_img">
+						<p class="font_size28">建设中...</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		var app = getArgumentsByName("app");
+		if(app == 1 || app == "1") {
+			$("header").hide();
+			$(".education_tab").show();
+		}
+		$(".module_03_con h5").click(function() {
+			$(this).siblings(".audit_report_img").show();
+			$(this).siblings("span").html("收起").addClass("cur");
+			$(this).parent(".module_03_con").css("paddingBottom", "38px");
+			$(".module_03_con span.cur").click(function() {
+				$(this).html("展开").removeClass("cur");
+				$(this).siblings(".audit_report_img").hide();
+				$(this).parent(".module_03_con").css("paddingBottom", "0");
+			});
+		});
+		
+	</script>
+
+</html>

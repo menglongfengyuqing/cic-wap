@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>中投摩根—领先的互联网借贷信息交互平台—更多-运营数据</title>
+	    <meta content="供应链金融, 区块链金,P2P网贷平台,互联网金融,中投摩根,cicmorgan" name="keywords" />
+
+		<meta content="中投摩根，以供应链为主导的综合性金融服务平台, 出借者首选互联网出借平台,中投摩根在健全的风险管控体系基础上,为出借者提供互联网金融出借产品,提高您的资金利用率." name="description" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/more.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<style>
+			html,
+			body {
+				background: #fff;
+			}
+			
+			.swiper-container {
+				overflow: hidden;
+			}
+			
+			.swiper-wrapper .swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				float: left;
+				width: 6.666666rem;
+				margin-right: 0.266666rem;
+			}
+			
+			.activity_wrap {
+				padding: 0 0 0.813333rem 0.533333rem;
+				background: #fff;
+				margin-top: 0;
+			}
+			
+			.operate_group.no_mb {
+				background: url(images/more/report_02.png) no-repeat;
+				background-size: 100% 100%;
+				margin-bottom: 0;
+				box-shadow: 0 0 0.16rem rgba(0, 0, 0, 0.1);
+			}
+			
+			.operate_group.no_mb_02 {
+				background: url(images/more/report_03.png) no-repeat;
+				background-size: 100% 100%;
+				margin-bottom: 0;
+			}
+			.operate_time li:last-child{
+				height:1.226666rem;
+				line-height: 1.226666rem;
+			}
+			.operate_time li{
+				border: 0;
+
+			}
+				.operate_group  li span,.operate_group li b{
+				line-height: 0.506666rem;
+					
+				}
+				.sign_about{
+width: 100%;
+border-top:0.533333rem solid #f2f2f2;
+border-bottom:0.533333rem solid #f2f2f2;
+}
+.sign_about h4{
+	background: #fff;
+	}
+.sign_about h4 span{
+
+    line-height: 2.08rem;
+    text-align: right;
+    width: 94%;
+    display: block;
+    position: relative;
+    padding-right:1.866666rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #5a5e62;
+
+}
+.sign_about h4 span:before {
+    content: '';
+    width: 1.6rem;
+    height: 1.28rem;
+    background: url(images/more/disclosure/sign.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="item_kind_tab back_tab">
+
+				<ul>
+					<a href="javascript:history.go(-1);" class="back_icon"></a>
+					<li class="font_size34 cur">
+						运营数据
+					</li>
+					<a href="javascript:window.location.reload();" class="refresh_icon"></a>
+
+				</ul>
+			</div>
+		</header>
+		<div class="data_wrap">
+			<div class="data_banner">
+				<div class="banner_con">
+					<h4 class="font_size30">中投摩根平台已上线</h4>
+					<div class="operate_time">
+						<ul>
+							<li class="font_size72" id="pastDay_a">0</li>
+							<li class="font_size72" id="pastDay_b">0</li>
+							<li class="font_size72" id="pastDay_c">0</li>
+							<li class="font_size72" id="pastDay_d">0</li>
+							<li class="font_size30">天</li>
+						</ul>
+					</div>
+					<h6><span class="font_size26">运营数据为实时更新</span></h6>
+				</div>
+			</div>
+			<div class="operate_group">
+				<div class="operate_group_con">
+					<div class="data_tit data_tit_01 font_size34">运营数据</div>
+					<ul>
+						<li>
+							<b class="font_size38 fr" id="investTotalAmount_id"></b>
+							<span class="font_size28 fl">累计撮合交易额(元)</span>
+						</li>
+						<li>
+							<b class="font_size38 fr" id="interestTotalAmount_id"></b>
+							<span class="font_size28 fl">累计为用户赚取利息(元)</span>
+						</li>
+						<li>
+							<b class="font_size38 fr" id="loanUserInfoTotalNumbers_id"></b>
+							<span class="font_size28 fl">累计出借人数量(人)</span>
+						</li>
+						<li>
+							<b class="font_size38 fr" id="nowLoanUserInfoNumbers_id"></b>
+							<span class="font_size28 fl">当前出借人数量(人)</span>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="operate_group">
+
+				<div class="data_tit data_tit_02 font_size34">借款标的情况</div>
+				<div class="operate_group_con operate_group_con_02">
+					<ul>
+						<li class="fl">
+							<span class="font_size28 ">累计借贷金额(元)</span>
+							<b class="font_size38 " id="loanTotalAmount_id"></b>
+						</li>
+						<li class="fr">
+							<span class="font_size28 ">累计借贷笔数(笔)</span>
+							<b class="font_size38 " id="loanTotalNumbers_id"></b>
+						</li>
+						<li class="fl">
+							<span class="font_size28 ">借贷本金余额(元)</span>
+							<b class="font_size38 " id="loanTotalAvailableAmount_id"></b>
+						</li>
+						<li class="fr">
+							<span class="font_size28 ">借贷余额笔数(笔)</span>
+							<b class="font_size38 " id="loanTotalAvailableNumbers_id"></b>
+						</li>
+						<li class="fl">
+							<span class="font_size28 ">关联关系借款余额(元)</span>
+							<b class="font_size38 " id="loanRelationalTotalAmount_id"></b>
+						</li>
+						<li class="fr">
+							<span class="font_size28 ">关联关系借款余额笔数(笔)</span>
+							<b class="font_size38 " id="loanRelationalTotalNumbers_id"></b>
+						</li>
+						<li class="fl">
+							<span class="font_size28 ">借贷利息金额(元)</span>
+							<b class="font_size38 " id="loanUserTotalInterestAmount_id"></b>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="operate_group">
+
+				<div class="operate_group_con operate_group_con_03">
+					<div class="data_tit data_tit_03 font_size34">借款人情况</div>
+					<ul>
+						<li>
+							<b class="font_size38 fr" id="loanUserTotalNumbers_id"></b>
+							<span class="font_size28 fl">累计借款人数量(户)</span>
+						</li>
+						<li>
+							<b class="font_size38 fr" id="nowLoanUserTotalNumbers_id"></b>
+							<span class="font_size28 fl">当前借款人数量(户)</span>
+						</li>
+
+						<li>
+							<b class="font_size38 fr" id="theTopTenStayStillTotalAmountPercentage_div_id"></b>
+							<span class="font_size28 fl">前十大借款人待还金额占比(%)</span>
+						</li>
+						<li>
+							<b class="font_size38 fr" id="theBiggestStayStillTotalAmountPercentage_span_id"></b>
+							<span class="font_size28 fl">最大单一借款人待还金额占比(%)</span>
+						</li>
+
+						<li>
+							<b class="font_size38 fr" id="loanAllUserPerCapitaTotalAmount_id"></b>
+							<span class="font_size28 fl">人均累计借贷金额(元)</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--出借人情况-->
+			<div class="operate_group operate_group_blue">
+				<div class="operate_group_con operate_group_con_04">
+					<div class="data_tit data_tit_04 font_size34">出借人情况</div>
+
+					<ul>
+						<li>
+							<b class="font_size38 fr" id="loanUserInfoSituationTotalNumbers_id"></b>
+							<span class="font_size28 fl">累计出借人数量(人)</span>
+						</li>
+						<li>
+							<b class="font_size38 fr" id="nowLoanUserInfoSituationNumbers_id"></b>
+							<span class="font_size28 fl">当前出借人数量(人)</span>
+						</li>
+						<li>
+							<b class="font_size38 fr" id="investSituationTotalAmount_id"></b>
+							<span class="font_size28 fl">累计撮合交易额(元)</span>
+						</li>
+						<li>
+							<b class="font_size38 fr" id="interestSituationTotalAmount_id"></b>
+							<span class="font_size28 fl">累计为用户赚取利息(元)</span>
+
+						</li>
+
+						<li>
+							<b class="font_size38 fr" id="theFirstInvestTotalAmountPercentage_id"></b>
+							<span class="font_size28 fl">最大单户出借余额占比(%)</span>
+
+						</li>
+						<li>
+							<b class="font_size38 fr" id="theTopTenInvestTotalAmountPercentage_id"></b>
+							<span class="font_size28 fl">最大十户出借余额占比(%)</span>
+						</li>
+						<li>
+							<b class="font_size38 fr" id="investPerCapitaTotalAmount_id"></b>
+							<span class="font_size28 fl">人均累计出借金额(元)</span>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="operate_group operate_group_blue">
+
+				<div class="operate_group_con operate_group_con_05">
+					<div class="data_tit data_tit_05 font_size34">逾期代偿情况</div>
+					<ul>
+						<li class="fl">
+							<span class="font_size28">逾期金额(元)</span>
+
+							<b class="font_size38" id="overdueAmount_id"></b>
+						</li>
+						<li class="fr">
+							<span class="font_size28">金额逾期率(%)</span>
+
+							<b class="font_size38" id="amountOverdueRate_id"></b>
+
+						</li>
+						<li class="fl">
+							<span class="font_size28">项目逾期率(%)</span>
+
+							<b class="font_size38" id="projectOverdueRate_id"></b>
+
+						</li>
+						<li class="fr">
+							<span class="font_size28">逾期笔数(笔)</span>
+
+							<b class="font_size38" id="overdueNumbers_id"></b>
+
+						</li>
+						<li class="fl">
+							<span class="font_size28">逾期90天以上金额(元)</span>
+
+							<b class="font_size38" id="overdue90DaysAmount_id"></b>
+
+						</li>
+						<li class="fr">
+							<span class="font_size28">逾期90天以上笔数(笔)</span>
+
+							<b class="font_size38" id="overdue90DaysNumbers_id"></b>
+
+						</li>
+
+						<!---->
+						<li class="fl">
+							<span class="font_size28">项目分级逾期率(%)<br />1～90(天)</span>
+
+							<b class="font_size38" id="projectClassificationOverdueRate90_id"></b>
+
+						</li>
+						<li class="fr">
+							<span class="font_size28">项目分级逾期率(%)<br />91～180(天)</span>
+
+							<b class="font_size38" id="projectClassificationOverdueRate180_id"></b>
+
+						</li>
+						<li class="fl">
+							<span class="font_size28">项目分级逾期率(%)<br />180(天)以上</span>
+
+							<b class="font_size38" id="projectClassificationOverdueRate360_id"></b>
+
+						</li>
+						<li class="fr">
+							<span class="font_size28">金额分级逾期率(%)<br />1～90(天)</span>
+
+							<b class="font_size38" id="amountClassificationOverdueRate90_id"></b>
+
+						</li>
+						<li class="fl">
+							<span class="font_size28">金额分级逾期率(%)<br />91～180(天)</span>
+
+							<b class="font_size38" id="amountClassificationOverdueRate180_id"></b>
+
+						</li>
+						<li class="fr">
+							<span class="font_size28">金额分级逾期率(%)<br />180(天)以上</span>
+
+							<b class="font_size38" id="amountClassificationOverdueRate360_id"></b>
+
+						</li>
+						<li class="fl">
+							<span class="font_size28">累计代偿金额(元)</span>
+
+							<b class="font_size38" id="theCumulativeReplaceRepayAmount_id"></b>
+
+						</li>
+						<li class="fr">
+							<span class="font_size28">累计代偿笔数(笔)</span>
+
+							<b class="font_size38" id="theCumulativeReplaceRepayNumbers_id"></b>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="activity_wrap core_enterprise_wrap">
+
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide activity_ing">
+							<div class="operate_group no_mb">
+								<a href="zt_yy_2018_up.html" class="font_size34">2018年度上半年运营报告</a>
+							</div>
+						</div>
+						<div class="swiper-slide activity_ing">
+							<div class="operate_group no_mb no_mb_02">
+								<a href="zt_operation_report.html" class="font_size34">2017年度运营报告</a>
+							</div>
+						</div>					
+						<div class="swiper-slide activity_ing" onclick="window.location.href='zt_data_more.html'">
+							<div class="operate_group no_mb no_mb_03">
+								<a href="zt_data_more.html" class="font_size34" style="visibility: hidden;">2017年度运营报告</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<div class="sign_about">
+							<h4 class="sign"><span class="font_size34">法定代表人签字：</span></h4>
+						</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/flexible_css.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/more_data.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript">
+		var app = getArgumentsByName("app");
+		if(app == 1 || app == "1") {
+			$("header").hide();
+			$(".data_wrap").css("marginTop", 0);
+		}
+
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 'auto',
+			spaceBetween: 20,
+			pagination: {
+
+				clickable: true,
+			},
+		});
+	</script>
+
+</html>
